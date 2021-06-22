@@ -1,0 +1,8 @@
+<map id="oneapi::vpl::ExtDecVideoProcessing" name="oneapi::vpl::ExtDecVideoProcessing">
+<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="oneapi::vpl::extension\l_buffer_trival\&lt; mfxExtDecVideo\lProcessing, MFX_EXTBUFF_DEC\l_VIDEO_PROCESSING \&gt;" alt="" coords="867,20,1093,91"/>
+<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtDecVideoProcessing, ID \&gt;" alt="" coords="545,35,817,76"/>
+<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="284,5,433,47"/>
+<area shape="rect" id="node5" href="$structmfxExtDecVideoProcessing.html" title="mfxExtDecVideoProcessing" alt="" coords="265,71,452,98"/>
+<area shape="rect" id="node6" href="$structmfxExtDecVideoProcessing_1_1mfxOut.html" title="mfxExtDecVideoProcessing\l::mfxOut" alt="" coords="5,31,192,72"/>
+<area shape="rect" id="node7" href="$structmfxExtDecVideoProcessing_1_1mfxIn.html" title="mfxExtDecVideoProcessing\l::mfxIn" alt="" coords="5,96,192,137"/>
+</map>

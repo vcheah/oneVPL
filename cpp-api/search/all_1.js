@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['a',['A',['../structmfxY416.html#a662f5e0068d0a9a74364bd500420c237',1,'mfxY416::A()'],['../structmfxA2RGB10.html#a5a54c8ef0a96a39599eff24acba0ee3b',1,'mfxA2RGB10::A()']]],
+  ['accelerationmode',['AccelerationMode',['../structmfxInitializationParam.html#a7c9ac94175572c506b5e49385b30379f',1,'mfxInitializationParam']]],
+  ['accelerator_5fhandle',['accelerator_handle',['../classoneapi_1_1vpl_1_1session.html#a0ef7804e597040cc92c87fdee8a1c44e',1,'oneapi::vpl::session']]],
+  ['acquire',['acquire',['../classoneapi_1_1vpl_1_1temporal__frame__allocator.html#a5b651d50e4367a442d6588088d8eeb6a',1,'oneapi::vpl::temporal_frame_allocator']]],
+  ['actables',['ACTables',['../structmfxExtJPEGHuffmanTables.html#aedca06da19a1bdc27075c444f665bf45',1,'mfxExtJPEGHuffmanTables']]],
+  ['add_5fbuffer',['add_buffer',['../classoneapi_1_1vpl_1_1buffer__list.html#aa156fcbd0cd65808fb14ffc2a3ebda5a',1,'oneapi::vpl::buffer_list::add_buffer()'],['../classoneapi_1_1vpl_1_1decoder__init__reset__list.html#a42700756569ce84e146b23b0d47e6ba1',1,'oneapi::vpl::decoder_init_reset_list::add_buffer()'],['../classoneapi_1_1vpl_1_1decoder__init__header__list.html#abffafe126a823e1b59db1688bea1f2f0',1,'oneapi::vpl::decoder_init_header_list::add_buffer()'],['../classoneapi_1_1vpl_1_1decoder__process__list.html#ad5a94ded300dacfbc0dd10385ac49730',1,'oneapi::vpl::decoder_process_list::add_buffer()'],['../classoneapi_1_1vpl_1_1encoder__init__list.html#af125474d512633a5d593461387c5778f',1,'oneapi::vpl::encoder_init_list::add_buffer()'],['../classoneapi_1_1vpl_1_1encoder__reset__list.html#aecf0f701a98fb450fad8ae7cc9400c6a',1,'oneapi::vpl::encoder_reset_list::add_buffer()'],['../classoneapi_1_1vpl_1_1encoder__process__list.html#a7bda93fd88f78a74b96bc0f2aaed7e7c',1,'oneapi::vpl::encoder_process_list::add_buffer()'],['../classoneapi_1_1vpl_1_1vpp__init__reset__list.html#a9caffbc7519d3c048437a01873ffe1d5',1,'oneapi::vpl::vpp_init_reset_list::add_buffer()'],['../classoneapi_1_1vpl_1_1vpp__process__list.html#a8748d973830fd86db8274d721a1d58b8',1,'oneapi::vpl::vpp_process_list::add_buffer()']]],
+  ['add_5foperation',['add_operation',['../classoneapi_1_1vpl_1_1future.html#af58241cf652dc329205b507bbc0ac870',1,'oneapi::vpl::future']]],
+  ['alglist',['AlgList',['../structmfxExtVPPDoNotUse.html#a5b19de41cda8f5d6e48d0dec71894055',1,'mfxExtVPPDoNotUse']]],
+  ['alloc',['Alloc',['../structmfxFrameAllocator.html#ab7f27ce364fbc04ac11c86fd020b4b5b',1,'mfxFrameAllocator']]],
+  ['alloc_5finput',['alloc_input',['../classoneapi_1_1vpl_1_1encode__session.html#adb5112f240041748ffe6a16782855749',1,'oneapi::vpl::encode_session::alloc_input()'],['../classoneapi_1_1vpl_1_1vpp__session.html#ae5e405c90e66b9e8c3a97a1bd9fb8305',1,'oneapi::vpl::vpp_session::alloc_input()']]],
+  ['anonymous',['Anonymous',['../structAnonymous.html',1,'']]],
+  ['applylongtermidx',['ApplyLongTermIdx',['../structmfxExtAVCRefListCtrl.html#a059586f1690a30d1ed5230d6027fe763',1,'mfxExtAVCRefListCtrl']]],
+  ['arcoefflag',['ArCoeffLag',['../structmfxExtAV1FilmGrainParam.html#a4cbfe0bdfabe24a35d95ac0b1f64c7aa',1,'mfxExtAV1FilmGrainParam']]],
+  ['arcoeffscbplus128',['ArCoeffsCbPlus128',['../structmfxExtAV1FilmGrainParam.html#a6880eedac522ccc7e10908bbf53117f5',1,'mfxExtAV1FilmGrainParam']]],
+  ['arcoeffscrplus128',['ArCoeffsCrPlus128',['../structmfxExtAV1FilmGrainParam.html#a0331653fc8fd77870a391883c346184f',1,'mfxExtAV1FilmGrainParam']]],
+  ['arcoeffshiftminus6',['ArCoeffShiftMinus6',['../structmfxExtAV1FilmGrainParam.html#a95fb5635b9a8578155b3803be8efa999',1,'mfxExtAV1FilmGrainParam']]],
+  ['arcoeffsyplus128',['ArCoeffsYPlus128',['../structmfxExtAV1FilmGrainParam.html#abfa6efa06691a30a22691f443fcef91e',1,'mfxExtAV1FilmGrainParam']]],
+  ['aspectratioh',['AspectRatioH',['../structmfxFrameInfo.html#a5b3ff1457bae50b6276618c2000a5f11',1,'mfxFrameInfo']]],
+  ['aspectratiow',['AspectRatioW',['../structmfxFrameInfo.html#a37de0c77df866265db9892b839bf7e9a',1,'mfxFrameInfo']]],
+  ['associate_5fcontext',['associate_context',['../classoneapi_1_1vpl_1_1bitstream__as__dst.html#a24ec0b55cc6f71c09d485074885c8de6',1,'oneapi::vpl::bitstream_as_dst::associate_context()'],['../classoneapi_1_1vpl_1_1frame__surface.html#ac2784800d1ed14d2850ca65be15eae6b',1,'oneapi::vpl::frame_surface::associate_context()']]],
+  ['attach_5fframe_5finfo',['attach_frame_info',['../classoneapi_1_1vpl_1_1temporal__frame__allocator.html#a21e4a39f175eec9eb9e060d24635cf82',1,'oneapi::vpl::temporal_frame_allocator']]]
+];

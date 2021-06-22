@@ -1,0 +1,26 @@
+var classMFXVideoSession =
+[
+    [ "MFXVideoSession", "classMFXVideoSession.html#a184fbd003ce62535f776104e298e6a76", null ],
+    [ "~MFXVideoSession", "classMFXVideoSession.html#a787f965faddffbd717d851ac167bc257", null ],
+    [ "CloneSession", "classMFXVideoSession.html#ac529097cc73972dea1814945f5486ae9", null ],
+    [ "Close", "classMFXVideoSession.html#a62a3255ac155a66de334f8b386e3a69b", null ],
+    [ "DisjoinSession", "classMFXVideoSession.html#afdc78871ff8c18555912c57e9e18a1d9", null ],
+    [ "GetHandle", "classMFXVideoSession.html#ae8db6ce6a2b19f9417114df146a90f62", null ],
+    [ "GetPriority", "classMFXVideoSession.html#a519436718ac0ee090d866563875062eb", null ],
+    [ "GetSurfaceForDecode", "classMFXVideoSession.html#a1fe66a69933275b506869e83b8d62265", null ],
+    [ "GetSurfaceForEncode", "classMFXVideoSession.html#ad52fea8b993bbe283a8e96eefb00ae0c", null ],
+    [ "GetSurfaceForVPP", "classMFXVideoSession.html#a8c0b4d5792b605d8cd0e8bd74d6d97ad", null ],
+    [ "GetSurfaceForVPPOut", "classMFXVideoSession.html#aa60d88c6392d372ce0d4ba81a4688529", null ],
+    [ "Init", "classMFXVideoSession.html#ad2378046531a0d933f60e8437cfd8120", null ],
+    [ "InitEx", "classMFXVideoSession.html#a8bc6778fbc0824b7f67059c57e2cb42e", null ],
+    [ "JoinSession", "classMFXVideoSession.html#ab541756f200cfb77be6552c5dd816005", null ],
+    [ "operator mfxSession", "classMFXVideoSession.html#a0dbb01eac88f3a35cf164b9b213ae805", null ],
+    [ "QueryIMPL", "classMFXVideoSession.html#ab8c46378c904252d63cd75d82b0eec6e", null ],
+    [ "QueryPlatform", "classMFXVideoSession.html#a154cedaf200d6693d614ab266fefafa4", null ],
+    [ "QueryVersion", "classMFXVideoSession.html#a5a89a58e439909b98130e758ee10042f", null ],
+    [ "SetFrameAllocator", "classMFXVideoSession.html#a39c494f295857572316b876f2ae9891c", null ],
+    [ "SetHandle", "classMFXVideoSession.html#a3854ae7458e9320effe7c83f0090abb7", null ],
+    [ "SetPriority", "classMFXVideoSession.html#adf9d13065015f7a93347ae60900504e5", null ],
+    [ "SyncOperation", "classMFXVideoSession.html#aceb40926426139a160b8d94aef2bd22b", null ],
+    [ "m_session", "classMFXVideoSession.html#afb89ddd01eaf456dcaf2bee2d1a1ca76", null ]
+];

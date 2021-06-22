@@ -1,0 +1,5 @@
+<map id="oneapi::vpl::ExtHEVCRegion" name="oneapi::vpl::ExtHEVCRegion">
+<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="oneapi::vpl::extension\l_buffer_trival\&lt; mfxExtHEVCRegion,\l MFX_EXTBUFF_HEVC_REGION \&gt;" alt="" coords="480,5,719,61"/>
+<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtHEVCRegion, ID \&gt;" alt="" coords="203,13,432,54"/>
+<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="5,13,155,54"/>
+</map>

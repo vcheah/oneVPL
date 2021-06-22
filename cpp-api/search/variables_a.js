@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['map_5f',['map_',['../classoneapi_1_1vpl_1_1implementation__capabilities__factory.html#a80891fbc99de8a1c2132f2fa4cbfdc93',1,'oneapi::vpl::implementation_capabilities_factory']]],
+  ['mask_5flen_5f',['mask_len_',['../classoneapi_1_1vpl_1_1ExtDeviceAffinityMask.html#aebb6441e562d7fb4bbf31d726213cc26',1,'oneapi::vpl::ExtDeviceAffinityMask']]],
+  ['max',['Max',['../structmfxRange32U.html#a18b8a882b86641e7fc9db0f1a1f850c1',1,'mfxRange32U']]],
+  ['maxcodeclevel',['MaxcodecLevel',['../structmfxDecoderDescription_1_1decoder.html#a74e37d797e9abe680f132d995d1fe147',1,'mfxDecoderDescription::decoder']]],
+  ['maxcontentlightlevel',['MaxContentLightLevel',['../structmfxExtContentLightLevelInfo.html#ad5e5b4df31018f405ec74e483447d134',1,'mfxExtContentLightLevelInfo']]],
+  ['maxlength',['MaxLength',['../structmfxBitstream.html#ab884085a33c690186a0da005566b9a9c',1,'mfxBitstream']]],
+  ['maxpicaveragelightlevel',['MaxPicAverageLightLevel',['../structmfxExtContentLightLevelInfo.html#a6f06c3d4079786c9ce9a97ba9398ea7c',1,'mfxExtContentLightLevelInfo']]],
+  ['mbpersec',['MBPerSec',['../structmfxExtEncoderCapability.html#abdd228e4b7cd8e8c50a6ba230717b237',1,'mfxExtEncoderCapability']]],
+  ['memdesc',['MemDesc',['../structmfxDecoderDescription_1_1decoder_1_1decprofile.html#a5d165fd4535eaf351334347800ec59e4',1,'mfxDecoderDescription::decoder::decprofile']]],
+  ['memdesc_5f',['memdesc_',['../classoneapi_1_1vpl_1_1implementation__capabilities_1_1codec__memory.html#af484d012b39eae26899125906b04d00b',1,'oneapi::vpl::implementation_capabilities::codec_memory::memdesc_()'],['../classoneapi_1_1vpl_1_1implementation__capabilities_1_1vpp__memory.html#af8c0a1caf92eae1a2ac4f9eafec238fc',1,'oneapi::vpl::implementation_capabilities::vpp_memory::memdesc_()']]],
+  ['memhandletype',['MemHandleType',['../structmfxDecoderDescription_1_1decoder_1_1decprofile_1_1decmemdesc.html#a4bb7d25a75fa19280da05c069bba8279',1,'mfxDecoderDescription::decoder::decprofile::decmemdesc']]],
+  ['memid',['MemId',['../structmfx3DLutVideoBuffer.html#aded786fe373c0035adf33e6ad40d058e',1,'mfx3DLutVideoBuffer']]],
+  ['memlayout',['MemLayout',['../structmfx3DLutVideoBuffer.html#a3e55f88d9e7bcfaa1a52484e210e3d4b',1,'mfx3DLutVideoBuffer']]],
+  ['mfxbuffers_5f',['mfxBuffers_',['../classoneapi_1_1vpl_1_1buffer__list.html#a2eaf434d5e4f173f0fb80fba53926c1a',1,'oneapi::vpl::buffer_list']]],
+  ['min',['Min',['../structmfxRange32U.html#aeca0f2271358d296e9d1bbfe07bb69e3',1,'mfxRange32U']]],
+  ['minframesize',['MinFrameSize',['../structmfxBRCFrameStatus.html#a385b129c69e06e00316ed93767c9a36f',1,'mfxBRCFrameStatus']]],
+  ['mode',['Mode',['../structmfxAccelerationModeDescription.html#ae768658301f47ed167109872cc636c58',1,'mfxAccelerationModeDescription']]]
+];

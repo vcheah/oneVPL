@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['implementation_5fcapabilities',['implementation_capabilities',['../classoneapi_1_1vpl_1_1implementation__capabilities.html#acf2f06cd2761d5bbd55bd8341d7b556a',1,'oneapi::vpl::implementation_capabilities']]],
+  ['implementation_5fcapabilities_5ffactory',['implementation_capabilities_factory',['../classoneapi_1_1vpl_1_1implementation__capabilities__factory.html#a5293415002a5cb764ac81e14814f44d4',1,'oneapi::vpl::implementation_capabilities_factory']]],
+  ['implemetation_5fselector',['implemetation_selector',['../classoneapi_1_1vpl_1_1implemetation__selector.html#afe5a874eef47fde493382d27e8f499fe',1,'oneapi::vpl::implemetation_selector::implemetation_selector(std::initializer_list&lt; property &gt; list={})'],['../classoneapi_1_1vpl_1_1implemetation__selector.html#a326c3e111fc5fe232d91f2f3e1f162a1',1,'oneapi::vpl::implemetation_selector::implemetation_selector(const std::vector&lt; property &gt; &amp;list)']]],
+  ['init',['Init',['../classoneapi_1_1vpl_1_1session.html#a161e980cb19e1e5a0bb92f046a77e249',1,'oneapi::vpl::session::Init()'],['../classoneapi_1_1vpl_1_1vpp__session.html#ad086aba28a59e99db99d0b2bbbfe1718',1,'oneapi::vpl::vpp_session::Init()']]],
+  ['init_5fby_5fheader',['init_by_header',['../classoneapi_1_1vpl_1_1decode__session.html#a26602259d023532169ea385c56eb771b',1,'oneapi::vpl::decode_session']]],
+  ['inject',['inject',['../classoneapi_1_1vpl_1_1frame__surface.html#a6dffec3dd51119e8a4250e748116af60',1,'oneapi::vpl::frame_surface']]],
+  ['is_5feos',['is_EOS',['../classoneapi_1_1vpl_1_1source__reader.html#a20c4578faf1fad36accb4d90d398c09b',1,'oneapi::vpl::source_reader::is_EOS()'],['../classoneapi_1_1vpl_1_1raw__frame__file__reader.html#ac0edbbe937f8eadca8b532249809aee2',1,'oneapi::vpl::raw_frame_file_reader::is_EOS()'],['../classoneapi_1_1vpl_1_1raw__frame__file__reader__by__name.html#a48f9aaa96c5cf071a6993e32c82b0422',1,'oneapi::vpl::raw_frame_file_reader_by_name::is_EOS()'],['../classoneapi_1_1vpl_1_1bitstream__file__reader.html#a58269a6ab800d7a83db15027d3d5da95',1,'oneapi::vpl::bitstream_file_reader::is_EOS()'],['../classoneapi_1_1vpl_1_1bitstream__file__reader__name.html#af89c2be109cfacd8ec469fa7e5851a3d',1,'oneapi::vpl::bitstream_file_reader_name::is_EOS()']]],
+  ['is_5fsuffix',['is_suffix',['../classoneapi_1_1vpl_1_1payload.html#a9cf11aaffb8ab3766e2a8fecc9d2a20a',1,'oneapi::vpl::payload']]]
+];

@@ -1,0 +1,492 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Python API &mdash; oneVPL Python Preview 2021.4 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> oneVPL Python Preview
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Python API</a></li>
+<li><a class="reference internal" href="#get-started">Get Started</a></li>
+<li><a class="reference internal" href="#simple-decode">Simple Decode</a></li>
+<li><a class="reference internal" href="#simple-encode">Simple Encode</a></li>
+<li><a class="reference internal" href="#simple-video-post-processing">Simple Video Post-Processing</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">oneVPL Python Preview</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Python API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python-api">
+<h1>Python API<a class="headerlink" href="#python-api" title="Permalink to this headline">¶</a></h1>
+<p>The following is a hierarchical summary of the oneVPL Python binding API.</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+</tbody>
+</table>
+<p>The oneVPL Python binding follows the OneVPL C++ API closely, also many structures and values originate
+with the oneVPL C API. If you need more information that is provided in this document those resources
+may be of use.</p>
+</div>
+<div class="section" id="get-started">
+<h1>Get Started<a class="headerlink" href="#get-started" title="Permalink to this headline">¶</a></h1>
+<p>OneVPL Python binding follows closely the API defined by the oneVPL C++ API.</p>
+<p>OneVPL Python binding is provided as a Dynamically linked library specific the version of Python you are using.</p>
+<p>The pre-built oneVPL Python binding included in the first preview is built to target Python 3.9.</p>
+<p>The oneVPL Python binding DLL is provided in the oneVPL install folder under <code class="docutils literal notranslate"><span class="pre">lib/python</span></code>.
+On Windows systems, the oneVPL Python binding DLL is named <code class="docutils literal notranslate"><span class="pre">pyvpl.*.pyd</span></code> where <code class="docutils literal notranslate"><span class="pre">*</span></code> is a summary of the
+target environments the DLL supports. On Linux systems, the DLL is named <code class="docutils literal notranslate"><span class="pre">pyvpl.*.so</span></code> following a similar pattern.
+The open source distribution of oneVPL includes the sources and the build scripts. You may use them to build oneVPL for other environments.</p>
+<p>The oneVPL Python binding DLL must be able to load the oneVPL dispatcher library, for this reason the
+oneVPL Python binding DLL should normally be placed in the same folder as the oneVPL dispatcher library.</p>
+<p>To set up the oneVPL Python binding for use:</p>
+<p>On Windows:</p>
+<ol class="arabic simple">
+<li><p>Ensure that Python 3.9 is installed.</p></li>
+<li><p>Copy <code class="docutils literal notranslate"><span class="pre">&lt;oneVpl&gt;/lib/python/pyvpl.*</span></code> to <code class="docutils literal notranslate"><span class="pre">&lt;oneVpl&gt;/bin/</span></code>.</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">&lt;oneVpl&gt;/bin</span></code> to the <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> environment variable.</p></li>
+</ol>
+<p>On Linux:</p>
+<ol class="arabic simple">
+<li><p>Ensure that Python 3.9 is installed.</p></li>
+<li><p>Copy <code class="docutils literal notranslate"><span class="pre">&lt;oneVpl&gt;/lib/python/pyvpl.*</span></code> to <code class="docutils literal notranslate"><span class="pre">&lt;oneVpl&gt;/lib/</span></code>.</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">&lt;oneVpl&gt;/lib</span></code> to the <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> environment variable.</p></li>
+</ol>
+<p>As an alternative to setting <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code>, you may find it easier to create a file called <code class="docutils literal notranslate"><span class="pre">vpl.pth</span></code>
+in the site-packages folder and add the same path to this file instead.</p>
+<p>To check that you can load the oneVPL Python binding run the following line in the Python interpreter:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyvpl</span>
+</pre></div>
+</div>
+<p>If the oneVPL Python binding could be loaded and could find the dispatcher this will run without errors,
+otherwise you will see an error indicating the problem Python or the Operating system encountered.</p>
+</div>
+<div class="section" id="simple-decode">
+<h1>Simple Decode<a class="headerlink" href="#simple-decode" title="Permalink to this headline">¶</a></h1>
+<p>The oneVPL Python binding (pyvpl) is stored in the pyvpl module. To include it simply <cite>import</cite> <cite>pyvpl</cite>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">pyvpl</span>
+</pre></div>
+</div>
+<p>Pyvpl includes file reader helpers to simplify reading both raw and encoded media streams.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">bitstream_file_reader_name</span><span class="p">(</span><span class="s2">&quot;input.h265&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">source</span><span class="p">:</span>
+   <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;raw.out&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">sink</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>Before processing any media you need to select an implementation. Implementations represent
+available hardware and software accelerators.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">opts</span> <span class="o">=</span> <span class="p">[</span><span class="n">pyvpl</span><span class="o">.</span><span class="n">property</span><span class="p">(</span><span class="s2">&quot;mfxImplDescription.Impl&quot;</span><span class="p">,</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">implementation</span><span class="o">.</span><span class="n">software</span><span class="p">)]</span>
+<span class="n">sel_default</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">default_selector</span><span class="p">(</span><span class="n">opts</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can describe the general configuration of the session you want using the session parameters.
+Parameters allow you to select things like the Codec and what kind of memory IO pattern to use.
+Then you can start a session. Different session types are used to represent different operations
+such as encode, decode, or video processing.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">params</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">decoder_video_param</span><span class="p">()</span>
+<span class="n">params</span><span class="o">.</span><span class="n">IOPattern</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">io_pattern</span><span class="o">.</span><span class="n">out_system_memory</span>
+<span class="n">params</span><span class="o">.</span><span class="n">CodecId</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">codec_format_fourcc</span><span class="o">.</span><span class="n">hevc</span>
+<span class="n">decoder</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">decode_session</span><span class="p">(</span><span class="n">sel_default</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">source</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Once you start your session you can check the API version it supports and other details to ensure
+that it meets your needs. More advanced APIs are available to directly specify the implementation
+a given session will use, however they are not normally needed for basic operation.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">version</span> <span class="o">=</span> <span class="n">decoder</span><span class="o">.</span><span class="n">version</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">version</span><span class="o">.</span><span class="n">Major</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">version</span><span class="o">.</span><span class="n">Minor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">version</span><span class="o">.</span><span class="n">Major</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+   <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Sample requires 2.x API implementation&quot;</span><span class="p">)</span>
+<span class="n">impl</span><span class="p">,</span> <span class="n">accel</span> <span class="o">=</span> <span class="n">decoder</span><span class="o">.</span><span class="n">implementation</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">impl</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">accel</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In many cases encoded streams will have important information included that must
+read before reading frames. The init_by_header method allows you to easily handle
+this aspect of parsing.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">init_header_list</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">decoder_init_header_list</span><span class="p">()</span>
+<span class="n">init_reset_list</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">decoder_init_reset_list</span><span class="p">()</span>
+<span class="n">decoder</span><span class="o">.</span><span class="n">init_by_header</span><span class="p">(</span><span class="n">init_header_list</span><span class="p">,</span> <span class="n">init_reset_list</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Some parts of the parameters my be filled in after reading data from input.
+You can query this using the Params property.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fourcc</span> <span class="o">=</span> <span class="n">decoder</span><span class="o">.</span><span class="n">Params</span><span class="o">.</span><span class="n">frame_info</span><span class="o">.</span><span class="n">FourCC</span>
+</pre></div>
+</div>
+<p>The session object can be processed as an iterator, reading form the source you specified why you
+created it, and yielding decoded frames. If you want to access frame data you can use the map method
+to ensure it is available in the processes memory space (when needed, and possible, this is ony
+affects the address translation copying data will be avoided if possible.)</p>
+<p>For raw frames mapping the data will result in a pair of objects representing the metadata about the
+frame and pointers to the frame data. The get_planes method of the second object will result in a
+list of buffer protocol objects that describe the various blocks of data in the frame. Each object will
+also have a <cite>desc</cite> member with a string indicating the type of sample plane it represents (e.g. Y, U, V,
+UV, YUV, RGB, etc.). Buffer protocol objects allow direct access to the underlying memory without copying,
+They can be explored by creating a MemoryView object, or they can be cast to NumPy arrays.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">frame</span> <span class="ow">in</span> <span class="n">decoder</span><span class="p">:</span>
+   <span class="n">frame_count</span> <span class="o">+=</span> <span class="mi">1</span>
+   <span class="n">info</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">pyvpl</span><span class="o">.</span><span class="n">memory_access</span><span class="o">.</span><span class="n">read</span><span class="p">)</span>
+   <span class="k">try</span><span class="p">:</span>
+      <span class="n">planes</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get_planes</span><span class="p">(</span><span class="n">info</span><span class="p">)</span>
+      <span class="k">for</span> <span class="n">plane</span> <span class="ow">in</span> <span class="n">planes</span><span class="p">:</span>
+            <span class="n">sink</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">plane</span><span class="p">)</span>
+   <span class="k">finally</span><span class="p">:</span>
+      <span class="n">frame</span><span class="o">.</span><span class="n">unmap</span><span class="p">()</span>
+   <span class="n">frame</span> <span class="o">=</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="simple-encode">
+<h1>Simple Encode<a class="headerlink" href="#simple-encode" title="Permalink to this headline">¶</a></h1>
+<p>The oneVPL Python binding (pyvpl) is stored in the pyvpl module. To include it simply <cite>import</cite> <cite>pyvpl</cite>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">pyvpl</span>
+</pre></div>
+</div>
+<p>Pyvpl includes file reader helpers to simplify reading both raw and encoded media streams.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">raw_frame_file_reader_by_name</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span>
+                                       <span class="n">pyvpl</span><span class="o">.</span><span class="n">color_format_fourcc</span><span class="o">.</span><span class="n">i420</span><span class="p">,</span>
+                                       <span class="s2">&quot;raw.in&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">source</span><span class="p">:</span>
+   <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;out.h265&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">sink</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>Before processing any media you need to select an implementation. Implementations represent
+available hardware and software accelerators. You can also filter by required features when
+selecting an implementation.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">opts</span> <span class="o">=</span> <span class="p">[</span>
+   <span class="n">pyvpl</span><span class="o">.</span><span class="n">property</span><span class="p">(</span><span class="s2">&quot;mfxImplDescription.Impl&quot;</span><span class="p">,</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">implementation</span><span class="o">.</span><span class="n">software</span><span class="p">),</span>
+   <span class="n">pyvpl</span><span class="o">.</span><span class="n">property</span><span class="p">(</span><span class="s2">&quot;mfxImplDescription.mfxEncoderDescription.encoder.CodecID&quot;</span><span class="p">,</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">codec_format_fourcc</span><span class="o">.</span><span class="n">hevc</span><span class="p">))</span>
+<span class="p">]</span>
+<span class="n">sel_default</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">default_selector</span><span class="p">(</span><span class="n">opts</span><span class="p">)</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">encode_session</span><span class="p">(</span><span class="n">sel_default</span><span class="p">,</span> <span class="n">source</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can describe the general configuration of the session you want using the session parameters.
+Parameters allow you to select things like incoming size, codec, and what kind of memory IO pattern to use.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">params</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">encoder_video_param</span><span class="p">()</span>
+<span class="n">info</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">frame_info</span><span class="p">()</span>
+
+<span class="n">info</span><span class="o">.</span><span class="n">frame_rate</span> <span class="o">=</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">info</span><span class="o">.</span><span class="n">frame_size</span> <span class="o">=</span> <span class="p">(</span>
+   <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">((</span><span class="n">width</span> <span class="o">+</span> <span class="mi">16</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">16</span><span class="p">)</span> <span class="o">*</span> <span class="mi">16</span><span class="p">),</span>
+   <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">((</span><span class="n">height</span> <span class="o">+</span> <span class="mi">16</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">16</span><span class="p">)</span> <span class="o">*</span> <span class="mi">16</span><span class="p">)</span>
+   <span class="p">)</span>
+<span class="n">info</span><span class="o">.</span><span class="n">FourCC</span> <span class="o">=</span> <span class="n">input_fourcc</span>
+<span class="n">info</span><span class="o">.</span><span class="n">ChromaFormat</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">chroma_format_idc</span><span class="o">.</span><span class="n">yuv420</span>
+<span class="n">info</span><span class="o">.</span><span class="n">ROI</span> <span class="o">=</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">))</span>
+
+<span class="n">params</span><span class="o">.</span><span class="n">RateControlMethod</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">rate_control_method</span><span class="o">.</span><span class="n">cqp</span>
+<span class="n">params</span><span class="o">.</span><span class="n">frame_info</span> <span class="o">=</span> <span class="n">info</span>
+<span class="n">params</span><span class="o">.</span><span class="n">CodecId</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">codec_format_fourcc</span><span class="o">.</span><span class="n">hevc</span>
+<span class="n">params</span><span class="o">.</span><span class="n">IOPattern</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">io_pattern</span><span class="o">.</span><span class="n">in_system_memory</span>
+
+<span class="n">init_list</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">encoder_init_list</span><span class="p">()</span>
+<span class="n">session</span><span class="o">.</span><span class="n">Init</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">init_list</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Once you start your session you can check the API version it supports and other details to ensure
+that it meets your needs. More advanced APIs are available to directly specify the implementation
+a given session will use, however they are not normally needed for basic operation.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">version</span> <span class="o">=</span> <span class="n">decoder</span><span class="o">.</span><span class="n">version</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">version</span><span class="o">.</span><span class="n">Major</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">version</span><span class="o">.</span><span class="n">Minor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">version</span><span class="o">.</span><span class="n">Major</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+   <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Sample requires 2.x API implementation&quot;</span><span class="p">)</span>
+<span class="n">impl</span><span class="p">,</span> <span class="n">accel</span> <span class="o">=</span> <span class="n">decoder</span><span class="o">.</span><span class="n">implementation</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">impl</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">accel</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The session object can be processed as an iterator, reading form the source you specified why you
+created it, and yielding encoded frames.</p>
+<p>For encoded frames the data will be returned as buffer protocol objects. Buffer protocol objects
+allow direct access to the underlying memory without copying, they can be explored by creating
+a MemoryView object, or they can be cast to NumPy arrays.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">bits</span> <span class="ow">in</span> <span class="n">session</span><span class="p">:</span>
+      <span class="n">sink</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">bits</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="simple-video-post-processing">
+<h1>Simple Video Post-Processing<a class="headerlink" href="#simple-video-post-processing" title="Permalink to this headline">¶</a></h1>
+<p>The oneVPL Python binding (pyvpl) is stored in the pyvpl module. To include it simply <cite>import</cite> <cite>pyvpl</cite>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">pyvpl</span>
+</pre></div>
+</div>
+<p>Pyvpl includes file reader helpers to simplify reading both raw and encoded media streams.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">raw_frame_file_reader_by_name</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span>
+                                       <span class="n">pyvpl</span><span class="o">.</span><span class="n">color_format_fourcc</span><span class="o">.</span><span class="n">i420</span><span class="p">,</span>
+                                       <span class="s2">&quot;raw.in&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">source</span><span class="p">:</span>
+   <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;raw.out&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">sink</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>Before processing any media you need to select an implementation. Implementations represent
+available hardware and software accelerators. You can also filter by required features when
+selecting an implementation.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">opts</span> <span class="o">=</span> <span class="p">[</span>
+   <span class="n">pyvpl</span><span class="o">.</span><span class="n">property</span><span class="p">(</span><span class="s2">&quot;mfxImplDescription.Impl&quot;</span><span class="p">,</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">implementation</span><span class="o">.</span><span class="n">software</span><span class="p">)</span>
+<span class="p">]</span>
+<span class="n">sel_default</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">default_selector</span><span class="p">(</span><span class="n">opts</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can describe the general configuration of the session you want using the session parameters.
+Parameters allow you to select things like incoming and destination size, color conversion, cropping,
+and what kind of memory IO pattern to use.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">params</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">vpp_video_param</span><span class="p">()</span>
+<span class="n">in_frame</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">frame_info</span><span class="p">()</span>
+<span class="n">in_frame</span><span class="o">.</span><span class="n">FourCC</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">color_format_fourcc</span><span class="o">.</span><span class="n">i420</span>
+<span class="n">in_frame</span><span class="o">.</span><span class="n">ChromaFormat</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">chroma_format_idc</span><span class="o">.</span><span class="n">yuv420</span>
+<span class="n">in_frame</span><span class="o">.</span><span class="n">PicStruct</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">pic_struct</span><span class="o">.</span><span class="n">progressive</span>
+<span class="n">in_frame</span><span class="o">.</span><span class="n">frame_rate</span> <span class="o">=</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">in_frame</span><span class="o">.</span><span class="n">ROI</span> <span class="o">=</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">))</span>
+<span class="n">in_frame</span><span class="o">.</span><span class="n">frame_size</span> <span class="o">=</span> <span class="p">(</span>
+   <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">((</span><span class="n">width</span> <span class="o">+</span> <span class="mi">16</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">16</span><span class="p">)</span> <span class="o">*</span> <span class="mi">16</span><span class="p">),</span>
+   <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">((</span><span class="n">height</span> <span class="o">+</span> <span class="mi">16</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">16</span><span class="p">)</span> <span class="o">*</span> <span class="mi">16</span><span class="p">)</span>
+   <span class="p">)</span>
+<span class="n">params</span><span class="o">.</span><span class="n">in_frame_info</span> <span class="o">=</span> <span class="n">in_frame</span>
+<span class="n">out_frame</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">frame_info</span><span class="p">()</span>
+<span class="n">out_frame</span><span class="o">.</span><span class="n">FourCC</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">color_format_fourcc</span><span class="o">.</span><span class="n">i420</span>
+<span class="n">out_frame</span><span class="o">.</span><span class="n">ChromaFormat</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">chroma_format_idc</span><span class="o">.</span><span class="n">yuv420</span>
+<span class="n">out_frame</span><span class="o">.</span><span class="n">PicStruct</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">pic_struct</span><span class="o">.</span><span class="n">progressive</span>
+<span class="n">out_frame</span><span class="o">.</span><span class="n">frame_rate</span> <span class="o">=</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">out_frame</span><span class="o">.</span><span class="n">ROI</span> <span class="o">=</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="n">dest_width</span><span class="p">,</span> <span class="n">dest_height</span><span class="p">))</span>
+<span class="n">out_frame</span><span class="o">.</span><span class="n">frame_size</span> <span class="o">=</span> <span class="p">(</span>
+   <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">((</span><span class="n">dest_width</span> <span class="o">+</span> <span class="mi">16</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">16</span><span class="p">)</span> <span class="o">*</span> <span class="mi">16</span><span class="p">),</span>
+   <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">((</span><span class="n">dest_height</span> <span class="o">+</span> <span class="mi">16</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">16</span><span class="p">)</span> <span class="o">*</span> <span class="mi">16</span><span class="p">)</span>
+   <span class="p">)</span>
+<span class="n">params</span><span class="o">.</span><span class="n">out_frame_info</span> <span class="o">=</span> <span class="n">out_frame</span>
+<span class="n">params</span><span class="o">.</span><span class="n">IOPattern</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">io_pattern</span><span class="o">.</span><span class="n">io_system_memory</span>
+<span class="n">init_reset_list</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">vpp_init_reset_list</span><span class="p">()</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">pyvpl</span><span class="o">.</span><span class="n">vpp_session</span><span class="p">(</span><span class="n">sel_default</span><span class="p">,</span> <span class="n">source</span><span class="p">)</span>
+<span class="n">session</span><span class="o">.</span><span class="n">Init</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">init_reset_list</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Once you start your session you can check the API version it supports and other details to ensure
+that it meets your needs. More advanced APIs are available to directly specify the implementation
+a given session will use, however they are not normally needed for basic operation.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">version</span> <span class="o">=</span> <span class="n">decoder</span><span class="o">.</span><span class="n">version</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">version</span><span class="o">.</span><span class="n">Major</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">version</span><span class="o">.</span><span class="n">Minor</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">version</span><span class="o">.</span><span class="n">Major</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+   <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Sample requires 2.x API implementation&quot;</span><span class="p">)</span>
+<span class="n">impl</span><span class="p">,</span> <span class="n">accel</span> <span class="o">=</span> <span class="n">decoder</span><span class="o">.</span><span class="n">implementation</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">impl</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">accel</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The session object can be processed as an iterator, reading form the source you specified why you
+created it, and yielding decoded frames. If you want to access frame data you can use the map method
+to ensure it is available in the processes memory space (when needed, and possible, this is ony
+affects the address translation copying data will be avoided if possible.)</p>
+<p>For raw frames mapping the data will result in a pair of objects representing the metadata about the
+frame and pointers to the frame data. The get_planes method of the second object will result in a
+list of buffer protocol objects that describe the various blocks of data in the frame. Each object will
+also have a <cite>desc</cite> member with a string indicating the type of sample plane it represents (e.g. Y, U, V,
+UV, YUV, RGB, etc.). Buffer protocol objects allow direct access to the underlying memory without copying,
+They can be explored by creating a MemoryView object, or they can be cast to NumPy arrays.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">frame</span> <span class="ow">in</span> <span class="n">session</span><span class="p">:</span>
+   <span class="n">frame_count</span> <span class="o">+=</span> <span class="mi">1</span>
+   <span class="n">info</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">pyvpl</span><span class="o">.</span><span class="n">memory_access</span><span class="o">.</span><span class="n">read</span><span class="p">)</span>
+   <span class="k">try</span><span class="p">:</span>
+      <span class="n">planes</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get_planes</span><span class="p">(</span><span class="n">info</span><span class="p">)</span>
+      <span class="k">for</span> <span class="n">plane</span> <span class="ow">in</span> <span class="n">planes</span><span class="p">:</span>
+         <span class="n">sink</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">plane</span><span class="p">)</span>
+   <span class="k">finally</span><span class="p">:</span>
+      <span class="n">frame</span><span class="o">.</span><span class="n">unmap</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2021, Intel.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

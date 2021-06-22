@@ -1,0 +1,8 @@
+oneVPL Preview API
+==============================================
+
+The following APIs are provided as a preview of upcoming features.
+The interfaces might be changed or removed without respect for backward compatibility.
+
+- `oneVPL C++ Preview API <cpp-api/index.html>`_
+- `oneVPL Python Preview API <python-api/index.html>`_

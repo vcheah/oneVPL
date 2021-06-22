@@ -1,0 +1,5 @@
+<map id="oneapi::vpl::ExtMBForceIntra" name="oneapi::vpl::ExtMBForceIntra">
+<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__with__ptrs.html" title="oneapi::vpl::extension\l_buffer_with_ptrs\&lt; mfxExtMBForce\lIntra, MFX_EXTBUFF_MB_FORCE_INTRA \&gt;" alt="" coords="480,5,773,61"/>
+<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtMBForceIntra, ID \&gt;" alt="" coords="203,13,432,54"/>
+<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="5,13,155,54"/>
+</map>

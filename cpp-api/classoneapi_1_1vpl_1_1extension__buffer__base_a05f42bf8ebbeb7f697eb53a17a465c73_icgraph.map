@@ -1,0 +1,28 @@
+<map id="oneapi::vpl::extension_buffer_base::get_ID" name="oneapi::vpl::extension_buffer_base::get_ID">
+<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html#a967ccde4fcac39b3a12620e5e09ff341" title="Dtor. " alt="" coords="203,697,372,753"/>
+<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1buffer__list.html#aa156fcbd0cd65808fb14ffc2a3ebda5a" title="adds extension buffer pointer to the map " alt="" coords="224,930,351,971"/>
+<area shape="rect" id="node5" href="$classoneapi_1_1vpl_1_1decoder__init__reset__list.html#a42700756569ce84e146b23b0d47e6ba1" title="Add extension buffer to list. " alt="" coords="437,5,575,61"/>
+<area shape="rect" id="node8" href="$classoneapi_1_1vpl_1_1decoder__init__header__list.html#abffafe126a823e1b59db1688bea1f2f0" title="Add extension buffer to list. " alt="" coords="433,85,579,141"/>
+<area shape="rect" id="node11" href="$classoneapi_1_1vpl_1_1decoder__process__list.html#ad5a94ded300dacfbc0dd10385ac49730" title="Add extension buffer to list. " alt="" coords="422,166,590,207"/>
+<area shape="rect" id="node14" href="$classoneapi_1_1vpl_1_1encoder__init__list.html#af125474d512633a5d593461387c5778f" title="Add extension buffer to list. " alt="" coords="437,1399,575,1441"/>
+<area shape="rect" id="node17" href="$classoneapi_1_1vpl_1_1encoder__reset__list.html#aecf0f701a98fb450fad8ae7cc9400c6a" title="Add extension buffer to list. " alt="" coords="431,1465,581,1506"/>
+<area shape="rect" id="node20" href="$classoneapi_1_1vpl_1_1encoder__process__list.html#a7bda93fd88f78a74b96bc0f2aaed7e7c" title="Add extension buffer to list. " alt="" coords="422,1530,590,1571"/>
+<area shape="rect" id="node23" href="$classoneapi_1_1vpl_1_1vpp__init__reset__list.html#a9caffbc7519d3c048437a01873ffe1d5" title="Add extension buffer to list. " alt="" coords="431,1595,581,1637"/>
+<area shape="rect" id="node26" href="$classoneapi_1_1vpl_1_1vpp__process__list.html#a8748d973830fd86db8274d721a1d58b8" title="Add extension buffer to list. " alt="" coords="423,1661,589,1702"/>
+<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1decoder__init__reset__list.html#a19f3bf0d2b5e76a41c90e467eefa49a4" title="ctor " alt="" coords="426,803,586,859"/>
+<area shape="rect" id="node6" href="$classoneapi_1_1vpl_1_1decoder__init__reset__list.html#a5a2e44cf757eeb224329b9fcbd32d7c0" title="Variadic length ctor helper. It adds extension buffers one by one to the map of buffers. " alt="" coords="437,883,575,939"/>
+<area shape="rect" id="node7" href="$classoneapi_1_1vpl_1_1decoder__init__header__list.html#a0402d3c4c42420b4cb52fc0af7990c7b" title="ctor " alt="" coords="421,963,591,1019"/>
+<area shape="rect" id="node9" href="$classoneapi_1_1vpl_1_1decoder__init__header__list.html#a16d13861650c26a143af88e9deef194b" title="Variadic length ctor helper. It adds extension buffers one by one to the map of buffers. " alt="" coords="433,1043,579,1099"/>
+<area shape="rect" id="node10" href="$classoneapi_1_1vpl_1_1decoder__process__list.html#a9e00e8f4babf896f8b8af0790d92368d" title="ctor " alt="" coords="429,1123,583,1179"/>
+<area shape="rect" id="node12" href="$classoneapi_1_1vpl_1_1decoder__process__list.html#ad10c577bc6de7d342bce687757cf0393" title="Variadic length ctor helper. It adds extension buffers one by one to the map of buffers. " alt="" coords="421,1203,591,1245"/>
+<area shape="rect" id="node13" href="$classoneapi_1_1vpl_1_1encoder__init__list.html#aa7cbc795175073f63f42985ef5772f36" title="ctor " alt="" coords="420,1269,592,1310"/>
+<area shape="rect" id="node15" href="$classoneapi_1_1vpl_1_1encoder__init__list.html#a5b24683c618072d856afbad20519292e" title="Variadic length ctor helper. It adds extension buffers one by one to the map of buffers. " alt="" coords="435,1334,577,1375"/>
+<area shape="rect" id="node16" href="$classoneapi_1_1vpl_1_1encoder__reset__list.html#ab70a5f0fef677a1f03b4668e78524a84" title="ctor " alt="" coords="437,232,575,288"/>
+<area shape="rect" id="node18" href="$classoneapi_1_1vpl_1_1encoder__reset__list.html#a6abc5af189a28be88813b5de7827b31d" title="Variadic length ctor helper. It adds extension buffers one by one to the map of buffers. " alt="" coords="429,313,583,354"/>
+<area shape="rect" id="node19" href="$classoneapi_1_1vpl_1_1encoder__process__list.html#a30ae5772ab1d459e7642d68ef9af176d" title="ctor " alt="" coords="429,379,583,435"/>
+<area shape="rect" id="node21" href="$classoneapi_1_1vpl_1_1encoder__process__list.html#a4318a6956e48b7bcccfae49655f30e5a" title="Variadic length ctor helper. It adds extension buffers one by one to the map of buffers. " alt="" coords="421,459,591,501"/>
+<area shape="rect" id="node22" href="$classoneapi_1_1vpl_1_1vpp__init__reset__list.html#a5408301ff5a1f5fc7d76443bcfe31332" title="ctor " alt="" coords="437,525,575,581"/>
+<area shape="rect" id="node24" href="$classoneapi_1_1vpl_1_1vpp__init__reset__list.html#a3fc46ff3b7e2a90c62ac2f234f3910ec" title="Variadic length ctor helper. It adds extension buffers one by one to the map of buffers. " alt="" coords="429,606,583,647"/>
+<area shape="rect" id="node25" href="$classoneapi_1_1vpl_1_1vpp__process__list.html#ab0860edefe20ab0150f62e092476da99" title="ctor " alt="" coords="423,671,589,713"/>
+<area shape="rect" id="node27" href="$classoneapi_1_1vpl_1_1vpp__process__list.html#ae191c7296dd6c66dae2f0bfc5838f1c7" title="Variadic length ctor helper. It adds extension buffers one by one to the map of buffers. " alt="" coords="423,737,589,778"/>
+</map>

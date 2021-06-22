@@ -1,0 +1,5 @@
+<map id="oneapi::vpl::ExtPartialBitstreamParam" name="oneapi::vpl::ExtPartialBitstreamParam">
+<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="oneapi::vpl::extension\l_buffer_trival\&lt; mfxExtPartial\lBitstreamParam, MFX_EXTBUFF\l_PARTIAL_BITSTREAM_PARAM \&gt;" alt="" coords="460,5,696,76"/>
+<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtPartialBitstream\lParam, ID \&gt;" alt="" coords="203,13,412,69"/>
+<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="5,20,155,61"/>
+</map>

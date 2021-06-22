@@ -1,0 +1,345 @@
+================
+Python API
+================
+
+The following is a hierarchical summary of the oneVPL Python binding API.
+
+.. autosummary::
+   :toctree: .autosummary
+   :template: custom-module-template.rst
+   :recursive:
+
+   pyvpl
+
+The oneVPL Python binding follows the OneVPL C++ API closely, also many structures and values originate
+with the oneVPL C API. If you need more information that is provided in this document those resources
+may be of use.
+
+===========
+Get Started
+===========
+
+OneVPL Python binding follows closely the API defined by the oneVPL C++ API.
+
+OneVPL Python binding is provided as a Dynamically linked library specific the version of Python you are using.
+
+The pre-built oneVPL Python binding included in the first preview is built to target Python 3.9.
+
+The oneVPL Python binding DLL is provided in the oneVPL install folder under ``lib/python``.
+On Windows systems, the oneVPL Python binding DLL is named ``pyvpl.*.pyd`` where ``*`` is a summary of the
+target environments the DLL supports. On Linux systems, the DLL is named ``pyvpl.*.so`` following a similar pattern.
+The open source distribution of oneVPL includes the sources and the build scripts. You may use them to build oneVPL for other environments.
+
+The oneVPL Python binding DLL must be able to load the oneVPL dispatcher library, for this reason the
+oneVPL Python binding DLL should normally be placed in the same folder as the oneVPL dispatcher library.
+
+To set up the oneVPL Python binding for use:
+
+On Windows:
+
+1. Ensure that Python 3.9 is installed.
+2. Copy ``<oneVpl>/lib/python/pyvpl.*`` to ``<oneVpl>/bin/``.
+3. Add ``<oneVpl>/bin`` to the ``PYTHONPATH`` environment variable.
+
+On Linux:
+
+1. Ensure that Python 3.9 is installed.
+2. Copy ``<oneVpl>/lib/python/pyvpl.*`` to ``<oneVpl>/lib/``.
+3. Add ``<oneVpl>/lib`` to the ``PYTHONPATH`` environment variable.
+
+As an alternative to setting ``PYTHONPATH``, you may find it easier to create a file called ``vpl.pth``
+in the site-packages folder and add the same path to this file instead.
+
+To check that you can load the oneVPL Python binding run the following line in the Python interpreter:
+
+.. code-block:: python
+
+   import pyvpl
+
+If the oneVPL Python binding could be loaded and could find the dispatcher this will run without errors,
+otherwise you will see an error indicating the problem Python or the Operating system encountered.
+
+================
+Simple Decode
+================
+
+The oneVPL Python binding (pyvpl) is stored in the pyvpl module. To include it simply `import` `pyvpl`.
+
+.. code-block:: python
+
+   import os
+   import sys
+   import pyvpl
+
+Pyvpl includes file reader helpers to simplify reading both raw and encoded media streams.
+
+.. code-block:: python
+
+   with pyvpl.bitstream_file_reader_name("input.h265") as source:
+      with open("raw.out", "wb") as sink:
+
+Before processing any media you need to select an implementation. Implementations represent
+available hardware and software accelerators.
+
+.. code-block:: python
+
+         opts = [pyvpl.property("mfxImplDescription.Impl", pyvpl.implementation.software)]
+         sel_default = pyvpl.default_selector(opts)
+
+You can describe the general configuration of the session you want using the session parameters.
+Parameters allow you to select things like the Codec and what kind of memory IO pattern to use.
+Then you can start a session. Different session types are used to represent different operations
+such as encode, decode, or video processing.
+
+.. code-block:: python
+
+         params = pyvpl.decoder_video_param()
+         params.IOPattern = pyvpl.io_pattern.out_system_memory
+         params.CodecId = pyvpl.codec_format_fourcc.hevc
+         decoder = pyvpl.decode_session(sel_default, params, source)
+
+Once you start your session you can check the API version it supports and other details to ensure
+that it meets your needs. More advanced APIs are available to directly specify the implementation
+a given session will use, however they are not normally needed for basic operation.
+
+.. code-block:: python
+
+         version = decoder.version
+         print(f"{version.Major}.{version.Minor}")
+         if version.Major < 2:
+            raise Exception("Sample requires 2.x API implementation")
+         impl, accel = decoder.implementation
+         print(f"{impl} {accel}")
+
+In many cases encoded streams will have important information included that must
+read before reading frames. The init_by_header method allows you to easily handle
+this aspect of parsing. 
+
+.. code-block:: python
+
+         init_header_list = pyvpl.decoder_init_header_list()
+         init_reset_list = pyvpl.decoder_init_reset_list()
+         decoder.init_by_header(init_header_list, init_reset_list)
+
+Some parts of the parameters my be filled in after reading data from input.
+You can query this using the Params property.
+
+.. code-block:: python
+
+         fourcc = decoder.Params.frame_info.FourCC
+
+The session object can be processed as an iterator, reading form the source you specified why you
+created it, and yielding decoded frames. If you want to access frame data you can use the map method
+to ensure it is available in the processes memory space (when needed, and possible, this is ony
+affects the address translation copying data will be avoided if possible.)
+
+For raw frames mapping the data will result in a pair of objects representing the metadata about the
+frame and pointers to the frame data. The get_planes method of the second object will result in a
+list of buffer protocol objects that describe the various blocks of data in the frame. Each object will
+also have a `desc` member with a string indicating the type of sample plane it represents (e.g. Y, U, V,
+UV, YUV, RGB, etc.). Buffer protocol objects allow direct access to the underlying memory without copying,
+They can be explored by creating a MemoryView object, or they can be cast to NumPy arrays.
+
+.. code-block:: python
+
+         for frame in decoder:
+            frame_count += 1
+            info, data = frame.map(pyvpl.memory_access.read)
+            try:
+               planes = data.get_planes(info)
+               for plane in planes:
+                     sink.write(plane)
+            finally:
+               frame.unmap()
+            frame = None
+
+================
+Simple Encode
+================
+
+The oneVPL Python binding (pyvpl) is stored in the pyvpl module. To include it simply `import` `pyvpl`.
+
+.. code-block:: python
+
+   import argparse
+   import os
+   import math
+   import sys
+   import pyvpl
+
+Pyvpl includes file reader helpers to simplify reading both raw and encoded media streams.
+
+.. code-block:: python
+
+   with pyvpl.raw_frame_file_reader_by_name(width, height,
+                                          pyvpl.color_format_fourcc.i420,
+                                          "raw.in") as source:
+      with open("out.h265", "wb") as sink:
+
+Before processing any media you need to select an implementation. Implementations represent
+available hardware and software accelerators. You can also filter by required features when
+selecting an implementation.
+   
+.. code-block:: python
+   
+      opts = [
+         pyvpl.property("mfxImplDescription.Impl", pyvpl.implementation.software),
+         pyvpl.property("mfxImplDescription.mfxEncoderDescription.encoder.CodecID", pyvpl.codec_format_fourcc.hevc))
+      ]
+      sel_default = pyvpl.default_selector(opts)
+      session = pyvpl.encode_session(sel_default, source)
+
+You can describe the general configuration of the session you want using the session parameters.
+Parameters allow you to select things like incoming size, codec, and what kind of memory IO pattern to use.
+
+.. code-block:: python
+      
+      params = pyvpl.encoder_video_param()
+      info = pyvpl.frame_info()
+
+      info.frame_rate = (30, 1)
+      info.frame_size = (
+         math.floor((width + 16 - 1) / 16) * 16),
+         math.floor((height + 16 - 1) / 16) * 16)
+         )
+      info.FourCC = input_fourcc
+      info.ChromaFormat = pyvpl.chroma_format_idc.yuv420
+      info.ROI = ((0, 0), (width, height))
+
+      params.RateControlMethod = pyvpl.rate_control_method.cqp
+      params.frame_info = info
+      params.CodecId = pyvpl.codec_format_fourcc.hevc
+      params.IOPattern = pyvpl.io_pattern.in_system_memory
+
+      init_list = pyvpl.encoder_init_list()
+      session.Init(params, init_list)
+
+Once you start your session you can check the API version it supports and other details to ensure
+that it meets your needs. More advanced APIs are available to directly specify the implementation
+a given session will use, however they are not normally needed for basic operation.
+
+.. code-block:: python
+
+      version = decoder.version
+      print(f"{version.Major}.{version.Minor}")
+      if version.Major < 2:
+         raise Exception("Sample requires 2.x API implementation")
+      impl, accel = decoder.implementation
+      print(f"{impl} {accel}")
+
+The session object can be processed as an iterator, reading form the source you specified why you
+created it, and yielding encoded frames. 
+
+For encoded frames the data will be returned as buffer protocol objects. Buffer protocol objects
+allow direct access to the underlying memory without copying, they can be explored by creating
+a MemoryView object, or they can be cast to NumPy arrays.
+
+.. code-block:: python
+
+      for bits in session:
+            sink.write(bits)
+
+=============================
+Simple Video Post-Processing
+=============================
+
+The oneVPL Python binding (pyvpl) is stored in the pyvpl module. To include it simply `import` `pyvpl`.
+
+.. code-block:: python
+
+   import argparse
+   import os
+   import math
+   import sys
+   import pyvpl
+
+Pyvpl includes file reader helpers to simplify reading both raw and encoded media streams.
+
+.. code-block:: python
+   
+   with pyvpl.raw_frame_file_reader_by_name(width, height,
+                                          pyvpl.color_format_fourcc.i420,
+                                          "raw.in") as source:
+      with open("raw.out", "wb") as sink:
+
+Before processing any media you need to select an implementation. Implementations represent
+available hardware and software accelerators. You can also filter by required features when
+selecting an implementation.
+   
+.. code-block:: python
+   
+      opts = [
+         pyvpl.property("mfxImplDescription.Impl", pyvpl.implementation.software)
+      ]
+      sel_default = pyvpl.default_selector(opts)
+
+You can describe the general configuration of the session you want using the session parameters.
+Parameters allow you to select things like incoming and destination size, color conversion, cropping,
+and what kind of memory IO pattern to use.
+
+.. code-block:: python
+      
+      params = pyvpl.vpp_video_param()
+      in_frame = pyvpl.frame_info()
+      in_frame.FourCC = pyvpl.color_format_fourcc.i420
+      in_frame.ChromaFormat = pyvpl.chroma_format_idc.yuv420
+      in_frame.PicStruct = pyvpl.pic_struct.progressive
+      in_frame.frame_rate = (30, 1)
+      in_frame.ROI = ((0, 0), (width, height))
+      in_frame.frame_size = (
+         math.floor((width + 16 - 1) / 16) * 16),
+         math.floor((height + 16 - 1) / 16) * 16)
+         )
+      params.in_frame_info = in_frame
+      out_frame = pyvpl.frame_info()
+      out_frame.FourCC = pyvpl.color_format_fourcc.i420
+      out_frame.ChromaFormat = pyvpl.chroma_format_idc.yuv420
+      out_frame.PicStruct = pyvpl.pic_struct.progressive
+      out_frame.frame_rate = (30, 1)
+      out_frame.ROI = ((0, 0), (dest_width, dest_height))
+      out_frame.frame_size = (
+         math.floor((dest_width + 16 - 1) / 16) * 16),
+         math.floor((dest_height + 16 - 1) / 16) * 16)
+         )
+      params.out_frame_info = out_frame
+      params.IOPattern = pyvpl.io_pattern.io_system_memory
+      init_reset_list = pyvpl.vpp_init_reset_list()
+      session = pyvpl.vpp_session(sel_default, source)
+      session.Init(params, init_reset_list)
+
+Once you start your session you can check the API version it supports and other details to ensure
+that it meets your needs. More advanced APIs are available to directly specify the implementation
+a given session will use, however they are not normally needed for basic operation.
+
+.. code-block:: python
+
+      version = decoder.version
+      print(f"{version.Major}.{version.Minor}")
+      if version.Major < 2:
+         raise Exception("Sample requires 2.x API implementation")
+      impl, accel = decoder.implementation
+      print(f"{impl} {accel}")
+
+The session object can be processed as an iterator, reading form the source you specified why you
+created it, and yielding decoded frames. If you want to access frame data you can use the map method
+to ensure it is available in the processes memory space (when needed, and possible, this is ony
+affects the address translation copying data will be avoided if possible.)
+
+For raw frames mapping the data will result in a pair of objects representing the metadata about the
+frame and pointers to the frame data. The get_planes method of the second object will result in a
+list of buffer protocol objects that describe the various blocks of data in the frame. Each object will
+also have a `desc` member with a string indicating the type of sample plane it represents (e.g. Y, U, V,
+UV, YUV, RGB, etc.). Buffer protocol objects allow direct access to the underlying memory without copying,
+They can be explored by creating a MemoryView object, or they can be cast to NumPy arrays.
+      
+.. code-block:: python
+      
+      for frame in session:
+         frame_count += 1
+         info, data = frame.map(pyvpl.memory_access.read)
+         try:
+            planes = data.get_planes(info)
+            for plane in planes:
+               sink.write(plane)
+         finally:
+            frame.unmap()

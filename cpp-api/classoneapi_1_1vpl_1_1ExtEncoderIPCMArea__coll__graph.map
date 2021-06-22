@@ -1,0 +1,5 @@
+<map id="oneapi::vpl::ExtEncoderIPCMArea" name="oneapi::vpl::ExtEncoderIPCMArea">
+<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__with__ptrs.html" title="oneapi::vpl::extension\l_buffer_with_ptrs\&lt; mfxExtEncoder\lIPCMArea, MFX_EXTBUFF_ENCODER\l_IPCM_AREA \&gt;" alt="" coords="509,5,772,76"/>
+<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtEncoderIPCMArea, ID \&gt;" alt="" coords="203,20,461,61"/>
+<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="5,20,155,61"/>
+</map>

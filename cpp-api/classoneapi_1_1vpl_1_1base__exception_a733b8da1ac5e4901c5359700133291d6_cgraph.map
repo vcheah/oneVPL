@@ -1,0 +1,5 @@
+<map id="oneapi::vpl::base_exception::base_exception" name="oneapi::vpl::base_exception::base_exception">
+<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1base__exception.html#a4ae2f12584f7d4e5d40f4dbe74e6a171" title="Converts C API status code in to the text form. " alt="" coords="469,5,653,47"/>
+<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1base__exception.html#a138a1ac40ec8869b379031ee15b9da42" title="Default ctor. " alt="" coords="237,35,421,76"/>
+<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1base__exception.html#ab68a1a9aba836bb70829f342d1474eba" title="Assignment operator. " alt="" coords="237,100,421,141"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="oneapi::vpl::extension_buffer&lt; T, ID &gt;" name="oneapi::vpl::extension_buffer&lt; T, ID &gt;">
+<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="Utilitary intermediate class to keep extension buffers without pointers. For such classes default cop..." alt="" coords="413,5,563,47"/>
+<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__with__ptrs.html" title="Utilitary intermediate class to keep extension buffers with pointers. For such classes copy ctor and ..." alt="" coords="400,71,576,112"/>
+<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="5,39,155,80"/>
+</map>

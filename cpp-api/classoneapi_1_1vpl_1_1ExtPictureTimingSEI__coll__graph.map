@@ -1,0 +1,6 @@
+<map id="oneapi::vpl::ExtPictureTimingSEI" name="oneapi::vpl::ExtPictureTimingSEI">
+<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="oneapi::vpl::extension\l_buffer_trival\&lt; mfxExtPicture\lTimingSEI, MFX_EXTBUFF_PICTURE\l_TIMING_SEI \&gt;" alt="" coords="511,20,765,91"/>
+<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtPictureTiming\lSEI, ID \&gt;" alt="" coords="265,27,461,83"/>
+<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="14,5,163,47"/>
+<area shape="rect" id="node5" href="$structmfxExtPictureTimingSEI.html" title="mfxExtPictureTimingSEI" alt="" coords="5,71,172,98"/>
+</map>

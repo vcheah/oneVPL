@@ -1,0 +1,6 @@
+<map id="oneapi::vpl::ExtVPPDenoise" name="oneapi::vpl::ExtVPPDenoise">
+<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="oneapi::vpl::extension\l_buffer_trival\&lt; mfxExtVPPDenoise,\l MFX_EXTBUFF_VPP_DENOISE \&gt;" alt="" coords="523,27,759,83"/>
+<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtVPPDenoise, ID \&gt;" alt="" coords="248,35,473,76"/>
+<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="5,5,155,47"/>
+<area shape="rect" id="node5" href="$structmfxExtVPPDenoise.html" title="mfxExtVPPDenoise" alt="" coords="11,71,149,98"/>
+</map>

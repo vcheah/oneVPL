@@ -1,0 +1,27 @@
+var structmfxExtAV1FilmGrainParam =
+[
+    [ "ArCoeffLag", "structmfxExtAV1FilmGrainParam.html#a4cbfe0bdfabe24a35d95ac0b1f64c7aa", null ],
+    [ "ArCoeffsCbPlus128", "structmfxExtAV1FilmGrainParam.html#a6880eedac522ccc7e10908bbf53117f5", null ],
+    [ "ArCoeffsCrPlus128", "structmfxExtAV1FilmGrainParam.html#a0331653fc8fd77870a391883c346184f", null ],
+    [ "ArCoeffShiftMinus6", "structmfxExtAV1FilmGrainParam.html#a95fb5635b9a8578155b3803be8efa999", null ],
+    [ "ArCoeffsYPlus128", "structmfxExtAV1FilmGrainParam.html#abfa6efa06691a30a22691f443fcef91e", null ],
+    [ "CbLumaMult", "structmfxExtAV1FilmGrainParam.html#a18f1a2c1e7427bc1c69d9896f3bf5d45", null ],
+    [ "CbMult", "structmfxExtAV1FilmGrainParam.html#a891990f834c9c328943ba5174f5c6bcc", null ],
+    [ "CbOffset", "structmfxExtAV1FilmGrainParam.html#af2e0da9b4b149b179d3cc68324a4e0cc", null ],
+    [ "CrLumaMult", "structmfxExtAV1FilmGrainParam.html#af6c46f61fdacb3a99133c8d2515b9244", null ],
+    [ "CrMult", "structmfxExtAV1FilmGrainParam.html#aac3e537cadcb8d2ff9e3064621bbe512", null ],
+    [ "CrOffset", "structmfxExtAV1FilmGrainParam.html#a8fa368d6a0c58e5694db9ba4c21972de", null ],
+    [ "FilmGrainFlags", "structmfxExtAV1FilmGrainParam.html#af129943155b205f21e478f61f8b8e657", null ],
+    [ "GrainScaleShift", "structmfxExtAV1FilmGrainParam.html#a8c93c555e31b8deb3cd3b15d4355962e", null ],
+    [ "GrainScalingMinus8", "structmfxExtAV1FilmGrainParam.html#a0c3e34823824fc41c34bcaead00ffa5f", null ],
+    [ "GrainSeed", "structmfxExtAV1FilmGrainParam.html#aff295305cc90cf05761ba62fe21762c4", null ],
+    [ "Header", "structmfxExtAV1FilmGrainParam.html#af2ca6cf675251b355bb30130daa6398a", null ],
+    [ "NumCbPoints", "structmfxExtAV1FilmGrainParam.html#a30a10c0231ce8347068ea510b8f459e0", null ],
+    [ "NumCrPoints", "structmfxExtAV1FilmGrainParam.html#aa678fe3e8319b1089e0ffe699b1245cb", null ],
+    [ "NumYPoints", "structmfxExtAV1FilmGrainParam.html#a9dc36cbe7d6c1bf00f8daa0a367b79ec", null ],
+    [ "PointCb", "structmfxExtAV1FilmGrainParam.html#a1e8f289cca657dd1788b95b9c082cba4", null ],
+    [ "PointCr", "structmfxExtAV1FilmGrainParam.html#a74a44526549fad8a7084a88e33a24946", null ],
+    [ "PointY", "structmfxExtAV1FilmGrainParam.html#a4e3702c79460aea4ba91042bb46e4856", null ],
+    [ "RefIdx", "structmfxExtAV1FilmGrainParam.html#adba1834482630938f6c8f9c9fb720c06", null ],
+    [ "reserved", "structmfxExtAV1FilmGrainParam.html#adf8679a2a801e1ffd3f9cfa9691f1bf8", null ]
+];

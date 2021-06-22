@@ -1,0 +1,5 @@
+<map id="oneapi::vpl::ExtVPPRotation" name="oneapi::vpl::ExtVPPRotation">
+<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="oneapi::vpl::extension\l_buffer_trival\&lt; mfxExtVPPRotation,\l MFX_EXTBUFF_VPP_ROTATION \&gt;" alt="" coords="477,5,721,61"/>
+<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtVPPRotation, ID \&gt;" alt="" coords="203,13,429,54"/>
+<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="5,13,155,54"/>
+</map>

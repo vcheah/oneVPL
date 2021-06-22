@@ -1,0 +1,26 @@
+var structmfxFrameInfo =
+[
+    [ "AspectRatioH", "structmfxFrameInfo.html#a5b3ff1457bae50b6276618c2000a5f11", null ],
+    [ "AspectRatioW", "structmfxFrameInfo.html#a37de0c77df866265db9892b839bf7e9a", null ],
+    [ "BitDepthChroma", "structmfxFrameInfo.html#a7e965325710b332c95829ddb0ba4a741", null ],
+    [ "BitDepthLuma", "structmfxFrameInfo.html#a8c4e5877bae0c169c775eb0085a2b6fe", null ],
+    [ "BufferSize", "structmfxFrameInfo.html#addaec48d42061f4128bdf05cbf3f3d5a", null ],
+    [ "ChannelId", "structmfxFrameInfo.html#a0a170cfb4996390618338bb838c9cd9f", null ],
+    [ "ChromaFormat", "structmfxFrameInfo.html#a482526a36796606db078fd006c1b261d", null ],
+    [ "CropH", "structmfxFrameInfo.html#a2f26adacd3c4460b96ee188ca2efc759", null ],
+    [ "CropW", "structmfxFrameInfo.html#a497c17a28534ffc07232af314687a24f", null ],
+    [ "CropX", "structmfxFrameInfo.html#ad46fd2be3ec06e1ecf9f9f8618eaca10", null ],
+    [ "CropY", "structmfxFrameInfo.html#a75eb9d5f85cb37f99aa36ec5e243d3c3", null ],
+    [ "FourCC", "structmfxFrameInfo.html#a8ba1456c8c2406ffa6292106c246f22d", null ],
+    [ "FrameId", "structmfxFrameInfo.html#ad57f510244b8ae37713c43b2a4812340", null ],
+    [ "FrameRateExtD", "structmfxFrameInfo.html#a6e87c845134aba61abd66afc74582656", null ],
+    [ "FrameRateExtN", "structmfxFrameInfo.html#a843b14787d2ea78fbc732bdeee51a4a8", null ],
+    [ "Height", "structmfxFrameInfo.html#ac6b0d2162fe8d4769059f1c507b39f98", null ],
+    [ "PicStruct", "structmfxFrameInfo.html#a7a1fb15f627058312dd625cd90a4350f", null ],
+    [ "reserved", "structmfxFrameInfo.html#a17bae488310cd72d13bfa32042fe5ad7", null ],
+    [ "reserved2", "structmfxFrameInfo.html#ad22623e5825b517c42095d659b1b41b3", null ],
+    [ "reserved3", "structmfxFrameInfo.html#a6bcef6c9f7b7b5e278749da5b87fad4b", null ],
+    [ "reserved5", "structmfxFrameInfo.html#a2f74cf56c51af8e7a0add37c4cf636fe", null ],
+    [ "Shift", "structmfxFrameInfo.html#ae6848aabffe6bc80071c8cd8f11c0cd3", null ],
+    [ "Width", "structmfxFrameInfo.html#ab1fe3fed0ce5ce6dd59c237214d19d80", null ]
+];

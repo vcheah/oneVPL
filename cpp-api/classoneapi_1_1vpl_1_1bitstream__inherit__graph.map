@@ -1,0 +1,4 @@
+<map id="oneapi::vpl::bitstream" name="oneapi::vpl::bitstream">
+<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1bitstream__as__dst.html" title="Defines the buffer that holds compressed video data. Used as the output from encoder. " alt="" coords="5,80,152,121"/>
+<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1bitstream__as__src.html" title="Defines the circular buffer that holds compressed video data. Used as the input to decoder..." alt="" coords="176,80,323,121"/>
+</map>
