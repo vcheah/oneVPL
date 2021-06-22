@@ -1,5 +1,0 @@
-<map id="oneapi::vpl::ExtCodingOptionVPS" name="oneapi::vpl::ExtCodingOptionVPS">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__with__ptrs.html" title="oneapi::vpl::extension\l_buffer_with_ptrs\&lt; mfxExtCoding\lOptionVPS, MFX_EXTBUFF_CODING\l_OPTION_VPS \&gt;" alt="" coords="507,5,759,76"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtCodingOptionVPS, ID \&gt;" alt="" coords="203,20,459,61"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="5,20,155,61"/>
-</map>

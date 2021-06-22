@@ -1,5 +1,0 @@
-<map id="oneapi::vpl::ExtMBQP" name="oneapi::vpl::ExtMBQP">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__with__ptrs.html" title="oneapi::vpl::extension\l_buffer_with_ptrs\&lt; mfxExtMBQP,\l MFX_EXTBUFF_MBQP \&gt;" alt="" coords="5,184,224,240"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtMBQP, ID \&gt;" alt="" coords="20,95,209,136"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="40,5,189,47"/>
-</map>

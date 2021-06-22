@@ -1,6 +1,0 @@
-<map id="oneapi::vpl::ExtEncoderCapability" name="oneapi::vpl::ExtEncoderCapability">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="oneapi::vpl::extension\l_buffer_trival\&lt; mfxExtEncoder\lCapability, MFX_EXTBUFF_ENCODER\l_CAPABILITY \&gt;" alt="" coords="575,20,833,91"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtEncoderCapability, ID \&gt;" alt="" coords="269,35,525,76"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="16,5,165,47"/>
-<area shape="rect" id="node5" href="$structmfxExtEncoderCapability.html" title="mfxExtEncoderCapability" alt="" coords="5,71,176,98"/>
-</map>

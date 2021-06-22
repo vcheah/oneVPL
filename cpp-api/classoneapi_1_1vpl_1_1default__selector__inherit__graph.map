@@ -1,5 +1,0 @@
-<map id="oneapi::vpl::default_selector" name="oneapi::vpl::default_selector">
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1cpu__selector.html" title="Default SW based implementation selector. It accepts first implementation with SW based acceleration..." alt="" coords="5,184,172,211"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1gpu__selector.html" title="Default HW based implementation selector. It accepts first implementation with HW based acceleration..." alt="" coords="196,184,363,211"/>
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1implemetation__selector.html" title="Selects oneVPL implementation according to the specified properties. " alt="" coords="96,5,271,47"/>
-</map>

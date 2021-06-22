@@ -1,5 +1,0 @@
-<map id="oneapi::vpl::EncodeCtrl" name="oneapi::vpl::EncodeCtrl">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__with__ptrs.html" title="oneapi::vpl::extension\l_buffer_with_ptrs\&lt; mfxEncode\lCtrl, 0 \&gt;" alt="" coords="5,184,205,240"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxEncodeCtrl, ID \&gt;" alt="" coords="8,95,203,136"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="31,5,180,47"/>
-</map>

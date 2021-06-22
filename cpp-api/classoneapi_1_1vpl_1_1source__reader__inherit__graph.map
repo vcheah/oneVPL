@@ -1,8 +1,0 @@
-<map id="oneapi::vpl::source_reader" name="oneapi::vpl::source_reader">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1bitstream__source__reader.html" title="Interface for the bitstream source data reader. " alt="" coords="185,71,332,112"/>
-<area shape="rect" id="node5" href="$classoneapi_1_1vpl_1_1frame__source__reader.html" title="Interface for the frame source data reader. " alt="" coords="195,136,322,177"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1bitstream__file__reader.html" title="File based source data reader. " alt="" coords="384,5,531,47"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1bitstream__file__reader__name.html" title="oneapi::vpl::bitstream\l_file_reader_name" alt="" coords="384,71,531,112"/>
-<area shape="rect" id="node6" href="$classoneapi_1_1vpl_1_1raw__frame__file__reader.html" title="File based reader of uncomressed frames. " alt="" coords="380,136,535,177"/>
-<area shape="rect" id="node7" href="$classoneapi_1_1vpl_1_1raw__frame__file__reader__by__name.html" title="File based reder of uncomressed frames. " alt="" coords="380,201,535,243"/>
-</map>

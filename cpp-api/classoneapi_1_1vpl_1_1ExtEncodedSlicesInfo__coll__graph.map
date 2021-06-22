@@ -1,5 +1,0 @@
-<map id="oneapi::vpl::ExtEncodedSlicesInfo" name="oneapi::vpl::ExtEncodedSlicesInfo">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__with__ptrs.html" title="oneapi::vpl::extension\l_buffer_with_ptrs\&lt; mfxExtEncoded\lSlicesInfo, MFX_EXTBUFF_ENCODED\l_SLICES_INFO \&gt;" alt="" coords="453,5,712,76"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtEncodedSlices\lInfo, ID \&gt;" alt="" coords="203,13,405,69"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="5,20,155,61"/>
-</map>

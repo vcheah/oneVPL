@@ -1,6 +1,0 @@
-<map id="oneapi::vpl::ExtCodingOptionSPSPPS" name="oneapi::vpl::ExtCodingOptionSPSPPS">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__with__ptrs.html" title="oneapi::vpl::extension\l_buffer_with_ptrs\&lt; mfxExtCoding\lOptionSPSPPS, MFX_EXTBUFF_CODING\l_OPTION_SPSPPS \&gt;" alt="" coords="628,20,907,91"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtCodingOptionSPSPPS, ID \&gt;" alt="" coords="296,35,579,76"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="29,5,179,47"/>
-<area shape="rect" id="node5" href="$structmfxExtCodingOptionSPSPPS.html" title="mfxExtCodingOptionSPSPPS" alt="" coords="5,71,203,98"/>
-</map>

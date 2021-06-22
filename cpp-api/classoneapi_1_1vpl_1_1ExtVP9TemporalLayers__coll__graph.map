@@ -1,7 +1,0 @@
-<map id="oneapi::vpl::ExtVP9TemporalLayers" name="oneapi::vpl::ExtVP9TemporalLayers">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="oneapi::vpl::extension\l_buffer_trival\&lt; mfxExtVP9Temporal\lLayers, MFX_EXTBUFF_VP9_TEMPORAL\l_LAYERS \&gt;" alt="" coords="839,20,1116,91"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtVP9TemporalLayers, ID \&gt;" alt="" coords="521,35,789,76"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="262,5,411,47"/>
-<area shape="rect" id="node5" href="$structmfxExtVP9TemporalLayers.html" title="mfxExtVP9TemporalLayers" alt="" coords="245,71,428,98"/>
-<area shape="rect" id="node6" href="$structmfxVP9TemporalLayer.html" title="mfxVP9TemporalLayer" alt="" coords="5,71,160,98"/>
-</map>

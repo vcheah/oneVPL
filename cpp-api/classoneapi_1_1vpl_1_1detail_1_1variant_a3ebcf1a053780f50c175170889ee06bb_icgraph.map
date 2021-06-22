@@ -1,5 +1,0 @@
-<map id="oneapi::vpl::detail::variant::get_variant" name="oneapi::vpl::detail::variant::get_variant">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1property.html#a20980451fd20039edca811975bf98944" title="Returns type of the property&#39;s value. " alt="" coords="195,5,335,47"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1property.html#a598214aa52e234da63c08c5402f35b2c" title="Returns property&#39;s value. " alt="" coords="195,71,335,112"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1property.html#afcf0564731cb42e6178a66a66cf78512" title="Converts propery into mfxVariant type. " alt="" coords="195,136,335,177"/>
-</map>

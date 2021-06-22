@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classoneapi_1_1vpl_1_1implemetation__selector.html" title="Selects oneVPL implementation according to the specified properties. " alt="" coords="5,23,180,65"/>
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1default__selector.html" title="Default implemetation selector. It accepts first implementation matching provided properties..." alt="" coords="228,23,360,65"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1cpu__selector.html" title="Default SW based implementation selector. It accepts first implementation with SW based acceleration..." alt="" coords="408,5,575,32"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1gpu__selector.html" title="Default HW based implementation selector. It accepts first implementation with HW based acceleration..." alt="" coords="408,56,575,83"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="oneapi::vpl::gpu_selector" name="oneapi::vpl::gpu_selector">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1default__selector.html" title="Default implemetation selector. It accepts first implementation matching provided properties..." alt="" coords="27,95,159,136"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1implemetation__selector.html" title="Selects oneVPL implementation according to the specified properties. " alt="" coords="5,5,180,47"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classoneapi_1_1vpl_1_1video__param.html" title="Holds general video params applicable for all kind of sessions. " alt="" coords="5,137,129,179"/>
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1codec__video__param.html" title="Holds general codec&#45;specific params applicable for any decoder and encoder. " alt="" coords="189,104,317,145"/>
-<area shape="rect" id="node7" href="$classoneapi_1_1vpl_1_1vpp__video__param.html" title="Holds VPP specific params. " alt="" coords="177,169,329,211"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1decoder__video__param.html" title="Holds decoder specific params. " alt="" coords="393,5,532,47"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1encoder__video__param.html" title="Holds encoder specific params. " alt="" coords="393,71,532,112"/>
-<area shape="rect" id="node5" href="$classoneapi_1_1vpl_1_1jpeg__decoder__video__param.html" title="Holds JPEG decoder specific params. " alt="" coords="377,136,548,177"/>
-<area shape="rect" id="node6" href="$classoneapi_1_1vpl_1_1jpeg__encoder__video__param.html" title="Holds JPEG encoder specific params. " alt="" coords="377,201,548,243"/>
-</map>

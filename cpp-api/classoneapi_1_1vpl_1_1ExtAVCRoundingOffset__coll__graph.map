@@ -1,6 +1,0 @@
-<map id="oneapi::vpl::ExtAVCRoundingOffset" name="oneapi::vpl::ExtAVCRoundingOffset">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="oneapi::vpl::extension\l_buffer_trival\&lt; mfxExtAVCRounding\lOffset, MFX_EXTBUFF_AVC_ROUNDING\l_OFFSET \&gt;" alt="" coords="600,20,879,91"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtAVCRoundingOffset, ID \&gt;" alt="" coords="281,35,551,76"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="22,5,171,47"/>
-<area shape="rect" id="node5" href="$structmfxExtAVCRoundingOffset.html" title="mfxExtAVCRoundingOffset" alt="" coords="5,71,188,98"/>
-</map>

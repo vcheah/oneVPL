@@ -1,7 +1,0 @@
-<map id="oneapi::vpl::codec_video_param" name="oneapi::vpl::codec_video_param">
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1decoder__video__param.html" title="Holds decoder specific params. " alt="" coords="369,5,508,47"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1encoder__video__param.html" title="Holds encoder specific params. " alt="" coords="369,71,508,112"/>
-<area shape="rect" id="node5" href="$classoneapi_1_1vpl_1_1jpeg__decoder__video__param.html" title="Holds JPEG decoder specific params. " alt="" coords="353,136,524,177"/>
-<area shape="rect" id="node6" href="$classoneapi_1_1vpl_1_1jpeg__encoder__video__param.html" title="Holds JPEG encoder specific params. " alt="" coords="353,201,524,243"/>
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1video__param.html" title="Holds general video params applicable for all kind of sessions. " alt="" coords="5,104,129,145"/>
-</map>

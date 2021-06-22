@@ -1,6 +1,0 @@
-<map id="oneapi::vpl::ExtDirtyRect" name="oneapi::vpl::ExtDirtyRect">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="oneapi::vpl::extension\l_buffer_trival\&lt; mfxExtDirtyRect,\l MFX_EXTBUFF_DIRTY_RECTANGLES \&gt;" alt="" coords="504,27,784,83"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtDirtyRect, ID \&gt;" alt="" coords="248,35,455,76"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="5,5,155,47"/>
-<area shape="rect" id="node5" href="$structmfxExtDirtyRect.html" title="mfxExtDirtyRect" alt="" coords="20,71,140,98"/>
-</map>

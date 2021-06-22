@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classoneapi_1_1vpl_1_1stat.html" title="Interface for the component&#39;s (session) run&#45;time statistic. " alt="" coords="5,56,120,83"/>
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1decode__stat.html" title="Decoder&#39;s session run&#45;time statistic. " alt="" coords="168,5,332,32"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1encode__stat.html" title="Encoder&#39;s session run&#45;time statistic. " alt="" coords="168,56,332,83"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1vpp__stat.html" title="VPP&#39;s session run&#45;time statistic. " alt="" coords="179,107,321,133"/>
-</map>

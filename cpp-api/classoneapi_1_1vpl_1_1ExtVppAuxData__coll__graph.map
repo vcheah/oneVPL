@@ -1,6 +1,0 @@
-<map id="oneapi::vpl::ExtVppAuxData" name="oneapi::vpl::ExtVppAuxData">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="oneapi::vpl::extension\l_buffer_trival\&lt; mfxExtVppAux\lData, MFX_EXTBUFF_VPP_AUXDATA \&gt;" alt="" coords="521,27,792,83"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtVppAuxData, ID \&gt;" alt="" coords="248,35,472,76"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="5,5,155,47"/>
-<area shape="rect" id="node5" href="$structmfxExtVppAuxData.html" title="mfxExtVppAuxData" alt="" coords="11,71,149,98"/>
-</map>

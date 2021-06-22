@@ -1,6 +1,0 @@
-<map id="oneapi::vpl::ExtPredWeightTable" name="oneapi::vpl::ExtPredWeightTable">
-<area shape="rect" id="node2" href="$classoneapi_1_1vpl_1_1extension__buffer__trival.html" title="oneapi::vpl::extension\l_buffer_trival\&lt; mfxExtPredWeight\lTable, MFX_EXTBUFF_PRED_WEIGHT_TABLE \&gt;" alt="" coords="563,27,888,83"/>
-<area shape="rect" id="node3" href="$classoneapi_1_1vpl_1_1extension__buffer.html" title="oneapi::vpl::extension\l_buffer\&lt; mfxExtPredWeightTable, ID \&gt;" alt="" coords="263,35,513,76"/>
-<area shape="rect" id="node4" href="$classoneapi_1_1vpl_1_1extension__buffer__base.html" title="Interface definition for extension buffers. Extension buffers are used to provide additional data for..." alt="" coords="13,5,162,47"/>
-<area shape="rect" id="node5" href="$structmfxExtPredWeightTable.html" title="mfxExtPredWeightTable" alt="" coords="5,71,169,98"/>
-</map>
