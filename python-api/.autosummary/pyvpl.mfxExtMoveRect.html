@@ -1,0 +1,632 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>pyvpl.mfxExtMoveRect &mdash; oneVPL Python Preview 2021.4 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pyvpl.mfxExtMoveRect_rect" href="pyvpl.mfxExtMoveRect_rect.html" />
+    <link rel="prev" title="pyvpl.mfxExtMasteringDisplayColourVolume" href="pyvpl.mfxExtMasteringDisplayColourVolume.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> oneVPL Python Preview
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="pyvpl.html">pyvpl</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.EncodeCtrl.html">pyvpl.EncodeCtrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtAVCEncodedFrameInfo.html">pyvpl.ExtAVCEncodedFrameInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtAVCRefListCtrl.html">pyvpl.ExtAVCRefListCtrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtAVCRefLists.html">pyvpl.ExtAVCRefLists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtAVCRoundingOffset.html">pyvpl.ExtAVCRoundingOffset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtAvcTemporalLayers.html">pyvpl.ExtAvcTemporalLayers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtChromaLocInfo.html">pyvpl.ExtChromaLocInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtCodingOption.html">pyvpl.ExtCodingOption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtCodingOption2.html">pyvpl.ExtCodingOption2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtCodingOption3.html">pyvpl.ExtCodingOption3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtCodingOptionSPSPPS.html">pyvpl.ExtCodingOptionSPSPPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtCodingOptionVPS.html">pyvpl.ExtCodingOptionVPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtColorConversion.html">pyvpl.ExtColorConversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtContentLightLevelInfo.html">pyvpl.ExtContentLightLevelInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtDecVideoProcessing.html">pyvpl.ExtDecVideoProcessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtDecodeErrorReport.html">pyvpl.ExtDecodeErrorReport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtDecodedFrameInfo.html">pyvpl.ExtDecodedFrameInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtDeviceAffinityMask.html">pyvpl.ExtDeviceAffinityMask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtDirtyRect.html">pyvpl.ExtDirtyRect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtEncodedSlicesInfo.html">pyvpl.ExtEncodedSlicesInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtEncodedUnitsInfo.html">pyvpl.ExtEncodedUnitsInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtEncoderCapability.html">pyvpl.ExtEncoderCapability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtEncoderIPCMArea.html">pyvpl.ExtEncoderIPCMArea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtEncoderROI.html">pyvpl.ExtEncoderROI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtEncoderResetOption.html">pyvpl.ExtEncoderResetOption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtHEVCParam.html">pyvpl.ExtHEVCParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtHEVCRegion.html">pyvpl.ExtHEVCRegion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtHEVCTiles.html">pyvpl.ExtHEVCTiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtInsertHeaders.html">pyvpl.ExtInsertHeaders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtMBDisableSkipMap.html">pyvpl.ExtMBDisableSkipMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtMBForceIntra.html">pyvpl.ExtMBForceIntra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtMBQP.html">pyvpl.ExtMBQP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtMVOverPicBoundaries.html">pyvpl.ExtMVOverPicBoundaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtMasteringDisplayColourVolume.html">pyvpl.ExtMasteringDisplayColourVolume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtMoveRect.html">pyvpl.ExtMoveRect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtPartialBitstreamParam.html">pyvpl.ExtPartialBitstreamParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtPictureTimingSEI.html">pyvpl.ExtPictureTimingSEI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtPredWeightTable.html">pyvpl.ExtPredWeightTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtTimeCode.html">pyvpl.ExtTimeCode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVP9Param.html">pyvpl.ExtVP9Param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVP9Segmentation.html">pyvpl.ExtVP9Segmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVP9TemporalLayers.html">pyvpl.ExtVP9TemporalLayers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPColorFill.html">pyvpl.ExtVPPColorFill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPComposite.html">pyvpl.ExtVPPComposite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPDeinterlacing.html">pyvpl.ExtVPPDeinterlacing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPDenoise.html">pyvpl.ExtVPPDenoise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPDetail.html">pyvpl.ExtVPPDetail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPDoNotUse.html">pyvpl.ExtVPPDoNotUse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPDoUse.html">pyvpl.ExtVPPDoUse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPFieldProcessing.html">pyvpl.ExtVPPFieldProcessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPFrameRateConversion.html">pyvpl.ExtVPPFrameRateConversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPImageStab.html">pyvpl.ExtVPPImageStab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPMirroring.html">pyvpl.ExtVPPMirroring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPProcAmp.html">pyvpl.ExtVPPProcAmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPRotation.html">pyvpl.ExtVPPRotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPScaling.html">pyvpl.ExtVPPScaling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVPPVideoSignalInfo.html">pyvpl.ExtVPPVideoSignalInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVideoSignalInfo.html">pyvpl.ExtVideoSignalInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVppAuxData.html">pyvpl.ExtVppAuxData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.ExtVppMctf.html">pyvpl.ExtVppMctf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.async_op_status.html">pyvpl.async_op_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.base_implementation_capabilities.html">pyvpl.base_implementation_capabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.bitstream.html">pyvpl.bitstream</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.bitstream_as_dst.html">pyvpl.bitstream_as_dst</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.bitstream_as_src.html">pyvpl.bitstream_as_src</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.bitstream_data.html">pyvpl.bitstream_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.bitstream_file_reader.html">pyvpl.bitstream_file_reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.bitstream_file_reader_name.html">pyvpl.bitstream_file_reader_name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.bitstream_source_reader.html">pyvpl.bitstream_source_reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.buffer_list.html">pyvpl.buffer_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.chroma_format_idc.html">pyvpl.chroma_format_idc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.codec_format_fourcc.html">pyvpl.codec_format_fourcc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.codec_video_param.html">pyvpl.codec_video_param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.color_format_fourcc.html">pyvpl.color_format_fourcc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.component.html">pyvpl.component</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.cpu_selector.html">pyvpl.cpu_selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.decode_session.html">pyvpl.decode_session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.decode_session_base.html">pyvpl.decode_session_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.decode_stat.html">pyvpl.decode_stat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.decoder_init_header_list.html">pyvpl.decoder_init_header_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.decoder_init_reset_list.html">pyvpl.decoder_init_reset_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.decoder_process_list.html">pyvpl.decoder_process_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.decoder_video_param.html">pyvpl.decoder_video_param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.default_selector.html">pyvpl.default_selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.encode_session.html">pyvpl.encode_session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.encode_session_base.html">pyvpl.encode_session_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.encode_stat.html">pyvpl.encode_stat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.encoder_init_list.html">pyvpl.encoder_init_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.encoder_process_list.html">pyvpl.encoder_process_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.encoder_reset_list.html">pyvpl.encoder_reset_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.encoder_video_param.html">pyvpl.encoder_video_param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_EncodeCtrl.html">pyvpl.extension_buffer_EncodeCtrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtAVCEncodedFrameInfo.html">pyvpl.extension_buffer_ExtAVCEncodedFrameInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtAVCRefListCtrl.html">pyvpl.extension_buffer_ExtAVCRefListCtrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtAVCRefLists.html">pyvpl.extension_buffer_ExtAVCRefLists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtAVCRoundingOffset.html">pyvpl.extension_buffer_ExtAVCRoundingOffset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtAvcTemporalLayers.html">pyvpl.extension_buffer_ExtAvcTemporalLayers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtChromaLocInfo.html">pyvpl.extension_buffer_ExtChromaLocInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtCodingOption.html">pyvpl.extension_buffer_ExtCodingOption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtCodingOption2.html">pyvpl.extension_buffer_ExtCodingOption2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtCodingOption3.html">pyvpl.extension_buffer_ExtCodingOption3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtCodingOptionSPSPPS.html">pyvpl.extension_buffer_ExtCodingOptionSPSPPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtCodingOptionVPS.html">pyvpl.extension_buffer_ExtCodingOptionVPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtColorConversion.html">pyvpl.extension_buffer_ExtColorConversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtContentLightLevelInfo.html">pyvpl.extension_buffer_ExtContentLightLevelInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtDecVideoProcessing.html">pyvpl.extension_buffer_ExtDecVideoProcessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtDecodeErrorReport.html">pyvpl.extension_buffer_ExtDecodeErrorReport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtDecodedFrameInfo.html">pyvpl.extension_buffer_ExtDecodedFrameInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtDeviceAffinityMask.html">pyvpl.extension_buffer_ExtDeviceAffinityMask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtDirtyRect.html">pyvpl.extension_buffer_ExtDirtyRect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtEncodedSlicesInfo.html">pyvpl.extension_buffer_ExtEncodedSlicesInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtEncodedUnitsInfo.html">pyvpl.extension_buffer_ExtEncodedUnitsInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtEncoderCapability.html">pyvpl.extension_buffer_ExtEncoderCapability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtEncoderIPCMArea.html">pyvpl.extension_buffer_ExtEncoderIPCMArea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtEncoderROI.html">pyvpl.extension_buffer_ExtEncoderROI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtEncoderResetOption.html">pyvpl.extension_buffer_ExtEncoderResetOption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtHEVCParam.html">pyvpl.extension_buffer_ExtHEVCParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtHEVCRegion.html">pyvpl.extension_buffer_ExtHEVCRegion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtHEVCTiles.html">pyvpl.extension_buffer_ExtHEVCTiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtInsertHeaders.html">pyvpl.extension_buffer_ExtInsertHeaders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtMBDisableSkipMap.html">pyvpl.extension_buffer_ExtMBDisableSkipMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtMBForceIntra.html">pyvpl.extension_buffer_ExtMBForceIntra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtMBQP.html">pyvpl.extension_buffer_ExtMBQP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtMVOverPicBoundaries.html">pyvpl.extension_buffer_ExtMVOverPicBoundaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtMasteringDisplayColourVolume.html">pyvpl.extension_buffer_ExtMasteringDisplayColourVolume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtMoveRect.html">pyvpl.extension_buffer_ExtMoveRect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtPartialBitstreamParam.html">pyvpl.extension_buffer_ExtPartialBitstreamParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtPictureTimingSEI.html">pyvpl.extension_buffer_ExtPictureTimingSEI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtPredWeightTable.html">pyvpl.extension_buffer_ExtPredWeightTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtTimeCode.html">pyvpl.extension_buffer_ExtTimeCode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVP9Param.html">pyvpl.extension_buffer_ExtVP9Param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVP9Segmentation.html">pyvpl.extension_buffer_ExtVP9Segmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVP9TemporalLayers.html">pyvpl.extension_buffer_ExtVP9TemporalLayers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPColorFill.html">pyvpl.extension_buffer_ExtVPPColorFill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPComposite.html">pyvpl.extension_buffer_ExtVPPComposite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPDeinterlacing.html">pyvpl.extension_buffer_ExtVPPDeinterlacing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPDenoise.html">pyvpl.extension_buffer_ExtVPPDenoise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPDetail.html">pyvpl.extension_buffer_ExtVPPDetail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPDoNotUse.html">pyvpl.extension_buffer_ExtVPPDoNotUse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPDoUse.html">pyvpl.extension_buffer_ExtVPPDoUse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPFieldProcessing.html">pyvpl.extension_buffer_ExtVPPFieldProcessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPFrameRateConversion.html">pyvpl.extension_buffer_ExtVPPFrameRateConversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPImageStab.html">pyvpl.extension_buffer_ExtVPPImageStab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPMirroring.html">pyvpl.extension_buffer_ExtVPPMirroring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPProcAmp.html">pyvpl.extension_buffer_ExtVPPProcAmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPRotation.html">pyvpl.extension_buffer_ExtVPPRotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPScaling.html">pyvpl.extension_buffer_ExtVPPScaling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVPPVideoSignalInfo.html">pyvpl.extension_buffer_ExtVPPVideoSignalInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVideoSignalInfo.html">pyvpl.extension_buffer_ExtVideoSignalInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVppAuxData.html">pyvpl.extension_buffer_ExtVppAuxData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_ExtVppMctf.html">pyvpl.extension_buffer_ExtVppMctf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_base.html">pyvpl.extension_buffer_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_EncodeCtrl.html">pyvpl.extension_buffer_trival_EncodeCtrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtAVCEncodedFrameInfo.html">pyvpl.extension_buffer_trival_ExtAVCEncodedFrameInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtAVCRefListCtrl.html">pyvpl.extension_buffer_trival_ExtAVCRefListCtrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtAVCRefLists.html">pyvpl.extension_buffer_trival_ExtAVCRefLists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtAVCRoundingOffset.html">pyvpl.extension_buffer_trival_ExtAVCRoundingOffset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtAvcTemporalLayers.html">pyvpl.extension_buffer_trival_ExtAvcTemporalLayers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtChromaLocInfo.html">pyvpl.extension_buffer_trival_ExtChromaLocInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtCodingOption.html">pyvpl.extension_buffer_trival_ExtCodingOption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtCodingOption2.html">pyvpl.extension_buffer_trival_ExtCodingOption2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtCodingOption3.html">pyvpl.extension_buffer_trival_ExtCodingOption3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtCodingOptionSPSPPS.html">pyvpl.extension_buffer_trival_ExtCodingOptionSPSPPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtCodingOptionVPS.html">pyvpl.extension_buffer_trival_ExtCodingOptionVPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtColorConversion.html">pyvpl.extension_buffer_trival_ExtColorConversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtContentLightLevelInfo.html">pyvpl.extension_buffer_trival_ExtContentLightLevelInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtDecVideoProcessing.html">pyvpl.extension_buffer_trival_ExtDecVideoProcessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtDecodeErrorReport.html">pyvpl.extension_buffer_trival_ExtDecodeErrorReport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtDecodedFrameInfo.html">pyvpl.extension_buffer_trival_ExtDecodedFrameInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtDeviceAffinityMask.html">pyvpl.extension_buffer_trival_ExtDeviceAffinityMask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtDirtyRect.html">pyvpl.extension_buffer_trival_ExtDirtyRect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtEncodedSlicesInfo.html">pyvpl.extension_buffer_trival_ExtEncodedSlicesInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtEncodedUnitsInfo.html">pyvpl.extension_buffer_trival_ExtEncodedUnitsInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtEncoderCapability.html">pyvpl.extension_buffer_trival_ExtEncoderCapability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtEncoderIPCMArea.html">pyvpl.extension_buffer_trival_ExtEncoderIPCMArea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtEncoderROI.html">pyvpl.extension_buffer_trival_ExtEncoderROI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtEncoderResetOption.html">pyvpl.extension_buffer_trival_ExtEncoderResetOption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtHEVCParam.html">pyvpl.extension_buffer_trival_ExtHEVCParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtHEVCRegion.html">pyvpl.extension_buffer_trival_ExtHEVCRegion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtHEVCTiles.html">pyvpl.extension_buffer_trival_ExtHEVCTiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtInsertHeaders.html">pyvpl.extension_buffer_trival_ExtInsertHeaders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtMBDisableSkipMap.html">pyvpl.extension_buffer_trival_ExtMBDisableSkipMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtMBForceIntra.html">pyvpl.extension_buffer_trival_ExtMBForceIntra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtMBQP.html">pyvpl.extension_buffer_trival_ExtMBQP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtMVOverPicBoundaries.html">pyvpl.extension_buffer_trival_ExtMVOverPicBoundaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtMasteringDisplayColourVolume.html">pyvpl.extension_buffer_trival_ExtMasteringDisplayColourVolume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtMoveRect.html">pyvpl.extension_buffer_trival_ExtMoveRect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtPartialBitstreamParam.html">pyvpl.extension_buffer_trival_ExtPartialBitstreamParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtPictureTimingSEI.html">pyvpl.extension_buffer_trival_ExtPictureTimingSEI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtPredWeightTable.html">pyvpl.extension_buffer_trival_ExtPredWeightTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtTimeCode.html">pyvpl.extension_buffer_trival_ExtTimeCode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVP9Param.html">pyvpl.extension_buffer_trival_ExtVP9Param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVP9Segmentation.html">pyvpl.extension_buffer_trival_ExtVP9Segmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVP9TemporalLayers.html">pyvpl.extension_buffer_trival_ExtVP9TemporalLayers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPColorFill.html">pyvpl.extension_buffer_trival_ExtVPPColorFill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPComposite.html">pyvpl.extension_buffer_trival_ExtVPPComposite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPDeinterlacing.html">pyvpl.extension_buffer_trival_ExtVPPDeinterlacing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPDenoise.html">pyvpl.extension_buffer_trival_ExtVPPDenoise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPDetail.html">pyvpl.extension_buffer_trival_ExtVPPDetail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPDoNotUse.html">pyvpl.extension_buffer_trival_ExtVPPDoNotUse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPDoUse.html">pyvpl.extension_buffer_trival_ExtVPPDoUse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPFieldProcessing.html">pyvpl.extension_buffer_trival_ExtVPPFieldProcessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPFrameRateConversion.html">pyvpl.extension_buffer_trival_ExtVPPFrameRateConversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPImageStab.html">pyvpl.extension_buffer_trival_ExtVPPImageStab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPMirroring.html">pyvpl.extension_buffer_trival_ExtVPPMirroring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPProcAmp.html">pyvpl.extension_buffer_trival_ExtVPPProcAmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPRotation.html">pyvpl.extension_buffer_trival_ExtVPPRotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPScaling.html">pyvpl.extension_buffer_trival_ExtVPPScaling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVPPVideoSignalInfo.html">pyvpl.extension_buffer_trival_ExtVPPVideoSignalInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVideoSignalInfo.html">pyvpl.extension_buffer_trival_ExtVideoSignalInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVppAuxData.html">pyvpl.extension_buffer_trival_ExtVppAuxData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.extension_buffer_trival_ExtVppMctf.html">pyvpl.extension_buffer_trival_ExtVppMctf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.frame_data.html">pyvpl.frame_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.frame_info.html">pyvpl.frame_info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.frame_source_reader.html">pyvpl.frame_source_reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.frame_surface.html">pyvpl.frame_surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.frame_type.html">pyvpl.frame_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.gpu_selector.html">pyvpl.gpu_selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.handle_type.html">pyvpl.handle_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.hevc_nal_unit_type.html">pyvpl.hevc_nal_unit_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.image_plane.html">pyvpl.image_plane</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation.html">pyvpl.implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation_capabilities.html">pyvpl.implementation_capabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation_capabilities_decoder.html">pyvpl.implementation_capabilities_decoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation_capabilities_decoder_memory.html">pyvpl.implementation_capabilities_decoder_memory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation_capabilities_decoder_profile.html">pyvpl.implementation_capabilities_decoder_profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation_capabilities_encoder.html">pyvpl.implementation_capabilities_encoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation_capabilities_encoder_memory.html">pyvpl.implementation_capabilities_encoder_memory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation_capabilities_encoder_profile.html">pyvpl.implementation_capabilities_encoder_profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation_capabilities_factory.html">pyvpl.implementation_capabilities_factory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation_capabilities_vpp_filter.html">pyvpl.implementation_capabilities_vpp_filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation_capabilities_vpp_memory.html">pyvpl.implementation_capabilities_vpp_memory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation_capabilities_vpp_memory_format.html">pyvpl.implementation_capabilities_vpp_memory_format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implementation_via.html">pyvpl.implementation_via</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.implemetation_selector.html">pyvpl.implemetation_selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.io_pattern.html">pyvpl.io_pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.jpeg_decoder_video_param.html">pyvpl.jpeg_decoder_video_param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.jpeg_encoder_video_param.html">pyvpl.jpeg_encoder_video_param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.memory_access.html">pyvpl.memory_access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxAV1FilmGrainPoint.html">pyvpl.mfxAV1FilmGrainPoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxAV1FilmGrainPoint_list.html">pyvpl.mfxAV1FilmGrainPoint_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxEncodedUnitInfo.html">pyvpl.mfxEncodedUnitInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtAV1FilmGrainParam.html">pyvpl.mfxExtAV1FilmGrainParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtAVCEncodedFrameInfo.html">pyvpl.mfxExtAVCEncodedFrameInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtAVCEncodedFrameInfo_UsedRefList.html">pyvpl.mfxExtAVCEncodedFrameInfo_UsedRefList</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtAVCEncodedFrameInfo_UsedRefList_list.html">pyvpl.mfxExtAVCEncodedFrameInfo_UsedRefList_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtAVCRefListCtrl.html">pyvpl.mfxExtAVCRefListCtrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtAVCRefListCtrl_ref.html">pyvpl.mfxExtAVCRefListCtrl_ref</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtAVCRefListCtrl_ref_list.html">pyvpl.mfxExtAVCRefListCtrl_ref_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtAVCRefLists.html">pyvpl.mfxExtAVCRefLists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtAVCRoundingOffset.html">pyvpl.mfxExtAVCRoundingOffset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtAvcTemporalLayers.html">pyvpl.mfxExtAvcTemporalLayers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtAvcTemporalLayers_layer.html">pyvpl.mfxExtAvcTemporalLayers_layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtAvcTemporalLayers_layer_list.html">pyvpl.mfxExtAvcTemporalLayers_layer_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtBuffer.html">pyvpl.mfxExtBuffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtChromaLocInfo.html">pyvpl.mfxExtChromaLocInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtCodingOption.html">pyvpl.mfxExtCodingOption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtCodingOption2.html">pyvpl.mfxExtCodingOption2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtCodingOption3.html">pyvpl.mfxExtCodingOption3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtCodingOptionSPSPPS.html">pyvpl.mfxExtCodingOptionSPSPPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtCodingOptionVPS.html">pyvpl.mfxExtCodingOptionVPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtColorConversion.html">pyvpl.mfxExtColorConversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtContentLightLevelInfo.html">pyvpl.mfxExtContentLightLevelInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtDecVideoProcessing.html">pyvpl.mfxExtDecVideoProcessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtDecVideoProcessing_In.html">pyvpl.mfxExtDecVideoProcessing_In</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtDecVideoProcessing_Out.html">pyvpl.mfxExtDecVideoProcessing_Out</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtDecodeErrorReport.html">pyvpl.mfxExtDecodeErrorReport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtDecodedFrameInfo.html">pyvpl.mfxExtDecodedFrameInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtDeviceAffinityMask.html">pyvpl.mfxExtDeviceAffinityMask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtDirtyRect.html">pyvpl.mfxExtDirtyRect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtDirtyRect_rect.html">pyvpl.mfxExtDirtyRect_rect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtDirtyRect_rect_list.html">pyvpl.mfxExtDirtyRect_rect_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtEncodedSlicesInfo.html">pyvpl.mfxExtEncodedSlicesInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtEncodedUnitsInfo.html">pyvpl.mfxExtEncodedUnitsInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtEncoderCapability.html">pyvpl.mfxExtEncoderCapability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtEncoderIPCMArea.html">pyvpl.mfxExtEncoderIPCMArea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtEncoderIPCMArea_Area.html">pyvpl.mfxExtEncoderIPCMArea_Area</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtEncoderIPCMArea_Area_list.html">pyvpl.mfxExtEncoderIPCMArea_Area_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtEncoderROI.html">pyvpl.mfxExtEncoderROI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtEncoderROI_roi.html">pyvpl.mfxExtEncoderROI_roi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtEncoderROI_roi_list.html">pyvpl.mfxExtEncoderROI_roi_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtEncoderResetOption.html">pyvpl.mfxExtEncoderResetOption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtHEVCParam.html">pyvpl.mfxExtHEVCParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtHEVCRegion.html">pyvpl.mfxExtHEVCRegion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtHEVCTiles.html">pyvpl.mfxExtHEVCTiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtHyperModeParam.html">pyvpl.mfxExtHyperModeParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtInCrops.html">pyvpl.mfxExtInCrops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtInsertHeaders.html">pyvpl.mfxExtInsertHeaders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtMBDisableSkipMap.html">pyvpl.mfxExtMBDisableSkipMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtMBForceIntra.html">pyvpl.mfxExtMBForceIntra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtMBQP.html">pyvpl.mfxExtMBQP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtMVOverPicBoundaries.html">pyvpl.mfxExtMVOverPicBoundaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtMasteringDisplayColourVolume.html">pyvpl.mfxExtMasteringDisplayColourVolume</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">pyvpl.mfxExtMoveRect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtMoveRect_rect.html">pyvpl.mfxExtMoveRect_rect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtMoveRect_rect_list.html">pyvpl.mfxExtMoveRect_rect_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtPartialBitstreamParam.html">pyvpl.mfxExtPartialBitstreamParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtPictureTimingSEI.html">pyvpl.mfxExtPictureTimingSEI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtPictureTimingSEI_timestamp.html">pyvpl.mfxExtPictureTimingSEI_timestamp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtPictureTimingSEI_timestamp_list.html">pyvpl.mfxExtPictureTimingSEI_timestamp_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtPredWeightTable.html">pyvpl.mfxExtPredWeightTable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtRefPic.html">pyvpl.mfxExtRefPic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtRefPic_list.html">pyvpl.mfxExtRefPic_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtTimeCode.html">pyvpl.mfxExtTimeCode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVP9Param.html">pyvpl.mfxExtVP9Param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVP9Segmentation.html">pyvpl.mfxExtVP9Segmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVP9TemporalLayers.html">pyvpl.mfxExtVP9TemporalLayers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPColorFill.html">pyvpl.mfxExtVPPColorFill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPComposite.html">pyvpl.mfxExtVPPComposite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPDeinterlacing.html">pyvpl.mfxExtVPPDeinterlacing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPDenoise.html">pyvpl.mfxExtVPPDenoise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPDenoise2.html">pyvpl.mfxExtVPPDenoise2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPDetail.html">pyvpl.mfxExtVPPDetail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPDoNotUse.html">pyvpl.mfxExtVPPDoNotUse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPDoUse.html">pyvpl.mfxExtVPPDoUse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPFieldProcessing.html">pyvpl.mfxExtVPPFieldProcessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPFrameRateConversion.html">pyvpl.mfxExtVPPFrameRateConversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPImageStab.html">pyvpl.mfxExtVPPImageStab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPMirroring.html">pyvpl.mfxExtVPPMirroring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPProcAmp.html">pyvpl.mfxExtVPPProcAmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPRotation.html">pyvpl.mfxExtVPPRotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPScaling.html">pyvpl.mfxExtVPPScaling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPVideoSignalInfo.html">pyvpl.mfxExtVPPVideoSignalInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVPPVideoSignalInfo_io.html">pyvpl.mfxExtVPPVideoSignalInfo_io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVideoSignalInfo.html">pyvpl.mfxExtVideoSignalInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVppAuxData.html">pyvpl.mfxExtVppAuxData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxExtVppMctf.html">pyvpl.mfxExtVppMctf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxI16Pair.html">pyvpl.mfxI16Pair</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxQPandMode.html">pyvpl.mfxQPandMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxRect.html">pyvpl.mfxRect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxSurfaceArray.html">pyvpl.mfxSurfaceArray</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxVP9SegmentParam.html">pyvpl.mfxVP9SegmentParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxVP9SegmentParam_list.html">pyvpl.mfxVP9SegmentParam_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxVP9TemporalLayer.html">pyvpl.mfxVP9TemporalLayer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxVP9TemporalLayer_list.html">pyvpl.mfxVP9TemporalLayer_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.mfxVersion.html">pyvpl.mfxVersion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.payload.html">pyvpl.payload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.pic_struct.html">pyvpl.pic_struct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.property.html">pyvpl.property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.property_name.html">pyvpl.property_name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.rate_control_method.html">pyvpl.rate_control_method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.raw_frame_file_reader.html">pyvpl.raw_frame_file_reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.raw_frame_file_reader_by_name.html">pyvpl.raw_frame_file_reader_by_name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.source_reader.html">pyvpl.source_reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.stat.html">pyvpl.stat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.status.html">pyvpl.status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.target_usage.html">pyvpl.target_usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.temporal_frame_allocator.html">pyvpl.temporal_frame_allocator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.video_param.html">pyvpl.video_param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.vpp_init_reset_list.html">pyvpl.vpp_init_reset_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.vpp_process_list.html">pyvpl.vpp_process_list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.vpp_session.html">pyvpl.vpp_session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.vpp_session_base.html">pyvpl.vpp_session_base</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.vpp_stat.html">pyvpl.vpp_stat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.vpp_video_param.html">pyvpl.vpp_video_param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.base_exception.html">pyvpl.base_exception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.file_exception.html">pyvpl.file_exception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyvpl.vpl_file_exception.html">pyvpl.vpl_file_exception</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">oneVPL Python Preview</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="pyvpl.html">pyvpl</a> &raquo;</li>
+        
+      <li>pyvpl.mfxExtMoveRect</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/.autosummary/pyvpl.mfxExtMoveRect.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyvpl-mfxextmoverect">
+<h1>pyvpl.mfxExtMoveRect<a class="headerlink" href="#pyvpl-mfxextmoverect" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pyvpl.mfxExtMoveRect">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">pyvpl.</span></span><span class="sig-name descname"><span class="pre">mfxExtMoveRect</span></span><a class="headerlink" href="#pyvpl.mfxExtMoveRect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pybind11_builtins.pybind11_object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pyvpl.mfxExtMoveRect.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyvpl.mfxExtMoveRect.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyvpl.mfxExtMoveRect.__init__" title="pyvpl.mfxExtMoveRect.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a></p></td>
+<td><p>Initialize self.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyvpl.mfxExtMoveRect.Header" title="pyvpl.mfxExtMoveRect.Header"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Header</span></code></a></p></td>
+<td><p>Extension buffer header.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#pyvpl.mfxExtMoveRect.NumRect" title="pyvpl.mfxExtMoveRect.NumRect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NumRect</span></code></a></p></td>
+<td><p>Number of moving rectangles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyvpl.mfxExtMoveRect.Rect" title="pyvpl.mfxExtMoveRect.Rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Rect</span></code></a></p></td>
+<td><p>Array of moving rectangles.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py property">
+<dt class="sig sig-object py" id="pyvpl.mfxExtMoveRect.Header">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">Header</span></span><a class="headerlink" href="#pyvpl.mfxExtMoveRect.Header" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extension buffer header. Header.BufferId must be equal to MFX_EXTBUFF_MOVING_RECTANGLE.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pyvpl.mfxExtMoveRect.NumRect">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">NumRect</span></span><a class="headerlink" href="#pyvpl.mfxExtMoveRect.NumRect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of moving rectangles.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pyvpl.mfxExtMoveRect.Rect">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">Rect</span></span><a class="headerlink" href="#pyvpl.mfxExtMoveRect.Rect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Array of moving rectangles.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="pyvpl.mfxExtMoveRect_rect.html" class="btn btn-neutral float-right" title="pyvpl.mfxExtMoveRect_rect" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="pyvpl.mfxExtMasteringDisplayColourVolume.html" class="btn btn-neutral float-left" title="pyvpl.mfxExtMasteringDisplayColourVolume" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2021, Intel.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

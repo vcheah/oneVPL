@@ -1,0 +1,33 @@
+pyvpl.vpp\_stat
+===============
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: vpp_stat
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~vpp_stat.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~vpp_stat.num_cached_frame
+      ~vpp_stat.num_frame
+      ~vpp_stat.raw
+   
+   

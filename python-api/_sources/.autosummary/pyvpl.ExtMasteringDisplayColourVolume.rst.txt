@@ -1,0 +1,35 @@
+pyvpl.ExtMasteringDisplayColourVolume
+=====================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtMasteringDisplayColourVolume
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtMasteringDisplayColourVolume.__init__
+      ~ExtMasteringDisplayColourVolume.get
+      ~ExtMasteringDisplayColourVolume.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtMasteringDisplayColourVolume.ID
+      ~ExtMasteringDisplayColourVolume.ptr
+      ~ExtMasteringDisplayColourVolume.size
+   
+   

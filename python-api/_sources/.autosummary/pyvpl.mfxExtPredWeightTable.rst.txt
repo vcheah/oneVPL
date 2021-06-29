@@ -1,0 +1,39 @@
+pyvpl.mfxExtPredWeightTable
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtPredWeightTable
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtPredWeightTable.__init__
+      ~mfxExtPredWeightTable.get_ChromaWeightFlag
+      ~mfxExtPredWeightTable.get_LumaWeightFlag
+      ~mfxExtPredWeightTable.get_Weight
+      ~mfxExtPredWeightTable.set_ChromaWeightFlag
+      ~mfxExtPredWeightTable.set_LumaWeightFlag
+      ~mfxExtPredWeightTable.set_Weight
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtPredWeightTable.ChromaLog2WeightDenom
+      ~mfxExtPredWeightTable.Header
+      ~mfxExtPredWeightTable.LumaLog2WeightDenom
+   
+   

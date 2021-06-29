@@ -1,0 +1,40 @@
+pyvpl.mfxExtAVCEncodedFrameInfo
+===============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtAVCEncodedFrameInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtAVCEncodedFrameInfo.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtAVCEncodedFrameInfo.BRCPanicMode
+      ~mfxExtAVCEncodedFrameInfo.FrameOrder
+      ~mfxExtAVCEncodedFrameInfo.Header
+      ~mfxExtAVCEncodedFrameInfo.LongTermIdx
+      ~mfxExtAVCEncodedFrameInfo.MAD
+      ~mfxExtAVCEncodedFrameInfo.PicStruct
+      ~mfxExtAVCEncodedFrameInfo.QP
+      ~mfxExtAVCEncodedFrameInfo.SecondFieldOffset
+      ~mfxExtAVCEncodedFrameInfo.UsedRefListL0
+      ~mfxExtAVCEncodedFrameInfo.UsedRefListL1
+   
+   

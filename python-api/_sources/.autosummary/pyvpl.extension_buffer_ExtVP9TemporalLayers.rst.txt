@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtVP9TemporalLayers
+=============================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtVP9TemporalLayers
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtVP9TemporalLayers.__init__
+      ~extension_buffer_ExtVP9TemporalLayers.get
+      ~extension_buffer_ExtVP9TemporalLayers.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtVP9TemporalLayers.ID
+      ~extension_buffer_ExtVP9TemporalLayers.ptr
+      ~extension_buffer_ExtVP9TemporalLayers.size
+   
+   

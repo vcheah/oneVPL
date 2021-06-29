@@ -1,0 +1,32 @@
+pyvpl.bitstream\_file\_reader\_name
+===================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: bitstream_file_reader_name
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~bitstream_file_reader_name.__init__
+      ~bitstream_file_reader_name.is_EOS
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~bitstream_file_reader_name.data
+   
+   

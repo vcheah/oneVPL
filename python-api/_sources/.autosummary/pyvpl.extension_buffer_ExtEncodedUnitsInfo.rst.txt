@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtEncodedUnitsInfo
+============================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtEncodedUnitsInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtEncodedUnitsInfo.__init__
+      ~extension_buffer_ExtEncodedUnitsInfo.get
+      ~extension_buffer_ExtEncodedUnitsInfo.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtEncodedUnitsInfo.ID
+      ~extension_buffer_ExtEncodedUnitsInfo.ptr
+      ~extension_buffer_ExtEncodedUnitsInfo.size
+   
+   

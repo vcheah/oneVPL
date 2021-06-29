@@ -1,0 +1,37 @@
+pyvpl.mfxExtCodingOptionSPSPPS
+==============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtCodingOptionSPSPPS
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtCodingOptionSPSPPS.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtCodingOptionSPSPPS.Header
+      ~mfxExtCodingOptionSPSPPS.PPSBufSize
+      ~mfxExtCodingOptionSPSPPS.PPSBuffer
+      ~mfxExtCodingOptionSPSPPS.PPSId
+      ~mfxExtCodingOptionSPSPPS.SPSBufSize
+      ~mfxExtCodingOptionSPSPPS.SPSBuffer
+      ~mfxExtCodingOptionSPSPPS.SPSId
+   
+   

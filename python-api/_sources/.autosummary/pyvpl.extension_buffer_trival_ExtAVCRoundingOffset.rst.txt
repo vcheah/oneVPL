@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtAVCRoundingOffset
+=====================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtAVCRoundingOffset
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtAVCRoundingOffset.__init__
+      ~extension_buffer_trival_ExtAVCRoundingOffset.get
+      ~extension_buffer_trival_ExtAVCRoundingOffset.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtAVCRoundingOffset.ID
+      ~extension_buffer_trival_ExtAVCRoundingOffset.ptr
+      ~extension_buffer_trival_ExtAVCRoundingOffset.size
+   
+   

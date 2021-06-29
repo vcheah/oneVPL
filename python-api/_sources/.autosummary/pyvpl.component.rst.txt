@@ -1,0 +1,37 @@
+pyvpl.component
+===============
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: component
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~component.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~component.decoder
+      ~component.decoder_vpp
+      ~component.encoder
+      ~component.name
+      ~component.unknown
+      ~component.value
+      ~component.vpp
+   
+   

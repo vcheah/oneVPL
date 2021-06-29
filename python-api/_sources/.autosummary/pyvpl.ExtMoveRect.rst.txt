@@ -1,0 +1,35 @@
+pyvpl.ExtMoveRect
+=================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtMoveRect
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtMoveRect.__init__
+      ~ExtMoveRect.get
+      ~ExtMoveRect.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtMoveRect.ID
+      ~ExtMoveRect.ptr
+      ~ExtMoveRect.size
+   
+   

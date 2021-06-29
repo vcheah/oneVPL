@@ -1,0 +1,32 @@
+pyvpl.mfxAV1FilmGrainPoint
+==========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxAV1FilmGrainPoint
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxAV1FilmGrainPoint.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxAV1FilmGrainPoint.Scaling
+      ~mfxAV1FilmGrainPoint.Value
+   
+   

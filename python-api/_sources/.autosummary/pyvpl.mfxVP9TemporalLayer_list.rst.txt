@@ -1,0 +1,25 @@
+pyvpl.mfxVP9TemporalLayer\_list
+===============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxVP9TemporalLayer_list
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxVP9TemporalLayer_list.__init__
+   
+   
+
+   
+   
+   

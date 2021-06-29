@@ -1,0 +1,44 @@
+pyvpl.implementation\_capabilities
+==================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: implementation_capabilities
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~implementation_capabilities.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~implementation_capabilities.acceleration_mode
+      ~implementation_capabilities.api_version
+      ~implementation_capabilities.decoders
+      ~implementation_capabilities.encoders
+      ~implementation_capabilities.id
+      ~implementation_capabilities.impl_name
+      ~implementation_capabilities.impl_type
+      ~implementation_capabilities.keywords_name
+      ~implementation_capabilities.license_name
+      ~implementation_capabilities.target_device_id
+      ~implementation_capabilities.target_subdevice_ids
+      ~implementation_capabilities.vendor_id
+      ~implementation_capabilities.vendor_impl_id
+      ~implementation_capabilities.vpp_filters
+   
+   

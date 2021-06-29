@@ -1,0 +1,35 @@
+pyvpl.mfxExtVPPProcAmp
+======================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVPPProcAmp
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVPPProcAmp.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVPPProcAmp.Brightness
+      ~mfxExtVPPProcAmp.Contrast
+      ~mfxExtVPPProcAmp.Header
+      ~mfxExtVPPProcAmp.Hue
+      ~mfxExtVPPProcAmp.Saturation
+   
+   

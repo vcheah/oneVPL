@@ -1,0 +1,32 @@
+pyvpl.mfxExtVPPColorFill
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVPPColorFill
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVPPColorFill.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVPPColorFill.Enable
+      ~mfxExtVPPColorFill.Header
+   
+   

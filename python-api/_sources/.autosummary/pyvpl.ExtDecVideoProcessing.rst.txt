@@ -1,0 +1,35 @@
+pyvpl.ExtDecVideoProcessing
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtDecVideoProcessing
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtDecVideoProcessing.__init__
+      ~ExtDecVideoProcessing.get
+      ~ExtDecVideoProcessing.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtDecVideoProcessing.ID
+      ~ExtDecVideoProcessing.ptr
+      ~ExtDecVideoProcessing.size
+   
+   

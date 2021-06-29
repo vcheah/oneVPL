@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtMBDisableSkipMap
+====================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtMBDisableSkipMap
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtMBDisableSkipMap.__init__
+      ~extension_buffer_trival_ExtMBDisableSkipMap.get
+      ~extension_buffer_trival_ExtMBDisableSkipMap.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtMBDisableSkipMap.ID
+      ~extension_buffer_trival_ExtMBDisableSkipMap.ptr
+      ~extension_buffer_trival_ExtMBDisableSkipMap.size
+   
+   

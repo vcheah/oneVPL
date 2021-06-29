@@ -1,0 +1,35 @@
+pyvpl.ExtVPPDeinterlacing
+=========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtVPPDeinterlacing
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtVPPDeinterlacing.__init__
+      ~ExtVPPDeinterlacing.get
+      ~ExtVPPDeinterlacing.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtVPPDeinterlacing.ID
+      ~ExtVPPDeinterlacing.ptr
+      ~ExtVPPDeinterlacing.size
+   
+   

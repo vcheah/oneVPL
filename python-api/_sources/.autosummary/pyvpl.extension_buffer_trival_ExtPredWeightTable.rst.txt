@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtPredWeightTable
+===================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtPredWeightTable
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtPredWeightTable.__init__
+      ~extension_buffer_trival_ExtPredWeightTable.get
+      ~extension_buffer_trival_ExtPredWeightTable.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtPredWeightTable.ID
+      ~extension_buffer_trival_ExtPredWeightTable.ptr
+      ~extension_buffer_trival_ExtPredWeightTable.size
+   
+   

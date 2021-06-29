@@ -1,0 +1,32 @@
+pyvpl.mfxI16Pair
+================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxI16Pair
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxI16Pair.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxI16Pair.x
+      ~mfxI16Pair.y
+   
+   

@@ -1,0 +1,25 @@
+pyvpl.mfxExtPictureTimingSEI\_timestamp\_list
+=============================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtPictureTimingSEI_timestamp_list
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtPictureTimingSEI_timestamp_list.__init__
+   
+   
+
+   
+   
+   

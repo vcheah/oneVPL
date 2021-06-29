@@ -1,0 +1,32 @@
+pyvpl.mfxExtVPPFrameRateConversion
+==================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVPPFrameRateConversion
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVPPFrameRateConversion.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVPPFrameRateConversion.Algorithm
+      ~mfxExtVPPFrameRateConversion.Header
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtVPPScaling
+==============================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtVPPScaling
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtVPPScaling.__init__
+      ~extension_buffer_trival_ExtVPPScaling.get
+      ~extension_buffer_trival_ExtVPPScaling.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtVPPScaling.ID
+      ~extension_buffer_trival_ExtVPPScaling.ptr
+      ~extension_buffer_trival_ExtVPPScaling.size
+   
+   

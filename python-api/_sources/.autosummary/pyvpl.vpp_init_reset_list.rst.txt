@@ -1,0 +1,35 @@
+pyvpl.vpp\_init\_reset\_list
+============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: vpp_init_reset_list
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~vpp_init_reset_list.__init__
+      ~vpp_init_reset_list.add_buffer
+      ~vpp_init_reset_list.get_buffer
+      ~vpp_init_reset_list.has_buffer
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~vpp_init_reset_list.buffers
+      ~vpp_init_reset_list.size
+   
+   

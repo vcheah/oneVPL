@@ -1,0 +1,35 @@
+pyvpl.decoder\_process\_list
+============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: decoder_process_list
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~decoder_process_list.__init__
+      ~decoder_process_list.add_buffer
+      ~decoder_process_list.get_buffer
+      ~decoder_process_list.has_buffer
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~decoder_process_list.buffers
+      ~decoder_process_list.size
+   
+   

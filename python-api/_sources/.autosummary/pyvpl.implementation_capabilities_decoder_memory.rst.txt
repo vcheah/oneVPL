@@ -1,0 +1,35 @@
+pyvpl.implementation\_capabilities\_decoder\_memory
+===================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: implementation_capabilities_decoder_memory
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~implementation_capabilities_decoder_memory.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~implementation_capabilities_decoder_memory.max_size
+      ~implementation_capabilities_decoder_memory.mem_type
+      ~implementation_capabilities_decoder_memory.min_size
+      ~implementation_capabilities_decoder_memory.out_mem_types
+      ~implementation_capabilities_decoder_memory.size_step
+   
+   

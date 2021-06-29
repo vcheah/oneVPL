@@ -1,0 +1,45 @@
+pyvpl.mfxExtPictureTimingSEI\_timestamp
+=======================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtPictureTimingSEI_timestamp
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtPictureTimingSEI_timestamp.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtPictureTimingSEI_timestamp.ClockTimestampFlag
+      ~mfxExtPictureTimingSEI_timestamp.CntDroppedFlag
+      ~mfxExtPictureTimingSEI_timestamp.CountingType
+      ~mfxExtPictureTimingSEI_timestamp.CtType
+      ~mfxExtPictureTimingSEI_timestamp.DiscontinuityFlag
+      ~mfxExtPictureTimingSEI_timestamp.FullTimestampFlag
+      ~mfxExtPictureTimingSEI_timestamp.HoursFlag
+      ~mfxExtPictureTimingSEI_timestamp.HoursValue
+      ~mfxExtPictureTimingSEI_timestamp.MinutesFlag
+      ~mfxExtPictureTimingSEI_timestamp.MinutesValue
+      ~mfxExtPictureTimingSEI_timestamp.NFrames
+      ~mfxExtPictureTimingSEI_timestamp.NuitFieldBasedFlag
+      ~mfxExtPictureTimingSEI_timestamp.SecondsFlag
+      ~mfxExtPictureTimingSEI_timestamp.SecondsValue
+      ~mfxExtPictureTimingSEI_timestamp.TimeOffset
+   
+   

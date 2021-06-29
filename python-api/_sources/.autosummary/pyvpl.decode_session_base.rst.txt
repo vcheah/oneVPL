@@ -1,0 +1,38 @@
+pyvpl.decode\_session\_base
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: decode_session_base
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~decode_session_base.Caps
+      ~decode_session_base.Init
+      ~decode_session_base.Reset
+      ~decode_session_base.Verify
+      ~decode_session_base.__init__
+      ~decode_session_base.working_params
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~decode_session_base.component_domain
+      ~decode_session_base.implementation
+      ~decode_session_base.version
+   
+   

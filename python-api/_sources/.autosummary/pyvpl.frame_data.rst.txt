@@ -1,0 +1,38 @@
+pyvpl.frame\_data
+=================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: frame_data
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~frame_data.__init__
+      ~frame_data.get_planes
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~frame_data.Corrupted
+      ~frame_data.DataFlag
+      ~frame_data.FrameOrder
+      ~frame_data.Locked
+      ~frame_data.MemType
+      ~frame_data.Pitch
+      ~frame_data.TimeStamp
+   
+   

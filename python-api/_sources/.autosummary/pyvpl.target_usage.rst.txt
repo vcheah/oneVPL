@@ -1,0 +1,43 @@
+pyvpl.target\_usage
+===================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: target_usage
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~target_usage.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~target_usage.balanced
+      ~target_usage.best_quality
+      ~target_usage.best_speed
+      ~target_usage.name
+      ~target_usage.t1
+      ~target_usage.t2
+      ~target_usage.t3
+      ~target_usage.t4
+      ~target_usage.t5
+      ~target_usage.t6
+      ~target_usage.t7
+      ~target_usage.unknown
+      ~target_usage.value
+   
+   

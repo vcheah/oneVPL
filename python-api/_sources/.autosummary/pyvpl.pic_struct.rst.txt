@@ -1,0 +1,44 @@
+pyvpl.pic\_struct
+=================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: pic_struct
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~pic_struct.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~pic_struct.field_bff
+      ~pic_struct.field_bottom
+      ~pic_struct.field_paired_next
+      ~pic_struct.field_paired_prev
+      ~pic_struct.field_repeated
+      ~pic_struct.field_single
+      ~pic_struct.field_tff
+      ~pic_struct.field_top
+      ~pic_struct.frame_doubling
+      ~pic_struct.frame_tripling
+      ~pic_struct.name
+      ~pic_struct.progressive
+      ~pic_struct.unknown
+      ~pic_struct.value
+   
+   

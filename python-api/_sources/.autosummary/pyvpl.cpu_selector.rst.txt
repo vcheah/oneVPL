@@ -1,0 +1,25 @@
+pyvpl.cpu\_selector
+===================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: cpu_selector
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~cpu_selector.__init__
+   
+   
+
+   
+   
+   

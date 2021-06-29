@@ -1,0 +1,35 @@
+pyvpl.ExtChromaLocInfo
+======================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtChromaLocInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtChromaLocInfo.__init__
+      ~ExtChromaLocInfo.get
+      ~ExtChromaLocInfo.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtChromaLocInfo.ID
+      ~ExtChromaLocInfo.ptr
+      ~ExtChromaLocInfo.size
+   
+   

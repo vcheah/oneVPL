@@ -1,0 +1,32 @@
+pyvpl.mfxVP9TemporalLayer
+=========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxVP9TemporalLayer
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxVP9TemporalLayer.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxVP9TemporalLayer.FrameRateScale
+      ~mfxVP9TemporalLayer.TargetKbps
+   
+   

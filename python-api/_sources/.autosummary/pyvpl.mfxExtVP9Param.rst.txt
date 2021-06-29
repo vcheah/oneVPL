@@ -1,0 +1,39 @@
+pyvpl.mfxExtVP9Param
+====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVP9Param
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVP9Param.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVP9Param.FrameHeight
+      ~mfxExtVP9Param.FrameWidth
+      ~mfxExtVP9Param.Header
+      ~mfxExtVP9Param.NumTileColumns
+      ~mfxExtVP9Param.NumTileRows
+      ~mfxExtVP9Param.QIndexDeltaChromaAC
+      ~mfxExtVP9Param.QIndexDeltaChromaDC
+      ~mfxExtVP9Param.QIndexDeltaLumaDC
+      ~mfxExtVP9Param.WriteIVFHeaders
+   
+   

@@ -1,0 +1,36 @@
+pyvpl.mfxExtTimeCode
+====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtTimeCode
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtTimeCode.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtTimeCode.DropFrameFlag
+      ~mfxExtTimeCode.Header
+      ~mfxExtTimeCode.TimeCodeHours
+      ~mfxExtTimeCode.TimeCodeMinutes
+      ~mfxExtTimeCode.TimeCodePictures
+      ~mfxExtTimeCode.TimeCodeSeconds
+   
+   

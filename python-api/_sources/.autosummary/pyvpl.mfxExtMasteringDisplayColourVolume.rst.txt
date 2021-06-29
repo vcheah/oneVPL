@@ -1,0 +1,38 @@
+pyvpl.mfxExtMasteringDisplayColourVolume
+========================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtMasteringDisplayColourVolume
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtMasteringDisplayColourVolume.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtMasteringDisplayColourVolume.DisplayPrimariesX
+      ~mfxExtMasteringDisplayColourVolume.DisplayPrimariesY
+      ~mfxExtMasteringDisplayColourVolume.Header
+      ~mfxExtMasteringDisplayColourVolume.InsertPayloadToggle
+      ~mfxExtMasteringDisplayColourVolume.MaxDisplayMasteringLuminance
+      ~mfxExtMasteringDisplayColourVolume.MinDisplayMasteringLuminance
+      ~mfxExtMasteringDisplayColourVolume.WhitePointX
+      ~mfxExtMasteringDisplayColourVolume.WhitePointY
+   
+   

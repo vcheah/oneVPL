@@ -1,0 +1,35 @@
+pyvpl.ExtEncoderIPCMArea
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtEncoderIPCMArea
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtEncoderIPCMArea.__init__
+      ~ExtEncoderIPCMArea.get
+      ~ExtEncoderIPCMArea.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtEncoderIPCMArea.ID
+      ~ExtEncoderIPCMArea.ptr
+      ~ExtEncoderIPCMArea.size
+   
+   

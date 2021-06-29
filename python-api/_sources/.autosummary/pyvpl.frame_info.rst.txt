@@ -1,0 +1,42 @@
+pyvpl.frame\_info
+=================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: frame_info
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~frame_info.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~frame_info.BitDepthChroma
+      ~frame_info.BitDepthLuma
+      ~frame_info.BufferSize
+      ~frame_info.ChromaFormat
+      ~frame_info.FourCC
+      ~frame_info.FrameId
+      ~frame_info.PicStruct
+      ~frame_info.ROI
+      ~frame_info.Shift
+      ~frame_info.aspect_ratio
+      ~frame_info.frame_rate
+      ~frame_info.frame_size
+   
+   

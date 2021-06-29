@@ -1,0 +1,36 @@
+pyvpl.mfxExtVppAuxData
+======================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVppAuxData
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVppAuxData.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVppAuxData.Header
+      ~mfxExtVppAuxData.PicStruct
+      ~mfxExtVppAuxData.RepeatedFrame
+      ~mfxExtVppAuxData.SceneChangeRate
+      ~mfxExtVppAuxData.SpatialComplexity
+      ~mfxExtVppAuxData.TemporalComplexity
+   
+   

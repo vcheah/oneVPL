@@ -1,0 +1,6 @@
+pyvpl.base\_exception
+=====================
+
+.. currentmodule:: pyvpl
+
+.. autoexception:: base_exception

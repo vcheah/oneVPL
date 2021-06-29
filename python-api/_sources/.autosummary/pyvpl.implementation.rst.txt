@@ -1,0 +1,42 @@
+pyvpl.implementation
+====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: implementation
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~implementation.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~implementation.auto_any
+      ~implementation.automatic
+      ~implementation.hardware
+      ~implementation.hardware_2
+      ~implementation.hardware_3
+      ~implementation.hardware_4
+      ~implementation.hardware_any
+      ~implementation.hardware_runtime
+      ~implementation.name
+      ~implementation.software
+      ~implementation.unsupported
+      ~implementation.value
+   
+   

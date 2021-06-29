@@ -1,0 +1,32 @@
+pyvpl.raw\_frame\_file\_reader\_by\_name
+========================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: raw_frame_file_reader_by_name
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~raw_frame_file_reader_by_name.__init__
+      ~raw_frame_file_reader_by_name.is_EOS
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~raw_frame_file_reader_by_name.data
+   
+   

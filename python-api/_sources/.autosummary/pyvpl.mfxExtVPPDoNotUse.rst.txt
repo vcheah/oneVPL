@@ -1,0 +1,33 @@
+pyvpl.mfxExtVPPDoNotUse
+=======================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVPPDoNotUse
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVPPDoNotUse.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVPPDoNotUse.AlgList
+      ~mfxExtVPPDoNotUse.Header
+      ~mfxExtVPPDoNotUse.NumAlg
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.ExtEncoderROI
+===================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtEncoderROI
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtEncoderROI.__init__
+      ~ExtEncoderROI.get
+      ~ExtEncoderROI.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtEncoderROI.ID
+      ~ExtEncoderROI.ptr
+      ~ExtEncoderROI.size
+   
+   

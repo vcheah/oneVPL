@@ -1,0 +1,35 @@
+pyvpl.ExtPartialBitstreamParam
+==============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtPartialBitstreamParam
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtPartialBitstreamParam.__init__
+      ~ExtPartialBitstreamParam.get
+      ~ExtPartialBitstreamParam.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtPartialBitstreamParam.ID
+      ~ExtPartialBitstreamParam.ptr
+      ~ExtPartialBitstreamParam.size
+   
+   

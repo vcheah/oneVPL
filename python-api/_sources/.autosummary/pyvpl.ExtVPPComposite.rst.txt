@@ -1,0 +1,42 @@
+pyvpl.ExtVPPComposite
+=====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtVPPComposite
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtVPPComposite.__init__
+      ~ExtVPPComposite.get
+      ~ExtVPPComposite.ref
+      ~ExtVPPComposite.set_B
+      ~ExtVPPComposite.set_G
+      ~ExtVPPComposite.set_NumTiles
+      ~ExtVPPComposite.set_R
+      ~ExtVPPComposite.set_U
+      ~ExtVPPComposite.set_V
+      ~ExtVPPComposite.set_Y
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtVPPComposite.ID
+      ~ExtVPPComposite.ptr
+      ~ExtVPPComposite.size
+   
+   

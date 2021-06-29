@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtVPPFrameRateConversion
+==========================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtVPPFrameRateConversion
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtVPPFrameRateConversion.__init__
+      ~extension_buffer_trival_ExtVPPFrameRateConversion.get
+      ~extension_buffer_trival_ExtVPPFrameRateConversion.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtVPPFrameRateConversion.ID
+      ~extension_buffer_trival_ExtVPPFrameRateConversion.ptr
+      ~extension_buffer_trival_ExtVPPFrameRateConversion.size
+   
+   

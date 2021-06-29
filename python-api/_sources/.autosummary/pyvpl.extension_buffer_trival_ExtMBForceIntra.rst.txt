@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtMBForceIntra
+================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtMBForceIntra
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtMBForceIntra.__init__
+      ~extension_buffer_trival_ExtMBForceIntra.get
+      ~extension_buffer_trival_ExtMBForceIntra.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtMBForceIntra.ID
+      ~extension_buffer_trival_ExtMBForceIntra.ptr
+      ~extension_buffer_trival_ExtMBForceIntra.size
+   
+   

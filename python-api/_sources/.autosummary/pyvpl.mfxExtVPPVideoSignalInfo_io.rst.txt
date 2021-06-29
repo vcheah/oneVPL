@@ -1,0 +1,32 @@
+pyvpl.mfxExtVPPVideoSignalInfo\_io
+==================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVPPVideoSignalInfo_io
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVPPVideoSignalInfo_io.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVPPVideoSignalInfo_io.NominalRange
+      ~mfxExtVPPVideoSignalInfo_io.TransferMatrix
+   
+   

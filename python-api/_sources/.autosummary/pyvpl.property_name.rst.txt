@@ -1,0 +1,31 @@
+pyvpl.property\_name
+====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: property_name
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~property_name.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~property_name.name
+   
+   

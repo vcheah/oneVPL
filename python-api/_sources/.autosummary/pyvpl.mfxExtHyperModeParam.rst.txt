@@ -1,0 +1,32 @@
+pyvpl.mfxExtHyperModeParam
+==========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtHyperModeParam
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtHyperModeParam.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtHyperModeParam.Header
+      ~mfxExtHyperModeParam.Mode
+   
+   

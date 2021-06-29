@@ -1,0 +1,40 @@
+pyvpl.chroma\_format\_idc
+=========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: chroma_format_idc
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~chroma_format_idc.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~chroma_format_idc.monochrome
+      ~chroma_format_idc.name
+      ~chroma_format_idc.value
+      ~chroma_format_idc.yuv400
+      ~chroma_format_idc.yuv411
+      ~chroma_format_idc.yuv420
+      ~chroma_format_idc.yuv422
+      ~chroma_format_idc.yuv422h
+      ~chroma_format_idc.yuv422v
+      ~chroma_format_idc.yuv444
+   
+   

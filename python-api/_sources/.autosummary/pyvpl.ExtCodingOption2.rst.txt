@@ -1,0 +1,35 @@
+pyvpl.ExtCodingOption2
+======================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtCodingOption2
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtCodingOption2.__init__
+      ~ExtCodingOption2.get
+      ~ExtCodingOption2.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtCodingOption2.ID
+      ~ExtCodingOption2.ptr
+      ~ExtCodingOption2.size
+   
+   

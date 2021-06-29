@@ -1,0 +1,39 @@
+pyvpl.codec\_format\_fourcc
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: codec_format_fourcc
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~codec_format_fourcc.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~codec_format_fourcc.av1
+      ~codec_format_fourcc.avc
+      ~codec_format_fourcc.capture
+      ~codec_format_fourcc.hevc
+      ~codec_format_fourcc.mpeg2
+      ~codec_format_fourcc.name
+      ~codec_format_fourcc.value
+      ~codec_format_fourcc.vc1
+      ~codec_format_fourcc.vp9
+   
+   

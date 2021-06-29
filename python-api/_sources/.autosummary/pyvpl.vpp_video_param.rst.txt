@@ -1,0 +1,37 @@
+pyvpl.vpp\_video\_param
+=======================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: vpp_video_param
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~vpp_video_param.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~vpp_video_param.AllocId
+      ~vpp_video_param.AsyncDepth
+      ~vpp_video_param.IOPattern
+      ~vpp_video_param.Mfx
+      ~vpp_video_param.Protected
+      ~vpp_video_param.in_frame_info
+      ~vpp_video_param.out_frame_info
+   
+   

@@ -1,0 +1,39 @@
+pyvpl.mfxExtVPPComposite
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVPPComposite
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVPPComposite.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVPPComposite.B
+      ~mfxExtVPPComposite.G
+      ~mfxExtVPPComposite.Header
+      ~mfxExtVPPComposite.NumInputStream
+      ~mfxExtVPPComposite.NumTiles
+      ~mfxExtVPPComposite.R
+      ~mfxExtVPPComposite.U
+      ~mfxExtVPPComposite.V
+      ~mfxExtVPPComposite.Y
+   
+   

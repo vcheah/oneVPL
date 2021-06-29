@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtInsertHeaders
+=========================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtInsertHeaders
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtInsertHeaders.__init__
+      ~extension_buffer_ExtInsertHeaders.get
+      ~extension_buffer_ExtInsertHeaders.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtInsertHeaders.ID
+      ~extension_buffer_ExtInsertHeaders.ptr
+      ~extension_buffer_ExtInsertHeaders.size
+   
+   

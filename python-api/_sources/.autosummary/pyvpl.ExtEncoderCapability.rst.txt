@@ -1,0 +1,35 @@
+pyvpl.ExtEncoderCapability
+==========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtEncoderCapability
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtEncoderCapability.__init__
+      ~ExtEncoderCapability.get
+      ~ExtEncoderCapability.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtEncoderCapability.ID
+      ~ExtEncoderCapability.ptr
+      ~ExtEncoderCapability.size
+   
+   

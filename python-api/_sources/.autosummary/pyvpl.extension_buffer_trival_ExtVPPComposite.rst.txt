@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtVPPComposite
+================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtVPPComposite
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtVPPComposite.__init__
+      ~extension_buffer_trival_ExtVPPComposite.get
+      ~extension_buffer_trival_ExtVPPComposite.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtVPPComposite.ID
+      ~extension_buffer_trival_ExtVPPComposite.ptr
+      ~extension_buffer_trival_ExtVPPComposite.size
+   
+   

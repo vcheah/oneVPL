@@ -1,0 +1,34 @@
+pyvpl.mfxExtEncodedUnitsInfo
+============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtEncodedUnitsInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtEncodedUnitsInfo.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtEncodedUnitsInfo.Header
+      ~mfxExtEncodedUnitsInfo.NumUnitsAlloc
+      ~mfxExtEncodedUnitsInfo.NumUnitsEncoded
+      ~mfxExtEncodedUnitsInfo.UnitInfo
+   
+   

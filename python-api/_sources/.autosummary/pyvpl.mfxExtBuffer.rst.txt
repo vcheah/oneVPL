@@ -1,0 +1,32 @@
+pyvpl.mfxExtBuffer
+==================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtBuffer
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtBuffer.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtBuffer.BufferId
+      ~mfxExtBuffer.BufferSz
+   
+   

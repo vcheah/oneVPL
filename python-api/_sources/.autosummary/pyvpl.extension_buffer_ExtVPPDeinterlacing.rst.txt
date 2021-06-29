@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtVPPDeinterlacing
+============================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtVPPDeinterlacing
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtVPPDeinterlacing.__init__
+      ~extension_buffer_ExtVPPDeinterlacing.get
+      ~extension_buffer_ExtVPPDeinterlacing.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtVPPDeinterlacing.ID
+      ~extension_buffer_ExtVPPDeinterlacing.ptr
+      ~extension_buffer_ExtVPPDeinterlacing.size
+   
+   

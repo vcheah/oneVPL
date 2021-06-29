@@ -1,0 +1,36 @@
+pyvpl.mfxExtEncoderROI\_roi
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtEncoderROI_roi
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtEncoderROI_roi.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtEncoderROI_roi.Bottom
+      ~mfxExtEncoderROI_roi.DeltaQP
+      ~mfxExtEncoderROI_roi.Left
+      ~mfxExtEncoderROI_roi.Priority
+      ~mfxExtEncoderROI_roi.Right
+      ~mfxExtEncoderROI_roi.Top
+   
+   

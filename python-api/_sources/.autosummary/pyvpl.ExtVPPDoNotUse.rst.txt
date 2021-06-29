@@ -1,0 +1,35 @@
+pyvpl.ExtVPPDoNotUse
+====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtVPPDoNotUse
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtVPPDoNotUse.__init__
+      ~ExtVPPDoNotUse.get
+      ~ExtVPPDoNotUse.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtVPPDoNotUse.ID
+      ~ExtVPPDoNotUse.ptr
+      ~ExtVPPDoNotUse.size
+   
+   

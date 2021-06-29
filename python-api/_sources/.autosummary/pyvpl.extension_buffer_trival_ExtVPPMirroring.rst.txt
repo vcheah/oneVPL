@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtVPPMirroring
+================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtVPPMirroring
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtVPPMirroring.__init__
+      ~extension_buffer_trival_ExtVPPMirroring.get
+      ~extension_buffer_trival_ExtVPPMirroring.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtVPPMirroring.ID
+      ~extension_buffer_trival_ExtVPPMirroring.ptr
+      ~extension_buffer_trival_ExtVPPMirroring.size
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.ExtAVCRefListCtrl
+=======================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtAVCRefListCtrl
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtAVCRefListCtrl.__init__
+      ~ExtAVCRefListCtrl.get
+      ~ExtAVCRefListCtrl.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtAVCRefListCtrl.ID
+      ~ExtAVCRefListCtrl.ptr
+      ~ExtAVCRefListCtrl.size
+   
+   

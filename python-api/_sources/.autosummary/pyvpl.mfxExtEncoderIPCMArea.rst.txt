@@ -1,0 +1,33 @@
+pyvpl.mfxExtEncoderIPCMArea
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtEncoderIPCMArea
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtEncoderIPCMArea.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtEncoderIPCMArea.Areas
+      ~mfxExtEncoderIPCMArea.Header
+      ~mfxExtEncoderIPCMArea.NumArea
+   
+   

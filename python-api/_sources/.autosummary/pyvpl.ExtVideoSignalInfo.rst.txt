@@ -1,0 +1,35 @@
+pyvpl.ExtVideoSignalInfo
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtVideoSignalInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtVideoSignalInfo.__init__
+      ~ExtVideoSignalInfo.get
+      ~ExtVideoSignalInfo.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtVideoSignalInfo.ID
+      ~ExtVideoSignalInfo.ptr
+      ~ExtVideoSignalInfo.size
+   
+   

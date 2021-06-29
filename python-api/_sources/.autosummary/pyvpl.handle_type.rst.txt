@@ -1,0 +1,38 @@
+pyvpl.handle\_type
+==================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: handle_type
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~handle_type.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~handle_type.cm_device
+      ~handle_type.d3d11_device_manager
+      ~handle_type.d3d9_device_manager
+      ~handle_type.name
+      ~handle_type.va_config_id
+      ~handle_type.va_context_id
+      ~handle_type.va_display
+      ~handle_type.value
+   
+   

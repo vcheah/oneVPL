@@ -1,0 +1,49 @@
+pyvpl.status
+============
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: status
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~status.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~status.DeviceBusy
+      ~status.EndOfStreamReached
+      ~status.ExecutionInProgress
+      ~status.FilterSkipped
+      ~status.IncompartibleVideoParam
+      ~status.NotEnoughBuffer
+      ~status.NotEnoughData
+      ~status.NotEnoughSurface
+      ~status.Ok
+      ~status.OutOfRange
+      ~status.PartialAcceleration
+      ~status.PartialOutput
+      ~status.TaskBusy
+      ~status.TaskWorking
+      ~status.Unknown
+      ~status.ValueNotChanged
+      ~status.VideoParamChanged
+      ~status.name
+      ~status.value
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtEncoderCapability
+=====================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtEncoderCapability
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtEncoderCapability.__init__
+      ~extension_buffer_trival_ExtEncoderCapability.get
+      ~extension_buffer_trival_ExtEncoderCapability.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtEncoderCapability.ID
+      ~extension_buffer_trival_ExtEncoderCapability.ptr
+      ~extension_buffer_trival_ExtEncoderCapability.size
+   
+   

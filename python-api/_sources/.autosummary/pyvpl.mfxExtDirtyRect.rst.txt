@@ -1,0 +1,33 @@
+pyvpl.mfxExtDirtyRect
+=====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtDirtyRect
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtDirtyRect.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtDirtyRect.Header
+      ~mfxExtDirtyRect.NumRect
+      ~mfxExtDirtyRect.Rect
+   
+   

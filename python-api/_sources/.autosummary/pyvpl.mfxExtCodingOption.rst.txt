@@ -1,0 +1,55 @@
+pyvpl.mfxExtCodingOption
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtCodingOption
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtCodingOption.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtCodingOption.AUDelimiter
+      ~mfxExtCodingOption.CAVLC
+      ~mfxExtCodingOption.EndOfSequence
+      ~mfxExtCodingOption.EndOfStream
+      ~mfxExtCodingOption.FieldOutput
+      ~mfxExtCodingOption.FramePicture
+      ~mfxExtCodingOption.Header
+      ~mfxExtCodingOption.InterPredBlockSize
+      ~mfxExtCodingOption.IntraPredBlockSize
+      ~mfxExtCodingOption.MECostType
+      ~mfxExtCodingOption.MESearchType
+      ~mfxExtCodingOption.MVPrecision
+      ~mfxExtCodingOption.MVSearchWindow
+      ~mfxExtCodingOption.MaxDecFrameBuffering
+      ~mfxExtCodingOption.NalHrdConformance
+      ~mfxExtCodingOption.PicTimingSEI
+      ~mfxExtCodingOption.RateDistortionOpt
+      ~mfxExtCodingOption.RecoveryPointSEI
+      ~mfxExtCodingOption.RefPicListReordering
+      ~mfxExtCodingOption.RefPicMarkRep
+      ~mfxExtCodingOption.ResetRefList
+      ~mfxExtCodingOption.SingleSeiNalUnit
+      ~mfxExtCodingOption.ViewOutput
+      ~mfxExtCodingOption.VuiNalHrdParameters
+      ~mfxExtCodingOption.VuiVclHrdParameters
+   
+   

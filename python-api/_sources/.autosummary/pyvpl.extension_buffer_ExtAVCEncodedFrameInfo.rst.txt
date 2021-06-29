@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtAVCEncodedFrameInfo
+===============================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtAVCEncodedFrameInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtAVCEncodedFrameInfo.__init__
+      ~extension_buffer_ExtAVCEncodedFrameInfo.get
+      ~extension_buffer_ExtAVCEncodedFrameInfo.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtAVCEncodedFrameInfo.ID
+      ~extension_buffer_ExtAVCEncodedFrameInfo.ptr
+      ~extension_buffer_ExtAVCEncodedFrameInfo.size
+   
+   

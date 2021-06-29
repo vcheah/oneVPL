@@ -1,0 +1,32 @@
+pyvpl.implementation\_capabilities\_encoder\_profile
+====================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: implementation_capabilities_encoder_profile
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~implementation_capabilities_encoder_profile.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~implementation_capabilities_encoder_profile.encoder_mem_types
+      ~implementation_capabilities_encoder_profile.profile
+   
+   

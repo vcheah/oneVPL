@@ -1,0 +1,25 @@
+pyvpl.mfxExtMoveRect\_rect\_list
+================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtMoveRect_rect_list
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtMoveRect_rect_list.__init__
+   
+   
+
+   
+   
+   

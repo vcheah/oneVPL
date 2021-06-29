@@ -1,0 +1,35 @@
+pyvpl.ExtVPPProcAmp
+===================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtVPPProcAmp
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtVPPProcAmp.__init__
+      ~ExtVPPProcAmp.get
+      ~ExtVPPProcAmp.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtVPPProcAmp.ID
+      ~ExtVPPProcAmp.ptr
+      ~ExtVPPProcAmp.size
+   
+   

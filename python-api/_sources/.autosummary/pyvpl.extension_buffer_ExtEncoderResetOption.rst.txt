@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtEncoderResetOption
+==============================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtEncoderResetOption
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtEncoderResetOption.__init__
+      ~extension_buffer_ExtEncoderResetOption.get
+      ~extension_buffer_ExtEncoderResetOption.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtEncoderResetOption.ID
+      ~extension_buffer_ExtEncoderResetOption.ptr
+      ~extension_buffer_ExtEncoderResetOption.size
+   
+   

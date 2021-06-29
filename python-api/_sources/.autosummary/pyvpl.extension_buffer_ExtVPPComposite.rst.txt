@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtVPPComposite
+========================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtVPPComposite
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtVPPComposite.__init__
+      ~extension_buffer_ExtVPPComposite.get
+      ~extension_buffer_ExtVPPComposite.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtVPPComposite.ID
+      ~extension_buffer_ExtVPPComposite.ptr
+      ~extension_buffer_ExtVPPComposite.size
+   
+   

@@ -1,0 +1,25 @@
+pyvpl.default\_selector
+=======================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: default_selector
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~default_selector.__init__
+   
+   
+
+   
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.ExtAVCRoundingOffset
+==========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtAVCRoundingOffset
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtAVCRoundingOffset.__init__
+      ~ExtAVCRoundingOffset.get
+      ~ExtAVCRoundingOffset.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtAVCRoundingOffset.ID
+      ~ExtAVCRoundingOffset.ptr
+      ~ExtAVCRoundingOffset.size
+   
+   

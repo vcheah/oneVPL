@@ -1,0 +1,33 @@
+pyvpl.mfxExtVPPScaling
+======================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVPPScaling
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVPPScaling.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVPPScaling.Header
+      ~mfxExtVPPScaling.InterpolationMethod
+      ~mfxExtVPPScaling.ScalingMode
+   
+   

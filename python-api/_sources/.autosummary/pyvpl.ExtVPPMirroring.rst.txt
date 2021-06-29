@@ -1,0 +1,35 @@
+pyvpl.ExtVPPMirroring
+=====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtVPPMirroring
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtVPPMirroring.__init__
+      ~ExtVPPMirroring.get
+      ~ExtVPPMirroring.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtVPPMirroring.ID
+      ~ExtVPPMirroring.ptr
+      ~ExtVPPMirroring.size
+   
+   

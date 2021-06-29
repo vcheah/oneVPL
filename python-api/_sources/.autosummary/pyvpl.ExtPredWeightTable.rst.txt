@@ -1,0 +1,35 @@
+pyvpl.ExtPredWeightTable
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtPredWeightTable
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtPredWeightTable.__init__
+      ~ExtPredWeightTable.get
+      ~ExtPredWeightTable.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtPredWeightTable.ID
+      ~ExtPredWeightTable.ptr
+      ~ExtPredWeightTable.size
+   
+   

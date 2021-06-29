@@ -1,0 +1,33 @@
+pyvpl.mfxQPandMode
+==================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxQPandMode
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxQPandMode.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxQPandMode.DeltaQP
+      ~mfxQPandMode.Mode
+      ~mfxQPandMode.QP
+   
+   

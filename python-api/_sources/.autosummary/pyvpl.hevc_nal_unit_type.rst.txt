@@ -1,0 +1,42 @@
+pyvpl.hevc\_nal\_unit\_type
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: hevc_nal_unit_type
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~hevc_nal_unit_type.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~hevc_nal_unit_type.cra_nut
+      ~hevc_nal_unit_type.idr_n_lp
+      ~hevc_nal_unit_type.idr_w_radl
+      ~hevc_nal_unit_type.name
+      ~hevc_nal_unit_type.radl_n
+      ~hevc_nal_unit_type.radl_r
+      ~hevc_nal_unit_type.rasl_n
+      ~hevc_nal_unit_type.rasl_r
+      ~hevc_nal_unit_type.trail_n
+      ~hevc_nal_unit_type.trail_r
+      ~hevc_nal_unit_type.unknown
+      ~hevc_nal_unit_type.value
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.decoder\_init\_reset\_list
+================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: decoder_init_reset_list
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~decoder_init_reset_list.__init__
+      ~decoder_init_reset_list.add_buffer
+      ~decoder_init_reset_list.get_buffer
+      ~decoder_init_reset_list.has_buffer
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~decoder_init_reset_list.buffers
+      ~decoder_init_reset_list.size
+   
+   

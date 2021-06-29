@@ -1,0 +1,33 @@
+pyvpl.implementation\_capabilities\_decoder
+===========================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: implementation_capabilities_decoder
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~implementation_capabilities_decoder.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~implementation_capabilities_decoder.codec_id
+      ~implementation_capabilities_decoder.max_codec_level
+      ~implementation_capabilities_decoder.profiles
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.ExtCodingOptionSPSPPS
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtCodingOptionSPSPPS
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtCodingOptionSPSPPS.__init__
+      ~ExtCodingOptionSPSPPS.get
+      ~ExtCodingOptionSPSPPS.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtCodingOptionSPSPPS.ID
+      ~ExtCodingOptionSPSPPS.ptr
+      ~ExtCodingOptionSPSPPS.size
+   
+   

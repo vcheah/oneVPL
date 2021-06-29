@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtContentLightLevelInfo
+=================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtContentLightLevelInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtContentLightLevelInfo.__init__
+      ~extension_buffer_ExtContentLightLevelInfo.get
+      ~extension_buffer_ExtContentLightLevelInfo.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtContentLightLevelInfo.ID
+      ~extension_buffer_ExtContentLightLevelInfo.ptr
+      ~extension_buffer_ExtContentLightLevelInfo.size
+   
+   

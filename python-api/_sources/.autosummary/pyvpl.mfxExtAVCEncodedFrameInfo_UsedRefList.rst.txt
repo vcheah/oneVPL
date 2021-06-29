@@ -1,0 +1,33 @@
+pyvpl.mfxExtAVCEncodedFrameInfo\_UsedRefList
+============================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtAVCEncodedFrameInfo_UsedRefList
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtAVCEncodedFrameInfo_UsedRefList.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtAVCEncodedFrameInfo_UsedRefList.FrameOrder
+      ~mfxExtAVCEncodedFrameInfo_UsedRefList.LongTermIdx
+      ~mfxExtAVCEncodedFrameInfo_UsedRefList.PicStruct
+   
+   

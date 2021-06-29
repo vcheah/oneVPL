@@ -1,0 +1,35 @@
+pyvpl.ExtHEVCTiles
+==================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtHEVCTiles
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtHEVCTiles.__init__
+      ~ExtHEVCTiles.get
+      ~ExtHEVCTiles.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtHEVCTiles.ID
+      ~ExtHEVCTiles.ptr
+      ~ExtHEVCTiles.size
+   
+   

@@ -1,0 +1,33 @@
+pyvpl.mfxVersion
+================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxVersion
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxVersion.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxVersion.Major
+      ~mfxVersion.Minor
+      ~mfxVersion.Version
+   
+   

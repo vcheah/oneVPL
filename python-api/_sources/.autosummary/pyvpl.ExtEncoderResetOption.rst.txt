@@ -1,0 +1,35 @@
+pyvpl.ExtEncoderResetOption
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtEncoderResetOption
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtEncoderResetOption.__init__
+      ~ExtEncoderResetOption.get
+      ~ExtEncoderResetOption.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtEncoderResetOption.ID
+      ~ExtEncoderResetOption.ptr
+      ~ExtEncoderResetOption.size
+   
+   

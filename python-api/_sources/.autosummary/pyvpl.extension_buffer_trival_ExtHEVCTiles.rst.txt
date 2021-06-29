@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtHEVCTiles
+=============================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtHEVCTiles
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtHEVCTiles.__init__
+      ~extension_buffer_trival_ExtHEVCTiles.get
+      ~extension_buffer_trival_ExtHEVCTiles.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtHEVCTiles.ID
+      ~extension_buffer_trival_ExtHEVCTiles.ptr
+      ~extension_buffer_trival_ExtHEVCTiles.size
+   
+   

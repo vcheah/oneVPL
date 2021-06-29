@@ -1,0 +1,32 @@
+pyvpl.mfxExtVPPDenoise
+======================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVPPDenoise
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVPPDenoise.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVPPDenoise.DenoiseFactor
+      ~mfxExtVPPDenoise.Header
+   
+   

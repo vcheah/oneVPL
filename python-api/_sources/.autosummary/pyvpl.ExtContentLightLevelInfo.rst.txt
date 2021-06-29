@@ -1,0 +1,35 @@
+pyvpl.ExtContentLightLevelInfo
+==============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtContentLightLevelInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtContentLightLevelInfo.__init__
+      ~ExtContentLightLevelInfo.get
+      ~ExtContentLightLevelInfo.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtContentLightLevelInfo.ID
+      ~ExtContentLightLevelInfo.ptr
+      ~ExtContentLightLevelInfo.size
+   
+   

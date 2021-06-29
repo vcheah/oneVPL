@@ -1,0 +1,25 @@
+pyvpl.gpu\_selector
+===================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: gpu_selector
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~gpu_selector.__init__
+   
+   
+
+   
+   
+   

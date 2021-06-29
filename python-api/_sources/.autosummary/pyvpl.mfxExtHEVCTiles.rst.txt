@@ -1,0 +1,33 @@
+pyvpl.mfxExtHEVCTiles
+=====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtHEVCTiles
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtHEVCTiles.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtHEVCTiles.Header
+      ~mfxExtHEVCTiles.NumTileColumns
+      ~mfxExtHEVCTiles.NumTileRows
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.ExtDecodeErrorReport
+==========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtDecodeErrorReport
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtDecodeErrorReport.__init__
+      ~ExtDecodeErrorReport.get
+      ~ExtDecodeErrorReport.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtDecodeErrorReport.ID
+      ~ExtDecodeErrorReport.ptr
+      ~ExtDecodeErrorReport.size
+   
+   

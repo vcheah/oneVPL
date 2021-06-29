@@ -1,0 +1,35 @@
+pyvpl.encoder\_reset\_list
+==========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: encoder_reset_list
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~encoder_reset_list.__init__
+      ~encoder_reset_list.add_buffer
+      ~encoder_reset_list.get_buffer
+      ~encoder_reset_list.has_buffer
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~encoder_reset_list.buffers
+      ~encoder_reset_list.size
+   
+   

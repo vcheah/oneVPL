@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtPictureTimingSEI
+====================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtPictureTimingSEI
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtPictureTimingSEI.__init__
+      ~extension_buffer_trival_ExtPictureTimingSEI.get
+      ~extension_buffer_trival_ExtPictureTimingSEI.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtPictureTimingSEI.ID
+      ~extension_buffer_trival_ExtPictureTimingSEI.ptr
+      ~extension_buffer_trival_ExtPictureTimingSEI.size
+   
+   

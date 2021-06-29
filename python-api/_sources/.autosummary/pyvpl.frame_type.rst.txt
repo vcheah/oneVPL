@@ -1,0 +1,45 @@
+pyvpl.frame\_type
+=================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: frame_type
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~frame_type.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~frame_type.b
+      ~frame_type.i
+      ~frame_type.idr
+      ~frame_type.name
+      ~frame_type.p
+      ~frame_type.ref
+      ~frame_type.s
+      ~frame_type.unknown
+      ~frame_type.value
+      ~frame_type.xb
+      ~frame_type.xi
+      ~frame_type.xidr
+      ~frame_type.xp
+      ~frame_type.xref
+      ~frame_type.xs
+   
+   

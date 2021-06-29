@@ -1,0 +1,35 @@
+pyvpl.ExtDecodedFrameInfo
+=========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtDecodedFrameInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtDecodedFrameInfo.__init__
+      ~ExtDecodedFrameInfo.get
+      ~ExtDecodedFrameInfo.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtDecodedFrameInfo.ID
+      ~ExtDecodedFrameInfo.ptr
+      ~ExtDecodedFrameInfo.size
+   
+   

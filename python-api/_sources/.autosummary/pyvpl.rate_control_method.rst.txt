@@ -1,0 +1,42 @@
+pyvpl.rate\_control\_method
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: rate_control_method
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~rate_control_method.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~rate_control_method.avbr
+      ~rate_control_method.cbr
+      ~rate_control_method.cqp
+      ~rate_control_method.icq
+      ~rate_control_method.la
+      ~rate_control_method.la_hrd
+      ~rate_control_method.la_icq
+      ~rate_control_method.name
+      ~rate_control_method.qvbr
+      ~rate_control_method.value
+      ~rate_control_method.vbr
+      ~rate_control_method.vcm
+   
+   

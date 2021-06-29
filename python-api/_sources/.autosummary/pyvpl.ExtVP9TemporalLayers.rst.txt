@@ -1,0 +1,35 @@
+pyvpl.ExtVP9TemporalLayers
+==========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtVP9TemporalLayers
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtVP9TemporalLayers.__init__
+      ~ExtVP9TemporalLayers.get
+      ~ExtVP9TemporalLayers.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtVP9TemporalLayers.ID
+      ~ExtVP9TemporalLayers.ptr
+      ~ExtVP9TemporalLayers.size
+   
+   

@@ -1,0 +1,27 @@
+pyvpl.temporal\_frame\_allocator
+================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: temporal_frame_allocator
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~temporal_frame_allocator.__init__
+      ~temporal_frame_allocator.acquire
+      ~temporal_frame_allocator.attach_frame_info
+   
+   
+
+   
+   
+   

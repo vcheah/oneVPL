@@ -1,0 +1,25 @@
+pyvpl.mfxExtDirtyRect\_rect\_list
+=================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtDirtyRect_rect_list
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtDirtyRect_rect_list.__init__
+   
+   
+
+   
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.ExtDeviceAffinityMask
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtDeviceAffinityMask
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtDeviceAffinityMask.__init__
+      ~ExtDeviceAffinityMask.get
+      ~ExtDeviceAffinityMask.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtDeviceAffinityMask.ID
+      ~ExtDeviceAffinityMask.ptr
+      ~ExtDeviceAffinityMask.size
+   
+   

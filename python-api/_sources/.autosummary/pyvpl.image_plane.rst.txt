@@ -1,0 +1,31 @@
+pyvpl.image\_plane
+==================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: image_plane
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~image_plane.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~image_plane.desc
+   
+   

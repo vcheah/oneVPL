@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtColorConversion
+===========================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtColorConversion
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtColorConversion.__init__
+      ~extension_buffer_ExtColorConversion.get
+      ~extension_buffer_ExtColorConversion.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtColorConversion.ID
+      ~extension_buffer_ExtColorConversion.ptr
+      ~extension_buffer_ExtColorConversion.size
+   
+   

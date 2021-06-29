@@ -1,0 +1,60 @@
+pyvpl.color\_format\_fourcc
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: color_format_fourcc
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~color_format_fourcc.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~color_format_fourcc.a2rgb10
+      ~color_format_fourcc.abgr16
+      ~color_format_fourcc.argb16
+      ~color_format_fourcc.ayuv
+      ~color_format_fourcc.ayuv_rgb4
+      ~color_format_fourcc.bgr4
+      ~color_format_fourcc.bgra
+      ~color_format_fourcc.i010
+      ~color_format_fourcc.i420
+      ~color_format_fourcc.name
+      ~color_format_fourcc.nv12
+      ~color_format_fourcc.nv16
+      ~color_format_fourcc.nv21
+      ~color_format_fourcc.p010
+      ~color_format_fourcc.p016
+      ~color_format_fourcc.p210
+      ~color_format_fourcc.p8
+      ~color_format_fourcc.p8_texture
+      ~color_format_fourcc.r16
+      ~color_format_fourcc.rgb3
+      ~color_format_fourcc.rgb465
+      ~color_format_fourcc.rgbp
+      ~color_format_fourcc.uyvy
+      ~color_format_fourcc.value
+      ~color_format_fourcc.y210
+      ~color_format_fourcc.y216
+      ~color_format_fourcc.y410
+      ~color_format_fourcc.y416
+      ~color_format_fourcc.yuy2
+      ~color_format_fourcc.yv12
+   
+   

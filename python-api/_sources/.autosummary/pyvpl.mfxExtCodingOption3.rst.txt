@@ -1,0 +1,77 @@
+pyvpl.mfxExtCodingOption3
+=========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtCodingOption3
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtCodingOption3.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtCodingOption3.AdaptiveCQM
+      ~mfxExtCodingOption3.AdaptiveMaxFrameSize
+      ~mfxExtCodingOption3.AspectRatioInfoPresent
+      ~mfxExtCodingOption3.BRCPanicMode
+      ~mfxExtCodingOption3.BitstreamRestriction
+      ~mfxExtCodingOption3.ContentInfo
+      ~mfxExtCodingOption3.DirectBiasAdjustment
+      ~mfxExtCodingOption3.EnableMBForceIntra
+      ~mfxExtCodingOption3.EnableMBQP
+      ~mfxExtCodingOption3.EnableNalUnitType
+      ~mfxExtCodingOption3.EnableQPOffset
+      ~mfxExtCodingOption3.EncodedUnitsInfo
+      ~mfxExtCodingOption3.ExtBrcAdaptiveLTR
+      ~mfxExtCodingOption3.FadeDetection
+      ~mfxExtCodingOption3.GPB
+      ~mfxExtCodingOption3.GlobalMotionBiasAdjustment
+      ~mfxExtCodingOption3.Header
+      ~mfxExtCodingOption3.IntRefCycleDist
+      ~mfxExtCodingOption3.LowDelayBRC
+      ~mfxExtCodingOption3.LowDelayHrd
+      ~mfxExtCodingOption3.MBDisableSkipMap
+      ~mfxExtCodingOption3.MVCostScalingFactor
+      ~mfxExtCodingOption3.MaxFrameSizeI
+      ~mfxExtCodingOption3.MaxFrameSizeP
+      ~mfxExtCodingOption3.MotionVectorsOverPicBoundaries
+      ~mfxExtCodingOption3.NumRefActiveBL0
+      ~mfxExtCodingOption3.NumRefActiveBL1
+      ~mfxExtCodingOption3.NumRefActiveP
+      ~mfxExtCodingOption3.NumSliceB
+      ~mfxExtCodingOption3.NumSliceI
+      ~mfxExtCodingOption3.NumSliceP
+      ~mfxExtCodingOption3.OverscanAppropriate
+      ~mfxExtCodingOption3.OverscanInfoPresent
+      ~mfxExtCodingOption3.PRefType
+      ~mfxExtCodingOption3.QPOffset
+      ~mfxExtCodingOption3.QVBRQuality
+      ~mfxExtCodingOption3.RepartitionCheckEnable
+      ~mfxExtCodingOption3.ScenarioInfo
+      ~mfxExtCodingOption3.TargetBitDepthChroma
+      ~mfxExtCodingOption3.TargetBitDepthLuma
+      ~mfxExtCodingOption3.TargetChromaFormatPlus1
+      ~mfxExtCodingOption3.TimingInfoPresent
+      ~mfxExtCodingOption3.TransformSkip
+      ~mfxExtCodingOption3.WeightedBiPred
+      ~mfxExtCodingOption3.WeightedPred
+      ~mfxExtCodingOption3.WinBRCMaxAvgKbps
+      ~mfxExtCodingOption3.WinBRCSize
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.ExtTimeCode
+=================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtTimeCode
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtTimeCode.__init__
+      ~ExtTimeCode.get
+      ~ExtTimeCode.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtTimeCode.ID
+      ~ExtTimeCode.ptr
+      ~ExtTimeCode.size
+   
+   

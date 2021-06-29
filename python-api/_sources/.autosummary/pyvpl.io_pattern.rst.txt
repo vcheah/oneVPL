@@ -1,0 +1,37 @@
+pyvpl.io\_pattern
+=================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: io_pattern
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~io_pattern.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~io_pattern.in_device_memory
+      ~io_pattern.in_system_memory
+      ~io_pattern.io_system_memory
+      ~io_pattern.name
+      ~io_pattern.out_device_memory
+      ~io_pattern.out_system_memory
+      ~io_pattern.value
+   
+   

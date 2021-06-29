@@ -1,0 +1,36 @@
+pyvpl.payload
+=============
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: payload
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~payload.__init__
+      ~payload.is_suffix
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~payload.codec_id
+      ~payload.num_bits
+      ~payload.payload_data
+      ~payload.raw_ptr
+      ~payload.type
+   
+   

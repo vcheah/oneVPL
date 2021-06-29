@@ -1,0 +1,35 @@
+pyvpl.ExtHEVCRegion
+===================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtHEVCRegion
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtHEVCRegion.__init__
+      ~ExtHEVCRegion.get
+      ~ExtHEVCRegion.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtHEVCRegion.ID
+      ~ExtHEVCRegion.ptr
+      ~ExtHEVCRegion.size
+   
+   

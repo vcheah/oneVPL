@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtEncodedSlicesInfo
+=====================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtEncodedSlicesInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtEncodedSlicesInfo.__init__
+      ~extension_buffer_trival_ExtEncodedSlicesInfo.get
+      ~extension_buffer_trival_ExtEncodedSlicesInfo.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtEncodedSlicesInfo.ID
+      ~extension_buffer_trival_ExtEncodedSlicesInfo.ptr
+      ~extension_buffer_trival_ExtEncodedSlicesInfo.size
+   
+   

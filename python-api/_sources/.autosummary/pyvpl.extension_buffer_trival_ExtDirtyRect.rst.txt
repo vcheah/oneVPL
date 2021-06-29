@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtDirtyRect
+=============================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtDirtyRect
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtDirtyRect.__init__
+      ~extension_buffer_trival_ExtDirtyRect.get
+      ~extension_buffer_trival_ExtDirtyRect.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtDirtyRect.ID
+      ~extension_buffer_trival_ExtDirtyRect.ptr
+      ~extension_buffer_trival_ExtDirtyRect.size
+   
+   

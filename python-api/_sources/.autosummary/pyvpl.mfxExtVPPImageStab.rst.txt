@@ -1,0 +1,32 @@
+pyvpl.mfxExtVPPImageStab
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVPPImageStab
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVPPImageStab.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVPPImageStab.Header
+      ~mfxExtVPPImageStab.Mode
+   
+   

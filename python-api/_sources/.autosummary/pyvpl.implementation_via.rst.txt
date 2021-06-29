@@ -1,0 +1,38 @@
+pyvpl.implementation\_via
+=========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: implementation_via
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~implementation_via.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~implementation_via.any
+      ~implementation_via.d3d11
+      ~implementation_via.d3d9
+      ~implementation_via.hddlunite
+      ~implementation_via.name
+      ~implementation_via.none
+      ~implementation_via.vaapi
+      ~implementation_via.value
+   
+   

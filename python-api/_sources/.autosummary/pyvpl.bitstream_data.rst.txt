@@ -1,0 +1,25 @@
+pyvpl.bitstream\_data
+=====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: bitstream_data
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~bitstream_data.__init__
+   
+   
+
+   
+   
+   

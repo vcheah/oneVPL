@@ -1,0 +1,32 @@
+pyvpl.implementation\_capabilities\_vpp\_memory\_format
+=======================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: implementation_capabilities_vpp_memory_format
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~implementation_capabilities_vpp_memory_format.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~implementation_capabilities_vpp_memory_format.input_format
+      ~implementation_capabilities_vpp_memory_format.out_format
+   
+   

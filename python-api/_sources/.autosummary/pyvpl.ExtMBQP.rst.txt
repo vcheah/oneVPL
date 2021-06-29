@@ -1,0 +1,35 @@
+pyvpl.ExtMBQP
+=============
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtMBQP
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtMBQP.__init__
+      ~ExtMBQP.get
+      ~ExtMBQP.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtMBQP.ID
+      ~ExtMBQP.ptr
+      ~ExtMBQP.size
+   
+   

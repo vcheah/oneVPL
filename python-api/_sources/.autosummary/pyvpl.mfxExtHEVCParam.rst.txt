@@ -1,0 +1,36 @@
+pyvpl.mfxExtHEVCParam
+=====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtHEVCParam
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtHEVCParam.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtHEVCParam.GeneralConstraintFlags
+      ~mfxExtHEVCParam.Header
+      ~mfxExtHEVCParam.LCUSize
+      ~mfxExtHEVCParam.PicHeightInLumaSamples
+      ~mfxExtHEVCParam.PicWidthInLumaSamples
+      ~mfxExtHEVCParam.SampleAdaptiveOffset
+   
+   

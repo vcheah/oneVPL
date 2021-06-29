@@ -1,0 +1,53 @@
+pyvpl.mfxExtAV1FilmGrainParam
+=============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtAV1FilmGrainParam
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtAV1FilmGrainParam.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtAV1FilmGrainParam.ArCoeffLag
+      ~mfxExtAV1FilmGrainParam.ArCoeffShiftMinus6
+      ~mfxExtAV1FilmGrainParam.ArCoeffsCbPlus128
+      ~mfxExtAV1FilmGrainParam.ArCoeffsCrPlus128
+      ~mfxExtAV1FilmGrainParam.ArCoeffsYPlus128
+      ~mfxExtAV1FilmGrainParam.CbLumaMult
+      ~mfxExtAV1FilmGrainParam.CbMult
+      ~mfxExtAV1FilmGrainParam.CbOffset
+      ~mfxExtAV1FilmGrainParam.CrLumaMult
+      ~mfxExtAV1FilmGrainParam.CrMult
+      ~mfxExtAV1FilmGrainParam.CrOffset
+      ~mfxExtAV1FilmGrainParam.FilmGrainFlags
+      ~mfxExtAV1FilmGrainParam.GrainScaleShift
+      ~mfxExtAV1FilmGrainParam.GrainScalingMinus8
+      ~mfxExtAV1FilmGrainParam.GrainSeed
+      ~mfxExtAV1FilmGrainParam.Header
+      ~mfxExtAV1FilmGrainParam.NumCbPoints
+      ~mfxExtAV1FilmGrainParam.NumCrPoints
+      ~mfxExtAV1FilmGrainParam.NumYPoints
+      ~mfxExtAV1FilmGrainParam.PointCb
+      ~mfxExtAV1FilmGrainParam.PointCr
+      ~mfxExtAV1FilmGrainParam.PointY
+      ~mfxExtAV1FilmGrainParam.RefIdx
+   
+   

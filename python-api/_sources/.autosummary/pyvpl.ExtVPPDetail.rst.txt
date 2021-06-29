@@ -1,0 +1,35 @@
+pyvpl.ExtVPPDetail
+==================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtVPPDetail
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtVPPDetail.__init__
+      ~ExtVPPDetail.get
+      ~ExtVPPDetail.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtVPPDetail.ID
+      ~ExtVPPDetail.ptr
+      ~ExtVPPDetail.size
+   
+   

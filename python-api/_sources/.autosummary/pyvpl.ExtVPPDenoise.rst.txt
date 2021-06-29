@@ -1,0 +1,35 @@
+pyvpl.ExtVPPDenoise
+===================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtVPPDenoise
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtVPPDenoise.__init__
+      ~ExtVPPDenoise.get
+      ~ExtVPPDenoise.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtVPPDenoise.ID
+      ~ExtVPPDenoise.ptr
+      ~ExtVPPDenoise.size
+   
+   

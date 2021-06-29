@@ -1,0 +1,38 @@
+pyvpl.ExtEncodedSlicesInfo
+==========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtEncodedSlicesInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtEncodedSlicesInfo.__init__
+      ~ExtEncodedSlicesInfo.get
+      ~ExtEncodedSlicesInfo.ref
+      ~ExtEncodedSlicesInfo.set_NumEncodedSlice
+      ~ExtEncodedSlicesInfo.set_NumSliceNonCopliant
+      ~ExtEncodedSlicesInfo.set_SliceSizeOverflow
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtEncodedSlicesInfo.ID
+      ~ExtEncodedSlicesInfo.ptr
+      ~ExtEncodedSlicesInfo.size
+   
+   

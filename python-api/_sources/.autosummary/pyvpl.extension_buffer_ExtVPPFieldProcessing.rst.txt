@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtVPPFieldProcessing
+==============================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtVPPFieldProcessing
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtVPPFieldProcessing.__init__
+      ~extension_buffer_ExtVPPFieldProcessing.get
+      ~extension_buffer_ExtVPPFieldProcessing.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtVPPFieldProcessing.ID
+      ~extension_buffer_ExtVPPFieldProcessing.ptr
+      ~extension_buffer_ExtVPPFieldProcessing.size
+   
+   

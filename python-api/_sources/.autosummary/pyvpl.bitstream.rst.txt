@@ -1,0 +1,43 @@
+pyvpl.bitstream
+===============
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: bitstream
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~bitstream.__init__
+      ~bitstream.buffer
+      ~bitstream.realloc
+      ~bitstream.reset
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~bitstream.CodecId
+      ~bitstream.DataFlag
+      ~bitstream.DataLength
+      ~bitstream.DataOffset
+      ~bitstream.DecodeTimeStamp
+      ~bitstream.FrameType
+      ~bitstream.PicStruct
+      ~bitstream.TimeStamp
+      ~bitstream.max_buffer_length
+      ~bitstream.valid_data
+   
+   

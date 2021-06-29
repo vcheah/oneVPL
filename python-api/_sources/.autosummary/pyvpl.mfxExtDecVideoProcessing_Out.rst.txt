@@ -1,0 +1,38 @@
+pyvpl.mfxExtDecVideoProcessing\_Out
+===================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtDecVideoProcessing_Out
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtDecVideoProcessing_Out.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtDecVideoProcessing_Out.ChromaFormat
+      ~mfxExtDecVideoProcessing_Out.CropH
+      ~mfxExtDecVideoProcessing_Out.CropW
+      ~mfxExtDecVideoProcessing_Out.CropX
+      ~mfxExtDecVideoProcessing_Out.CropY
+      ~mfxExtDecVideoProcessing_Out.FourCC
+      ~mfxExtDecVideoProcessing_Out.Height
+      ~mfxExtDecVideoProcessing_Out.Width
+   
+   

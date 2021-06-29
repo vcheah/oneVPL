@@ -1,0 +1,36 @@
+pyvpl.ExtEncodedUnitsInfo
+=========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtEncodedUnitsInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtEncodedUnitsInfo.__init__
+      ~ExtEncodedUnitsInfo.get
+      ~ExtEncodedUnitsInfo.ref
+      ~ExtEncodedUnitsInfo.set_NumUnitsEncoded
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtEncodedUnitsInfo.ID
+      ~ExtEncodedUnitsInfo.ptr
+      ~ExtEncodedUnitsInfo.size
+   
+   

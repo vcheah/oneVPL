@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtPredWeightTable
+===========================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtPredWeightTable
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtPredWeightTable.__init__
+      ~extension_buffer_ExtPredWeightTable.get
+      ~extension_buffer_ExtPredWeightTable.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtPredWeightTable.ID
+      ~extension_buffer_ExtPredWeightTable.ptr
+      ~extension_buffer_ExtPredWeightTable.size
+   
+   

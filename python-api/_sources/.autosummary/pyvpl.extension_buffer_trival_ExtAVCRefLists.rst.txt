@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtAVCRefLists
+===============================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtAVCRefLists
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtAVCRefLists.__init__
+      ~extension_buffer_trival_ExtAVCRefLists.get
+      ~extension_buffer_trival_ExtAVCRefLists.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtAVCRefLists.ID
+      ~extension_buffer_trival_ExtAVCRefLists.ptr
+      ~extension_buffer_trival_ExtAVCRefLists.size
+   
+   

@@ -1,0 +1,45 @@
+pyvpl.bitstream\_as\_dst
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: bitstream_as_dst
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~bitstream_as_dst.__init__
+      ~bitstream_as_dst.buffer
+      ~bitstream_as_dst.realloc
+      ~bitstream_as_dst.reset
+      ~bitstream_as_dst.wait
+      ~bitstream_as_dst.wait_for
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~bitstream_as_dst.CodecId
+      ~bitstream_as_dst.DataFlag
+      ~bitstream_as_dst.DataLength
+      ~bitstream_as_dst.DataOffset
+      ~bitstream_as_dst.DecodeTimeStamp
+      ~bitstream_as_dst.FrameType
+      ~bitstream_as_dst.PicStruct
+      ~bitstream_as_dst.TimeStamp
+      ~bitstream_as_dst.max_buffer_length
+      ~bitstream_as_dst.valid_data
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtVP9Segmentation
+===========================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtVP9Segmentation
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtVP9Segmentation.__init__
+      ~extension_buffer_ExtVP9Segmentation.get
+      ~extension_buffer_ExtVP9Segmentation.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtVP9Segmentation.ID
+      ~extension_buffer_ExtVP9Segmentation.ptr
+      ~extension_buffer_ExtVP9Segmentation.size
+   
+   

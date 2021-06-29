@@ -1,0 +1,35 @@
+pyvpl.ExtVPPFrameRateConversion
+===============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtVPPFrameRateConversion
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtVPPFrameRateConversion.__init__
+      ~ExtVPPFrameRateConversion.get
+      ~ExtVPPFrameRateConversion.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtVPPFrameRateConversion.ID
+      ~ExtVPPFrameRateConversion.ptr
+      ~ExtVPPFrameRateConversion.size
+   
+   

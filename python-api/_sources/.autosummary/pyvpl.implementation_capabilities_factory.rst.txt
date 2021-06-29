@@ -1,0 +1,26 @@
+pyvpl.implementation\_capabilities\_factory
+===========================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: implementation_capabilities_factory
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~implementation_capabilities_factory.__init__
+      ~implementation_capabilities_factory.create
+   
+   
+
+   
+   
+   

@@ -1,0 +1,32 @@
+pyvpl.mfxExtColorConversion
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtColorConversion
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtColorConversion.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtColorConversion.ChromaSiting
+      ~mfxExtColorConversion.Header
+   
+   

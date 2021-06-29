@@ -1,0 +1,31 @@
+pyvpl.base\_implementation\_capabilities
+========================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: base_implementation_capabilities
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~base_implementation_capabilities.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~base_implementation_capabilities.id
+   
+   

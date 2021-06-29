@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtAVCEncodedFrameInfo
+=======================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtAVCEncodedFrameInfo
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtAVCEncodedFrameInfo.__init__
+      ~extension_buffer_trival_ExtAVCEncodedFrameInfo.get
+      ~extension_buffer_trival_ExtAVCEncodedFrameInfo.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtAVCEncodedFrameInfo.ID
+      ~extension_buffer_trival_ExtAVCEncodedFrameInfo.ptr
+      ~extension_buffer_trival_ExtAVCEncodedFrameInfo.size
+   
+   

@@ -1,0 +1,36 @@
+pyvpl.mfxExtVP9Segmentation
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVP9Segmentation
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVP9Segmentation.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVP9Segmentation.Header
+      ~mfxExtVP9Segmentation.NumSegmentIdAlloc
+      ~mfxExtVP9Segmentation.NumSegments
+      ~mfxExtVP9Segmentation.Segment
+      ~mfxExtVP9Segmentation.SegmentId
+      ~mfxExtVP9Segmentation.SegmentIdBlockSize
+   
+   

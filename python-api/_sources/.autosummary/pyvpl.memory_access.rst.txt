@@ -1,0 +1,36 @@
+pyvpl.memory\_access
+====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: memory_access
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~memory_access.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~memory_access.name
+      ~memory_access.nowait
+      ~memory_access.read
+      ~memory_access.read_write
+      ~memory_access.value
+      ~memory_access.write
+   
+   

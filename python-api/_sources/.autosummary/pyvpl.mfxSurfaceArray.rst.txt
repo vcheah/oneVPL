@@ -1,0 +1,36 @@
+pyvpl.mfxSurfaceArray
+=====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxSurfaceArray
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxSurfaceArray.AddRef
+      ~mfxSurfaceArray.GetRefCounter
+      ~mfxSurfaceArray.Release
+      ~mfxSurfaceArray.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxSurfaceArray.Context
+      ~mfxSurfaceArray.NumSurfaces
+      ~mfxSurfaceArray.Version
+   
+   

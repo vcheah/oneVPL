@@ -1,0 +1,35 @@
+pyvpl.EncodeCtrl
+================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: EncodeCtrl
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~EncodeCtrl.__init__
+      ~EncodeCtrl.get
+      ~EncodeCtrl.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~EncodeCtrl.ID
+      ~EncodeCtrl.ptr
+      ~EncodeCtrl.size
+   
+   

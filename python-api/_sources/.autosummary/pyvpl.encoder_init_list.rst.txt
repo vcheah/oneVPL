@@ -1,0 +1,35 @@
+pyvpl.encoder\_init\_list
+=========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: encoder_init_list
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~encoder_init_list.__init__
+      ~encoder_init_list.add_buffer
+      ~encoder_init_list.get_buffer
+      ~encoder_init_list.has_buffer
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~encoder_init_list.buffers
+      ~encoder_init_list.size
+   
+   

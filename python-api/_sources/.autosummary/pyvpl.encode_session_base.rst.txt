@@ -1,0 +1,38 @@
+pyvpl.encode\_session\_base
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: encode_session_base
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~encode_session_base.Caps
+      ~encode_session_base.Init
+      ~encode_session_base.Reset
+      ~encode_session_base.Verify
+      ~encode_session_base.__init__
+      ~encode_session_base.working_params
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~encode_session_base.component_domain
+      ~encode_session_base.implementation
+      ~encode_session_base.version
+   
+   

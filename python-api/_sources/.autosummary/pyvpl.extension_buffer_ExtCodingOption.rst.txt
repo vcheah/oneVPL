@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtCodingOption
+========================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtCodingOption
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtCodingOption.__init__
+      ~extension_buffer_ExtCodingOption.get
+      ~extension_buffer_ExtCodingOption.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtCodingOption.ID
+      ~extension_buffer_ExtCodingOption.ptr
+      ~extension_buffer_ExtCodingOption.size
+   
+   

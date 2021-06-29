@@ -1,0 +1,33 @@
+pyvpl.mfxExtAvcTemporalLayers
+=============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtAvcTemporalLayers
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtAvcTemporalLayers.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtAvcTemporalLayers.BaseLayerPID
+      ~mfxExtAvcTemporalLayers.Header
+      ~mfxExtAvcTemporalLayers.Layer
+   
+   

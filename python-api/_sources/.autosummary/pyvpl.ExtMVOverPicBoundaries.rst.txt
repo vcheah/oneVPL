@@ -1,0 +1,35 @@
+pyvpl.ExtMVOverPicBoundaries
+============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtMVOverPicBoundaries
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtMVOverPicBoundaries.__init__
+      ~ExtMVOverPicBoundaries.get
+      ~ExtMVOverPicBoundaries.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtMVOverPicBoundaries.ID
+      ~ExtMVOverPicBoundaries.ptr
+      ~ExtMVOverPicBoundaries.size
+   
+   

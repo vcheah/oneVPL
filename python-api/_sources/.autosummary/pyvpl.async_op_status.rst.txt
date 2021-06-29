@@ -1,0 +1,37 @@
+pyvpl.async\_op\_status
+=======================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: async_op_status
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~async_op_status.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~async_op_status.aborted
+      ~async_op_status.cancelled
+      ~async_op_status.name
+      ~async_op_status.ready
+      ~async_op_status.timeout
+      ~async_op_status.unknown
+      ~async_op_status.value
+   
+   

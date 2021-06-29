@@ -1,0 +1,33 @@
+pyvpl.mfxExtMBForceIntra
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtMBForceIntra
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtMBForceIntra.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtMBForceIntra.Header
+      ~mfxExtMBForceIntra.Map
+      ~mfxExtMBForceIntra.MapSize
+   
+   

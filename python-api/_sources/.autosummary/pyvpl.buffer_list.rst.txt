@@ -1,0 +1,35 @@
+pyvpl.buffer\_list
+==================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: buffer_list
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~buffer_list.__init__
+      ~buffer_list.add_buffer
+      ~buffer_list.get_buffer
+      ~buffer_list.has_buffer
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~buffer_list.buffers
+      ~buffer_list.size
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.ExtInsertHeaders
+======================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtInsertHeaders
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtInsertHeaders.__init__
+      ~ExtInsertHeaders.get
+      ~ExtInsertHeaders.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtInsertHeaders.ID
+      ~ExtInsertHeaders.ptr
+      ~ExtInsertHeaders.size
+   
+   

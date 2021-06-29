@@ -1,0 +1,37 @@
+pyvpl.mfxExtMBQP
+================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtMBQP
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtMBQP.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtMBQP.BlockSize
+      ~mfxExtMBQP.DeltaQP
+      ~mfxExtMBQP.Header
+      ~mfxExtMBQP.Mode
+      ~mfxExtMBQP.NumQPAlloc
+      ~mfxExtMBQP.QP
+      ~mfxExtMBQP.QPmode
+   
+   

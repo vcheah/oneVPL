@@ -1,0 +1,38 @@
+pyvpl.vpp\_session\_base
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: vpp_session_base
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~vpp_session_base.Caps
+      ~vpp_session_base.Init
+      ~vpp_session_base.Reset
+      ~vpp_session_base.Verify
+      ~vpp_session_base.__init__
+      ~vpp_session_base.working_params
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~vpp_session_base.component_domain
+      ~vpp_session_base.implementation
+      ~vpp_session_base.version
+   
+   

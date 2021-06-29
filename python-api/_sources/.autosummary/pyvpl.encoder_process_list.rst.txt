@@ -1,0 +1,35 @@
+pyvpl.encoder\_process\_list
+============================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: encoder_process_list
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~encoder_process_list.__init__
+      ~encoder_process_list.add_buffer
+      ~encoder_process_list.get_buffer
+      ~encoder_process_list.has_buffer
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~encoder_process_list.buffers
+      ~encoder_process_list.size
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_ExtVPPProcAmp
+======================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_ExtVPPProcAmp
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtVPPProcAmp.__init__
+      ~extension_buffer_ExtVPPProcAmp.get
+      ~extension_buffer_ExtVPPProcAmp.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_ExtVPPProcAmp.ID
+      ~extension_buffer_ExtVPPProcAmp.ptr
+      ~extension_buffer_ExtVPPProcAmp.size
+   
+   

@@ -1,0 +1,40 @@
+pyvpl.frame\_surface
+====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: frame_surface
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~frame_surface.__init__
+      ~frame_surface.inject
+      ~frame_surface.map
+      ~frame_surface.unmap
+      ~frame_surface.wait
+      ~frame_surface.wait_for
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~frame_surface.device_handle
+      ~frame_surface.frame_info
+      ~frame_surface.native_handle
+      ~frame_surface.raw_ptr
+      ~frame_surface.ref_counter
+   
+   

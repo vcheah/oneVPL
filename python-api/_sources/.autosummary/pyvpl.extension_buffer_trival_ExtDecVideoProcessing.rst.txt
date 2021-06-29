@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtDecVideoProcessing
+======================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtDecVideoProcessing
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtDecVideoProcessing.__init__
+      ~extension_buffer_trival_ExtDecVideoProcessing.get
+      ~extension_buffer_trival_ExtDecVideoProcessing.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtDecVideoProcessing.ID
+      ~extension_buffer_trival_ExtDecVideoProcessing.ptr
+      ~extension_buffer_trival_ExtDecVideoProcessing.size
+   
+   

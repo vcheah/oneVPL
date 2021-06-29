@@ -1,0 +1,35 @@
+pyvpl.extension\_buffer\_trival\_ExtPartialBitstreamParam
+=========================================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: extension_buffer_trival_ExtPartialBitstreamParam
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtPartialBitstreamParam.__init__
+      ~extension_buffer_trival_ExtPartialBitstreamParam.get
+      ~extension_buffer_trival_ExtPartialBitstreamParam.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~extension_buffer_trival_ExtPartialBitstreamParam.ID
+      ~extension_buffer_trival_ExtPartialBitstreamParam.ptr
+      ~extension_buffer_trival_ExtPartialBitstreamParam.size
+   
+   

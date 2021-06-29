@@ -1,0 +1,61 @@
+pyvpl.encoder\_video\_param
+===========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: encoder_video_param
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~encoder_video_param.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~encoder_video_param.Accuracy
+      ~encoder_video_param.AllocId
+      ~encoder_video_param.AsyncDepth
+      ~encoder_video_param.BRCParamMultiplier
+      ~encoder_video_param.BufferSizeInKB
+      ~encoder_video_param.CodecId
+      ~encoder_video_param.CodecLevel
+      ~encoder_video_param.CodecProfile
+      ~encoder_video_param.Convergence
+      ~encoder_video_param.EncodedOrder
+      ~encoder_video_param.GopOptFlag
+      ~encoder_video_param.GopPicSize
+      ~encoder_video_param.GopRefDist
+      ~encoder_video_param.ICQQuality
+      ~encoder_video_param.IOPattern
+      ~encoder_video_param.IdrInterval
+      ~encoder_video_param.InitialDelayInKB
+      ~encoder_video_param.LowPower
+      ~encoder_video_param.MaxKbps
+      ~encoder_video_param.Mfx
+      ~encoder_video_param.NumRefFrame
+      ~encoder_video_param.NumSlice
+      ~encoder_video_param.NumThread
+      ~encoder_video_param.Protected
+      ~encoder_video_param.QPB
+      ~encoder_video_param.QPI
+      ~encoder_video_param.QPP
+      ~encoder_video_param.RateControlMethod
+      ~encoder_video_param.TargetKbps
+      ~encoder_video_param.TargetUsage
+      ~encoder_video_param.frame_info
+   
+   

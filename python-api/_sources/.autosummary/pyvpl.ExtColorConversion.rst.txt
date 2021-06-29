@@ -1,0 +1,35 @@
+pyvpl.ExtColorConversion
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtColorConversion
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtColorConversion.__init__
+      ~ExtColorConversion.get
+      ~ExtColorConversion.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtColorConversion.ID
+      ~ExtColorConversion.ptr
+      ~ExtColorConversion.size
+   
+   

@@ -1,0 +1,33 @@
+pyvpl.mfxExtVPPDoUse
+====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVPPDoUse
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVPPDoUse.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVPPDoUse.AlgList
+      ~mfxExtVPPDoUse.Header
+      ~mfxExtVPPDoUse.NumAlg
+   
+   

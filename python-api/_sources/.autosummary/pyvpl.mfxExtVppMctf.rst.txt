@@ -1,0 +1,32 @@
+pyvpl.mfxExtVppMctf
+===================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVppMctf
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVppMctf.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVppMctf.FilterStrength
+      ~mfxExtVppMctf.Header
+   
+   

@@ -1,0 +1,35 @@
+pyvpl.ExtPictureTimingSEI
+=========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtPictureTimingSEI
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtPictureTimingSEI.__init__
+      ~ExtPictureTimingSEI.get
+      ~ExtPictureTimingSEI.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtPictureTimingSEI.ID
+      ~ExtPictureTimingSEI.ptr
+      ~ExtPictureTimingSEI.size
+   
+   

@@ -1,0 +1,32 @@
+pyvpl.mfxExtVPPMirroring
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtVPPMirroring
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtVPPMirroring.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtVPPMirroring.Header
+      ~mfxExtVPPMirroring.Type
+   
+   

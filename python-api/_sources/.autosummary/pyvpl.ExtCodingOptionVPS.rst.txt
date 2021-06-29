@@ -1,0 +1,36 @@
+pyvpl.ExtCodingOptionVPS
+========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtCodingOptionVPS
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtCodingOptionVPS.__init__
+      ~ExtCodingOptionVPS.get
+      ~ExtCodingOptionVPS.ref
+      ~ExtCodingOptionVPS.set_VPSId
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtCodingOptionVPS.ID
+      ~ExtCodingOptionVPS.ptr
+      ~ExtCodingOptionVPS.size
+   
+   

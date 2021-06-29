@@ -1,0 +1,60 @@
+pyvpl.mfxExtCodingOption2
+=========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtCodingOption2
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtCodingOption2.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtCodingOption2.AdaptiveB
+      ~mfxExtCodingOption2.AdaptiveI
+      ~mfxExtCodingOption2.BRefType
+      ~mfxExtCodingOption2.BitrateLimit
+      ~mfxExtCodingOption2.BufferingPeriodSEI
+      ~mfxExtCodingOption2.DisableDeblockingIdc
+      ~mfxExtCodingOption2.DisableVUI
+      ~mfxExtCodingOption2.EnableMAD
+      ~mfxExtCodingOption2.ExtBRC
+      ~mfxExtCodingOption2.FixedFrameRate
+      ~mfxExtCodingOption2.Header
+      ~mfxExtCodingOption2.IntRefCycleSize
+      ~mfxExtCodingOption2.IntRefQPDelta
+      ~mfxExtCodingOption2.IntRefType
+      ~mfxExtCodingOption2.LookAheadDS
+      ~mfxExtCodingOption2.LookAheadDepth
+      ~mfxExtCodingOption2.MBBRC
+      ~mfxExtCodingOption2.MaxFrameSize
+      ~mfxExtCodingOption2.MaxQPB
+      ~mfxExtCodingOption2.MaxQPI
+      ~mfxExtCodingOption2.MaxQPP
+      ~mfxExtCodingOption2.MaxSliceSize
+      ~mfxExtCodingOption2.MinQPB
+      ~mfxExtCodingOption2.MinQPI
+      ~mfxExtCodingOption2.MinQPP
+      ~mfxExtCodingOption2.NumMbPerSlice
+      ~mfxExtCodingOption2.RepeatPPS
+      ~mfxExtCodingOption2.SkipFrame
+      ~mfxExtCodingOption2.Trellis
+      ~mfxExtCodingOption2.UseRawRef
+   
+   

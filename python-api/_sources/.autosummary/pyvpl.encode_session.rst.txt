@@ -1,0 +1,42 @@
+pyvpl.encode\_session
+=====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: encode_session
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~encode_session.Caps
+      ~encode_session.Init
+      ~encode_session.Reset
+      ~encode_session.Verify
+      ~encode_session.__init__
+      ~encode_session.alloc_input
+      ~encode_session.encode_frame
+      ~encode_session.process
+      ~encode_session.working_params
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~encode_session.Stat
+      ~encode_session.component_domain
+      ~encode_session.implementation
+      ~encode_session.version
+   
+   

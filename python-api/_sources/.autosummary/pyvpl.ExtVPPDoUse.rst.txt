@@ -1,0 +1,35 @@
+pyvpl.ExtVPPDoUse
+=================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtVPPDoUse
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtVPPDoUse.__init__
+      ~ExtVPPDoUse.get
+      ~ExtVPPDoUse.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtVPPDoUse.ID
+      ~ExtVPPDoUse.ptr
+      ~ExtVPPDoUse.size
+   
+   

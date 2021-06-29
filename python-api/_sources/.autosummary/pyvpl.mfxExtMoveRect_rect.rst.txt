@@ -1,0 +1,36 @@
+pyvpl.mfxExtMoveRect\_rect
+==========================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtMoveRect_rect
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtMoveRect_rect.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~mfxExtMoveRect_rect.DestBottom
+      ~mfxExtMoveRect_rect.DestLeft
+      ~mfxExtMoveRect_rect.DestRight
+      ~mfxExtMoveRect_rect.DestTop
+      ~mfxExtMoveRect_rect.SourceLeft
+      ~mfxExtMoveRect_rect.SourceTop
+   
+   

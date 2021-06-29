@@ -1,0 +1,25 @@
+pyvpl.mfxExtAVCRefListCtrl\_ref\_list
+=====================================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: mfxExtAVCRefListCtrl_ref_list
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~mfxExtAVCRefListCtrl_ref_list.__init__
+   
+   
+
+   
+   
+   

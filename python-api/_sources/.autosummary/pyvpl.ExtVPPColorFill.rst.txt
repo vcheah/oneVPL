@@ -1,0 +1,35 @@
+pyvpl.ExtVPPColorFill
+=====================
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: ExtVPPColorFill
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ExtVPPColorFill.__init__
+      ~ExtVPPColorFill.get
+      ~ExtVPPColorFill.ref
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ExtVPPColorFill.ID
+      ~ExtVPPColorFill.ptr
+      ~ExtVPPColorFill.size
+   
+   

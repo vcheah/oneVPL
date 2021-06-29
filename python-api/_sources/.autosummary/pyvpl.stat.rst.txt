@@ -1,0 +1,32 @@
+pyvpl.stat
+==========
+
+.. currentmodule:: pyvpl
+
+.. autoclass:: stat
+   :members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~stat.__init__
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~stat.num_cached_frame
+      ~stat.num_frame
+   
+   
