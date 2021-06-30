@@ -6,3 +6,6 @@ The interfaces might be changed or removed without respect for backward compatib
 
 - `oneVPL C++ Preview API <cpp-api/index.html>`_
 - `oneVPL Python Preview API <python-api/index.html>`_
+
+We encourage you to provide your feedback via
+`Media Products Forum <https://community.intel.com/t5/Media-Intel-oneAPI-Video/bd-p/media-products>`_.
