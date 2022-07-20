@@ -35,7 +35,9 @@ CD3D11Device::CD3D11Device()
           m_nViews(0),
           m_bDefaultStereoEnabled(FALSE),
           m_bIsA2rgb10(FALSE),
-          m_HandleWindow(NULL) {}
+          m_bHdrSupport(FALSE),
+          m_HandleWindow(NULL),
+          m_bDxgiFs(FALSE) {}
 
 CD3D11Device::~CD3D11Device() {
     Close();
@@ -102,6 +104,33 @@ mfxStatus CD3D11Device::Init(mfxHDL hWindow, mfxU16 nViews, mfxU32 nAdapterNum) 
     hres = m_pDXGIFactory->EnumAdapters(nAdapterNum, &m_pAdapter);
     if (FAILED(hres))
         return MFX_ERR_DEVICE_FAILED;
+
+    hres = m_pDXGIFactory->EnumAdapters1(0, &m_pAdapter1);
+    if (FAILED(hres))
+        return MFX_ERR_DEVICE_FAILED;
+
+    // Obtain primary display
+    hres = m_pAdapter1->EnumOutputs(0, &m_pDXGIOutput);
+    if (FAILED(hres))
+        return MFX_ERR_DEVICE_FAILED;
+
+    hres = m_pDXGIOutput->QueryInterface(__uuidof(IDXGIOutput6), (void**)&m_pDXGIOutput6);
+    if (FAILED(hres))
+        return MFX_ERR_DEVICE_FAILED;
+
+    DXGI_OUTPUT_DESC1 outDesc1 = {};
+    hres                       = m_pDXGIOutput6->GetDesc1(&outDesc1);
+    if (FAILED(hres))
+        return MFX_ERR_DEVICE_FAILED;
+
+    // Obtain display resolution for -dxgiFs
+    m_nPrimaryWidth  = outDesc1.DesktopCoordinates.right - outDesc1.DesktopCoordinates.left;
+    m_nPrimaryHeight = outDesc1.DesktopCoordinates.bottom - outDesc1.DesktopCoordinates.top;
+
+    if (outDesc1.ColorSpace == DXGI_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020) {
+        m_bIsA2rgb10  = TRUE;
+        m_bHdrSupport = TRUE;
+    }
 
     hres = D3D11CreateDevice(m_pAdapter,
                              D3D_DRIVER_TYPE_UNKNOWN,
@@ -219,6 +248,29 @@ mfxStatus CD3D11Device::Reset() {
 
         return MFX_ERR_DEVICE_FAILED;
     }
+
+    m_pSwapChain->QueryInterface(IID_PPV_ARGS(&m_pSwapChain4));
+    m_pSwapChain->QueryInterface(IID_PPV_ARGS(&m_pSwapChain3));
+
+    if (m_bDxgiFs) {
+        DXGI_SWAP_CHAIN_DESC desc = {};
+        hres                      = m_pSwapChain->GetDesc(&desc);
+        if (FAILED(hres))
+            return MFX_ERR_DEVICE_FAILED;
+
+        hres = m_pSwapChain->SetFullscreenState(TRUE, nullptr);
+        if (FAILED(hres))
+            return MFX_ERR_DEVICE_FAILED;
+
+        hres = m_pSwapChain->ResizeBuffers(2,
+                                           m_nPrimaryWidth,
+                                           m_nPrimaryHeight,
+                                           desc.BufferDesc.Format,
+                                           desc.Flags);
+        if (FAILED(hres))
+            return MFX_ERR_DEVICE_FAILED;
+    }
+
     return MFX_ERR_NONE;
 }
 
@@ -280,6 +332,88 @@ mfxStatus CD3D11Device::RenderFrame(mfxFrameSurface1* pSrf, mfxFrameAllocator* p
                                                                   &m_pOutputView.p);
         if (FAILED(hres))
             return MFX_ERR_DEVICE_FAILED;
+    }
+
+    if (m_pSwapChain3) {
+        if (pSrf->Info.FourCC == MFX_FOURCC_P010) {
+            DXGI_COLOR_SPACE_TYPE colorSpace = DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709;
+#if (MFX_VERSION >= 2006)
+            mfxExtMasteringDisplayColourVolume* displayColor =
+                (mfxExtMasteringDisplayColourVolume*)GetExtBuffer(
+                    pSrf->Data.ExtParam,
+                    pSrf->Data.NumExtParam,
+                    MFX_EXTBUFF_MASTERING_DISPLAY_COLOUR_VOLUME);
+            mfxExtContentLightLevelInfo* contentLight =
+                (mfxExtContentLightLevelInfo*)GetExtBuffer(pSrf->Data.ExtParam,
+                                                           pSrf->Data.NumExtParam,
+                                                           MFX_EXTBUFF_CONTENT_LIGHT_LEVEL_INFO);
+
+            if (m_bHdrSupport && (displayColor && contentLight)) {
+                colorSpace = DXGI_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020;
+
+                // panel support HDR. check if bitstream support HDR.
+                // TODO: use displayColor->InsertPayloadToggle and contentLight->InsertPayloadToggle
+	        // to determine validity of HDR content once the API has merged to VPL.
+                if (displayColor->DisplayPrimariesX[0] == 0 &&
+                    displayColor->DisplayPrimariesX[1] == 0 &&
+                    displayColor->DisplayPrimariesX[2] == 0 &&
+                    displayColor->DisplayPrimariesY[0] == 0 &&
+                    displayColor->DisplayPrimariesY[1] == 0 &&
+                    displayColor->DisplayPrimariesY[2] == 0 && displayColor->WhitePointX == 0 &&
+                    displayColor->WhitePointY == 0 &&
+                    displayColor->MaxDisplayMasteringLuminance == 0 &&
+                    displayColor->MinDisplayMasteringLuminance == 0)
+                    DXGI_COLOR_SPACE_TYPE colorSpace = DXGI_COLOR_SPACE_RGB_FULL_G22_NONE_P709;
+            }
+#endif
+            if (memcmp(&m_pColorSpaceDataTemp, &colorSpace, sizeof(DXGI_COLOR_SPACE_TYPE))) {
+                memcpy(&m_pColorSpaceDataTemp, &colorSpace, sizeof(DXGI_COLOR_SPACE_TYPE));
+                hres = m_pSwapChain3->SetColorSpace1(colorSpace);
+                if (FAILED(hres))
+                    return MFX_ERR_DEVICE_FAILED;
+            }
+        }
+    }
+
+    if (m_pSwapChain4) {
+#if (MFX_VERSION >= 2006)
+        mfxExtMasteringDisplayColourVolume* displayColor =
+            (mfxExtMasteringDisplayColourVolume*)GetExtBuffer(
+                pSrf->Data.ExtParam,
+                pSrf->Data.NumExtParam,
+                MFX_EXTBUFF_MASTERING_DISPLAY_COLOUR_VOLUME);
+        mfxExtContentLightLevelInfo* contentLight =
+            (mfxExtContentLightLevelInfo*)GetExtBuffer(pSrf->Data.ExtParam,
+                                                       pSrf->Data.NumExtParam,
+                                                       MFX_EXTBUFF_CONTENT_LIGHT_LEVEL_INFO);
+
+        // TODO: use displayColor->InsertPayloadToggle and contentLight->InsertPayloadToggle
+	// to determine validity of HDR content once the API has merged to VPL.
+        if (displayColor && contentLight) {
+            DXGI_HDR_METADATA_HDR10 pHDRMetaData   = {};
+            pHDRMetaData.MaxMasteringLuminance     = displayColor->MaxDisplayMasteringLuminance;
+            pHDRMetaData.MinMasteringLuminance     = displayColor->MinDisplayMasteringLuminance;
+            pHDRMetaData.MaxContentLightLevel      = contentLight->MaxContentLightLevel;
+            pHDRMetaData.MaxFrameAverageLightLevel = contentLight->MaxPicAverageLightLevel;
+            pHDRMetaData.RedPrimary[0]             = displayColor->DisplayPrimariesX[2];
+            pHDRMetaData.RedPrimary[1]             = displayColor->DisplayPrimariesY[2];
+            pHDRMetaData.GreenPrimary[0]           = displayColor->DisplayPrimariesX[0];
+            pHDRMetaData.GreenPrimary[1]           = displayColor->DisplayPrimariesY[0];
+            pHDRMetaData.BluePrimary[0]            = displayColor->DisplayPrimariesX[1];
+            pHDRMetaData.BluePrimary[1]            = displayColor->DisplayPrimariesY[1];
+            pHDRMetaData.WhitePoint[0]             = displayColor->WhitePointX;
+            pHDRMetaData.WhitePoint[1]             = displayColor->WhitePointY;
+            if (memcmp(&m_pHDRMetaDataTemp, &pHDRMetaData, sizeof(pHDRMetaData))) {
+                memcpy(&m_pHDRMetaDataTemp, &pHDRMetaData, sizeof(pHDRMetaData));
+
+                hres = m_pSwapChain4->SetHDRMetaData(DXGI_HDR_METADATA_TYPE_HDR10,
+                                                     sizeof(DXGI_HDR_METADATA_HDR10),
+                                                     &m_pHDRMetaDataTemp);
+                if (FAILED(hres))
+                    return MFX_ERR_DEVICE_FAILED;
+            }
+        }
+#endif
     }
 
     D3D11_VIDEO_PROCESSOR_INPUT_VIEW_DESC InputViewDesc;

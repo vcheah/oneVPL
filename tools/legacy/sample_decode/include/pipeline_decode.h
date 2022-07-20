@@ -99,6 +99,7 @@ struct sInputParams {
     mfxU32 nRenderWinX;
     mfxU32 nRenderWinY;
     bool bErrorReport;
+    bool bDxgiFs;
 
     mfxI32 monitorType;
 #if defined(LIBVA_SUPPORT)
@@ -195,7 +196,6 @@ public:
                 msdk_printf(MSDK_STRING("[Error] Frame Gap Error detected!\n"));
         }
     }
-
 protected: // functions
 #if (defined(_WIN64) || defined(_WIN32)) && (MFX_VERSION >= 1031)
     mfxU32 GetPreferredAdapterNum(const mfxAdaptersInfo& adapters, const sInputParams& params);
@@ -273,6 +273,7 @@ protected: // variables
     mfxU32 m_fourcc; // color format of vpp out, i420 by default
     bool m_bPrintLatency;
     bool m_bOutI420;
+    bool m_bDxgiFs;
 
     mfxU16 m_vppOutWidth;
     mfxU16 m_vppOutHeight;
@@ -291,6 +292,10 @@ protected: // variables
 
     mfxExtVPPVideoSignalInfo m_VppVideoSignalInfo;
     std::vector<mfxExtBuffer*> m_VppSurfaceExtParams;
+
+    mfxExtContentLightLevelInfo m_ContentLight;
+    mfxExtMasteringDisplayColourVolume m_DisplayColor;
+    std::vector<mfxExtBuffer*> m_OutSurfaceExtParams;
 
 #if defined(LINUX32) || defined(LINUX64)
     std::string m_strDevicePath; //path to device for processing

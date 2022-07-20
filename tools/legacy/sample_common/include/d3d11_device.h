@@ -17,6 +17,9 @@
         #include "hw_device.h"
 
         #include <dxgi1_2.h>
+        #include <dxgi1_4.h>
+        #include <dxgi1_5.h>
+        #include <dxgi1_6.h>
 
 class CD3D11Device : public CHWDevice {
 public:
@@ -33,6 +36,37 @@ public:
         m_bIsA2rgb10 = (isA2rgb10) ? TRUE : FALSE;
     }
     virtual void SetMondelloInput(bool /*isMondelloInputEnabled*/) {}
+    virtual void SetDxgiFullScreen() { m_bDxgiFs = TRUE; }
+
+#if (MFX_VERSION >= 2006)
+    inline void PrintHdrSei(mfxExtMasteringDisplayColourVolume* displayColor,
+                            mfxExtContentLightLevelInfo* contentLight) {
+        if (displayColor) {
+            for (int i = 0; i < 3; i++) {
+                msdk_printf(MSDK_STRING("DisplayPrimariesX[%d] = %d\n"),
+                            i,
+                            displayColor->DisplayPrimariesX[i]);
+                msdk_printf(MSDK_STRING("DisplayPrimariesY[%d] = %d\n"),
+                            i,
+                            displayColor->DisplayPrimariesY[i]);
+            }
+
+            msdk_printf(MSDK_STRING("WhitePointX = %d\n"), displayColor->WhitePointX);
+            msdk_printf(MSDK_STRING("WhitePointY = %d\n"), displayColor->WhitePointY);
+            msdk_printf(MSDK_STRING("MaxDisplayMasteringLuminance = %d\n"),
+                        displayColor->MaxDisplayMasteringLuminance);
+            msdk_printf(MSDK_STRING("MinDisplayMasteringLuminance = %d\n"),
+                        displayColor->MinDisplayMasteringLuminance);
+        }
+
+        if (contentLight) {
+            msdk_printf(MSDK_STRING("MaxContentLightLevel = %d\n"),
+                        contentLight->MaxContentLightLevel);
+            msdk_printf(MSDK_STRING("MaxPicAverageLightLevel = %d\n"),
+                        contentLight->MaxPicAverageLightLevel);
+        }
+    }
+#endif
 
 protected:
     virtual mfxStatus FillSCD(mfxHDL hWindow, DXGI_SWAP_CHAIN_DESC& scd);
@@ -47,10 +81,13 @@ protected:
 
     CComQIPtr<IDXGIDevice1> m_pDXGIDev;
     CComQIPtr<IDXGIAdapter> m_pAdapter;
+    CComQIPtr<IDXGIAdapter1> m_pAdapter1;
 
     CComPtr<IDXGIFactory2> m_pDXGIFactory;
 
     CComPtr<IDXGISwapChain1> m_pSwapChain;
+    CComPtr<IDXGISwapChain4> m_pSwapChain4;
+    CComPtr<IDXGISwapChain3> m_pSwapChain3;
     CComPtr<ID3D11VideoProcessor> m_pVideoProcessor;
 
 private:
@@ -62,10 +99,18 @@ private:
     CComPtr<ID3D11Texture2D> m_pTempTexture;
     CComPtr<IDXGIDisplayControl> m_pDisplayControl;
     CComPtr<IDXGIOutput> m_pDXGIOutput;
+    CComPtr<IDXGIOutput6> m_pDXGIOutput6;
     mfxU16 m_nViews;
+    mfxU16 m_nPrimaryWidth;
+    mfxU16 m_nPrimaryHeight;
     BOOL m_bDefaultStereoEnabled;
+    BOOL m_bHdrSupport;
     BOOL m_bIsA2rgb10;
     HWND m_HandleWindow;
+    BOOL m_bDxgiFs;
+
+    DXGI_COLOR_SPACE_TYPE m_pColorSpaceDataTemp;
+    DXGI_HDR_METADATA_HDR10 m_pHDRMetaDataTemp;
 };
 
     #endif //#if defined( _WIN32 ) || defined ( _WIN64 )
