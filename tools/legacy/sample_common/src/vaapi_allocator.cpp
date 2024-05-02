@@ -266,6 +266,10 @@ mfxStatus vaapiFrameAllocator::AllocImpl(mfxFrameAllocRequest* request,
             }
             else if (va_fourcc == VA_FOURCC_NV12) {
                 format = VA_RT_FORMAT_YUV420;
+
+                if (MFX_MEMTYPE_FROM_ENCODE & request->Type &&
+                    request->Info.ChromaFormat == MFX_CHROMAFORMAT_YUV400)
+                    format = VA_RT_FORMAT_YUV400;
             }
             else if (va_fourcc == VA_FOURCC_P010) {
                 format = VA_RT_FORMAT_YUV420_10;
@@ -484,6 +488,13 @@ mfxStatus vaapiFrameAllocator::LockFrame(mfxMemId mid, mfxFrameData* ptr) {
         }
         if (MFX_ERR_NONE == mfx_res) {
             switch (vaapi_mid->m_image.format.fourcc) {
+                case MFX_FOURCC_YUV400:
+                    if (((mfx_fourcc == MFX_FOURCC_NV12) ? MFX_FOURCC_YUV400 : mfx_fourcc) !=
+                        vaapi_mid->m_image.format.fourcc)
+                        return MFX_ERR_LOCK_MEMORY;
+                    { ptr->Y = pBuffer + vaapi_mid->m_image.offsets[0]; }
+                    break;
+
                 case VA_FOURCC_NV12:
                     if (mfx_fourcc != vaapi_mid->m_image.format.fourcc)
                         return MFX_ERR_LOCK_MEMORY;
