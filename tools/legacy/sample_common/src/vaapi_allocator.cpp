@@ -78,7 +78,8 @@ vaapiFrameAllocator::vaapiFrameAllocator()
         : m_dpy(0),
           m_libva(new MfxLoader::VA_Proxy),
           m_export_mode(vaapiAllocatorParams::DONOT_EXPORT),
-          m_exporter(NULL) {}
+          m_exporter(NULL),
+          m_libvaBackend(0) {}
 
 vaapiFrameAllocator::~vaapiFrameAllocator() {
     Close();
@@ -99,9 +100,10 @@ mfxStatus vaapiFrameAllocator::Init(mfxAllocatorParams* pParams) {
     if ((p_vaapiParams->m_export_mode & vaapiAllocatorParams::CUSTOM) && !p_vaapiParams->m_exporter)
         return MFX_ERR_UNSUPPORTED;
 
-    m_dpy         = p_vaapiParams->m_dpy;
-    m_export_mode = p_vaapiParams->m_export_mode;
-    m_exporter    = p_vaapiParams->m_exporter;
+    m_dpy          = p_vaapiParams->m_dpy;
+    m_export_mode  = p_vaapiParams->m_export_mode;
+    m_exporter     = p_vaapiParams->m_exporter;
+    m_libvaBackend = p_vaapiParams->m_libvaBackend;
     return MFX_ERR_NONE;
 }
 
@@ -268,9 +270,23 @@ mfxStatus vaapiFrameAllocator::AllocImpl(mfxFrameAllocRequest* request,
             }
             else if (va_fourcc == VA_FOURCC_NV12) {
                 format = VA_RT_FORMAT_YUV420;
+
+                if (m_libvaBackend == MFX_LIBVA_DRM_MODESET) {
+                    attrib[attrCnt].type            = (VASurfaceAttribType)VASurfaceAttribUsageHint;
+                    attrib[attrCnt].flags           = VA_SURFACE_ATTRIB_SETTABLE;
+                    attrib[attrCnt].value.type      = VAGenericValueTypeInteger;
+                    attrib[attrCnt++].value.value.i = VA_SURFACE_ATTRIB_USAGE_HINT_RDRM;
+                }
             }
             else if (va_fourcc == VA_FOURCC_P010) {
                 format = VA_RT_FORMAT_YUV420_10;
+
+                if (m_libvaBackend == MFX_LIBVA_DRM_MODESET) {
+                    attrib[attrCnt].type            = (VASurfaceAttribType)VASurfaceAttribUsageHint;
+                    attrib[attrCnt].flags           = VA_SURFACE_ATTRIB_SETTABLE;
+                    attrib[attrCnt].value.type      = VAGenericValueTypeInteger;
+                    attrib[attrCnt++].value.value.i = VA_SURFACE_ATTRIB_USAGE_HINT_RDRM;
+                }
             }
             else if ((va_fourcc == VA_FOURCC_UYVY) || (va_fourcc == VA_FOURCC_YUY2)) {
                 format = VA_RT_FORMAT_YUV422;
@@ -280,6 +296,14 @@ mfxStatus vaapiFrameAllocator::AllocImpl(mfxFrameAllocRequest* request,
             }
             else if (fourcc == MFX_FOURCC_RGBP) {
                 format = VA_RT_FORMAT_RGBP;
+            }
+            else if (fourcc == MFX_FOURCC_RGB4) {
+                if (m_libvaBackend == MFX_LIBVA_DRM_MODESET) {
+                    attrib[attrCnt].type            = (VASurfaceAttribType)VASurfaceAttribUsageHint;
+                    attrib[attrCnt].flags           = VA_SURFACE_ATTRIB_SETTABLE;
+                    attrib[attrCnt].value.type      = VAGenericValueTypeInteger;
+                    attrib[attrCnt++].value.value.i = VA_SURFACE_ATTRIB_USAGE_HINT_RDRM;
+                }
             }
 
             va_res = m_libva->vaCreateSurfaces(m_dpy,

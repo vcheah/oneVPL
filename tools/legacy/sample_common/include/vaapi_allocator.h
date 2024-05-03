@@ -51,11 +51,16 @@ struct vaapiAllocatorParams : mfxAllocatorParams {
         virtual void release(mfxMemId mid, void* hdl) = 0;
     };
 
-    vaapiAllocatorParams() : m_dpy(NULL), m_export_mode(DONOT_EXPORT), m_exporter(NULL) {}
+    vaapiAllocatorParams()
+            : m_dpy(NULL),
+              m_export_mode(DONOT_EXPORT),
+              m_exporter(NULL),
+              m_libvaBackend(0) {}
 
     VADisplay m_dpy;
     mfxU32 m_export_mode;
     Exporter* m_exporter;
+    mfxI32 m_libvaBackend;
 };
 
 class vaapiFrameAllocator : public BaseFrameAllocator {
@@ -87,6 +92,7 @@ protected:
     MfxLoader::VA_Proxy* m_libva;
     mfxU32 m_export_mode;
     vaapiAllocatorParams::Exporter* m_exporter;
+    mfxI32 m_libvaBackend;
 };
 
 #endif //#if defined(LIBVA_SUPPORT)
