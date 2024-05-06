@@ -928,11 +928,11 @@ mfxStatus ParseInputString(char* strInput[], mfxU32 nArgNum, sInputParams* pPara
         else if (msdk_match(strInput[i], "-y410")) {
             pParams->FileInputFourCC = MFX_FOURCC_Y410;
         }
-#if (defined(_WIN64) || defined(_WIN32))
+        //#if (defined(_WIN64) || defined(_WIN32))
         else if (msdk_match(strInput[i], "-yuv400")) {
             pParams->FileInputFourCC = MFX_FOURCC_YUV400;
         }
-#endif
+        //#endif
         else if (msdk_match(strInput[i], "-ec::p010")) {
             pParams->EncodeFourCC = MFX_FOURCC_P010;
         }
