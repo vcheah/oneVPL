@@ -14,22 +14,22 @@
 
 #define TARGETKBPS                 4000
 #define FRAMERATE                  30
-#define OUTPUT_FILE                "out.h265"
-#define BITSTREAM_BUFFER_SIZE      2000000
+#define QUALITY                    90
+#define OUTPUT_FILE                "out.mjpeg"
+#define BITSTREAM_BUFFER_SIZE      (8000 * 8000 * 2)
 #define MAJOR_API_VERSION_REQUIRED 2
 #define MINOR_API_VERSION_REQUIRED 2
 
 void Usage(void) {
     printf("\n");
     printf("   Usage  :  hello-encode\n");
-    printf("     -i input file name (NV12 raw frames)\n");
+    printf("     -i input file name (BGR4 raw frames)\n");
     printf("     -w input width\n");
     printf("     -h input height\n\n");
-    printf("   Example:  hello-encode -i in.NV12 -w 320 -h 240\n");
-    printf("   To view:  ffplay %s\n\n", OUTPUT_FILE);
-    printf(" * Encode raw frames to HEVC/H265 elementary stream in %s\n\n", OUTPUT_FILE);
-    printf("   GPU native color format is "
-           "NV12\n");
+    printf("     -g grep image\n\n");
+    printf("   Example: BGR4 encode: hello-encode -i in.bgr4 -w 4096 -h 4096\n");
+    printf("   Example: Grey encode:  hello-encode -i in.nv12 -w 4096 -h 4096 -g\n");
+    printf(" * Encode BGR4/Grey raw frames to JPEG %s\n\n", OUTPUT_FILE);
     return;
 }
 
@@ -78,12 +78,11 @@ int main(int argc, char *argv[]) {
     cfgVal[0].Data.U32 = MFX_IMPL_TYPE_HARDWARE;
     sts = MFXSetConfigFilterProperty(cfg[0], (mfxU8 *)"mfxImplDescription.Impl", cfgVal[0]);
     VERIFY(MFX_ERR_NONE == sts, "MFXSetConfigFilterProperty failed for Impl");
-
-    // Implementation must provide an HEVC encoder
+    // Implementation must provide an JPEG encoder
     cfg[1] = MFXCreateConfig(loader);
     VERIFY(NULL != cfg[1], "MFXCreateConfig failed")
     cfgVal[1].Type     = MFX_VARIANT_TYPE_U32;
-    cfgVal[1].Data.U32 = MFX_CODEC_HEVC;
+    cfgVal[1].Data.U32 = MFX_CODEC_JPEG;
     sts                = MFXSetConfigFilterProperty(
         cfg[1],
         (mfxU8 *)"mfxImplDescription.mfxEncoderDescription.encoder.CodecID",
@@ -108,20 +107,28 @@ int main(int argc, char *argv[]) {
     ShowImplementationInfo(loader, 0);
 
     // Initialize encode parameters
-    encodeParams.mfx.CodecId                 = MFX_CODEC_HEVC;
-    encodeParams.mfx.TargetUsage             = MFX_TARGETUSAGE_BALANCED;
-    encodeParams.mfx.TargetKbps              = TARGETKBPS;
-    encodeParams.mfx.RateControlMethod       = MFX_RATECONTROL_VBR;
+    encodeParams.mfx.CodecId                 = MFX_CODEC_JPEG;
     encodeParams.mfx.FrameInfo.FrameRateExtN = FRAMERATE;
     encodeParams.mfx.FrameInfo.FrameRateExtD = 1;
-    encodeParams.mfx.FrameInfo.FourCC        = MFX_FOURCC_NV12;
-    encodeParams.mfx.FrameInfo.ChromaFormat  = MFX_CHROMAFORMAT_YUV420;
     encodeParams.mfx.FrameInfo.CropW         = cliParams.srcWidth;
     encodeParams.mfx.FrameInfo.CropH         = cliParams.srcHeight;
     encodeParams.mfx.FrameInfo.Width         = ALIGN16(cliParams.srcWidth);
     encodeParams.mfx.FrameInfo.Height        = ALIGN16(cliParams.srcHeight);
+    if (!cliParams.isGrey) {
+        encodeParams.mfx.FrameInfo.FourCC       = MFX_FOURCC_NV12;
+        encodeParams.mfx.FrameInfo.ChromaFormat = MFX_CHROMAFORMAT_YUV420;
+    }
+    else {
+        printf("Input fourcc is YUV400\n");
+        encodeParams.mfx.FrameInfo.FourCC       = MFX_FOURCC_YUV400; //only Y plane will be used
+        encodeParams.mfx.FrameInfo.ChromaFormat = MFX_CHROMAFORMAT_YUV400;
+    }
 
-    encodeParams.IOPattern = MFX_IOPATTERN_IN_SYSTEM_MEMORY;
+    encodeParams.mfx.Interleaved     = 1;
+    encodeParams.mfx.Quality         = QUALITY;
+    encodeParams.mfx.RestartInterval = 0;
+
+    encodeParams.IOPattern = MFX_IOPATTERN_IN_VIDEO_MEMORY;
 
     // Validate video encode parameters
     // - In this example the validation result is written to same structure
@@ -149,7 +156,16 @@ int main(int argc, char *argv[]) {
             printf("I420 (aka yuv420p)\n");
             break;
         case MFX_FOURCC_NV12: // GPU input
-            printf("NV12\n");
+            if (cliParams.isGrey)
+                printf("Y400\n");
+            else
+                printf("NV12\n");
+            break;
+        case MFX_FOURCC_BGR4: // GPU input
+            printf("BGR4\n");
+            break;
+        case MFX_FOURCC_YUV400: // GPU input
+            printf("YUV400\n");
             break;
         default:
             printf("Unsupported color format\n");
@@ -163,8 +179,11 @@ int main(int argc, char *argv[]) {
         if (isDraining == false) {
             sts = MFXMemory_GetSurfaceForEncode(session, &encSurfaceIn);
             VERIFY(MFX_ERR_NONE == sts, "Could not get encode surface");
+            if (cliParams.isGrey) {
+                encSurfaceIn->Info.ChromaFormat = MFX_CHROMAFORMAT_YUV400;
+            }
 
-            sts = ReadRawFrame_InternalMem(encSurfaceIn, source);
+            sts = ReadRawFrame_InternalMem(encSurfaceIn, source, cliParams.isGrey);
             if (sts != MFX_ERR_NONE)
                 isDraining = true;
         }

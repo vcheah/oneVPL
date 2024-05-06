@@ -43,8 +43,8 @@ enum {
 
 #define WAIT_100_MILLISECONDS 100
 #define MAX_PATH              260
-#define MAX_WIDTH             3840
-#define MAX_HEIGHT            2160
+#define MAX_WIDTH             16384
+#define MAX_HEIGHT            16384
 #define IS_ARG_EQ(a, b)       (!strcmp((a), (b)))
 
 #define VERIFY(x, y)       \
@@ -57,6 +57,16 @@ enum {
 #define ALIGN16(value)           (((value + 15) >> 4) << 4)
 #define ALIGN32(X)               (((mfxU32)((X) + 31)) & (~(mfxU32)31))
 #define VPLVERSION(major, minor) (major << 16 | minor)
+
+enum {
+    MFX_FOURCC_IMC3    = MFX_MAKEFOURCC('I', 'M', 'C', '3'),
+    MFX_FOURCC_YUV400  = MFX_MAKEFOURCC('4', '0', '0', 'P'),
+    MFX_FOURCC_YUV411  = MFX_MAKEFOURCC('4', '1', '1', 'P'),
+    MFX_FOURCC_YUV422H = MFX_MAKEFOURCC('4', '2', '2', 'H'),
+    MFX_FOURCC_YUV422V = MFX_MAKEFOURCC('4', '2', '2', 'V'),
+    MFX_FOURCC_YUV444  = MFX_MAKEFOURCC('4', '4', '4', 'P'),
+    MFX_FOURCC_RGBP24  = MFX_MAKEFOURCC('R', 'G', 'B', 'P'),
+};
 
 enum ExampleParams { PARAM_IMPL = 0, PARAM_INFILE, PARAM_INRES, PARAM_COUNT };
 enum ParamGroup {
@@ -73,6 +83,7 @@ typedef struct _Params {
 
     mfxU16 srcWidth;
     mfxU16 srcHeight;
+    bool isGrey;
 } Params;
 
 char *ValidateFileName(char *in) {
@@ -133,6 +144,9 @@ bool ParseArgsAndValidate(int argc, char *argv[], Params *params, ParamGroup gro
         else if (IS_ARG_EQ(s, "h")) {
             if (!ValidateSize(argv[idx++], &params->srcHeight, MAX_HEIGHT))
                 return false;
+        }
+        else if (IS_ARG_EQ(s, "g")) {
+            params->isGrey = true;
         }
     }
 
@@ -439,7 +453,7 @@ void WriteEncodedStream(mfxBitstream &bs, FILE *f) {
 }
 
 // Load raw I420 frames to mfxFrameSurface
-mfxStatus ReadRawFrame(mfxFrameSurface1 *surface, FILE *f) {
+mfxStatus ReadRawFrame(mfxFrameSurface1 *surface, FILE *f, bool isGrey) {
     mfxU16 w, h, i, pitch;
     size_t bytes_read;
     mfxU8 *ptr;
@@ -486,10 +500,20 @@ mfxStatus ReadRawFrame(mfxFrameSurface1 *surface, FILE *f) {
                 if (w != bytes_read)
                     return MFX_ERR_MORE_DATA;
             }
-            // UV
-            h /= 2;
+            // skip UV if it's grey image
+            if (!isGrey) {
+                h /= 2;
+                for (i = 0; i < h; i++) {
+                    bytes_read = fread(data->UV + i * pitch, 1, w, f);
+                    if (w != bytes_read)
+                        return MFX_ERR_MORE_DATA;
+                }
+            }
+            break;
+        case MFX_FOURCC_YUV400:
+            pitch = data->Pitch;
             for (i = 0; i < h; i++) {
-                bytes_read = fread(data->UV + i * pitch, 1, w, f);
+                bytes_read = fread(data->Y + i * pitch, 1, w, f);
                 if (w != bytes_read)
                     return MFX_ERR_MORE_DATA;
             }
@@ -503,6 +527,15 @@ mfxStatus ReadRawFrame(mfxFrameSurface1 *surface, FILE *f) {
                     return MFX_ERR_MORE_DATA;
             }
             break;
+        case MFX_FOURCC_BGR4:
+            pitch = data->Pitch;
+            for (i = 0; i < h; i++) {
+                bytes_read = fread(data->R + i * pitch, 1, pitch, f);
+                if (pitch != bytes_read)
+                    return MFX_ERR_MORE_DATA;
+            }
+            break;
+
         default:
             printf("Unsupported FourCC code, skip LoadRawFrame\n");
             break;
@@ -512,7 +545,7 @@ mfxStatus ReadRawFrame(mfxFrameSurface1 *surface, FILE *f) {
 }
 
 #if (MFX_VERSION >= 2000)
-mfxStatus ReadRawFrame_InternalMem(mfxFrameSurface1 *surface, FILE *f) {
+mfxStatus ReadRawFrame_InternalMem(mfxFrameSurface1 *surface, FILE *f, bool isGrey) {
     bool is_more_data = false;
 
     // Map makes surface writable by CPU for all implementations
@@ -522,7 +555,7 @@ mfxStatus ReadRawFrame_InternalMem(mfxFrameSurface1 *surface, FILE *f) {
         return sts;
     }
 
-    sts = ReadRawFrame(surface, f);
+    sts = ReadRawFrame(surface, f, isGrey);
     if (sts != MFX_ERR_NONE) {
         if (sts == MFX_ERR_MORE_DATA)
             is_more_data = true;
