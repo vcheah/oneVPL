@@ -212,7 +212,6 @@ drmRenderer::drmRenderer(int fd, mfxI32 monitorType)
           m_crtc(),
           m_connectorProperties(),
           m_crtcProperties(),
-          m_bufmgr(NULL),
           m_overlay_wrn(true),
           m_bSentHDR(false),
           m_bHdrSupport(false),
@@ -258,11 +257,6 @@ drmRenderer::~drmRenderer() {
     m_drmlib.drmModeFreeCrtc(m_crtc);
     m_drmlib.drmModeFreeObjectProperties(m_connectorProperties);
     m_drmlib.drmModeFreeObjectProperties(m_crtcProperties);
-
-    if (m_bufmgr) {
-        m_drmintellib.drm_intel_bufmgr_destroy(m_bufmgr);
-        m_bufmgr = NULL;
-    }
 }
 
 drmModeObjectPropertiesPtr drmRenderer::getProperties(int fd, int objectId, int32_t objectTypeId) {
